@@ -26,3 +26,4 @@ loguru>=0.7,<1.0             # structured, colorful logs for agents
 # Testing (if you install dev tools from this file; otherwise put these in requirements-dev.txt)
 pytest>=8.0,<9.0             # test runner
 pytest-asyncio>=0.23,<0.24   # asyncio tests for agents if needed
+coverage>=7.4,<8.0           # used by CI workflow for coverage reporting
