@@ -1,1 +1,28 @@
-abc
+# Core data modeling & validation
+pydantic>=2.3,<3.0           # schemas for intents/plans/context; fast validation
+typing-extensions>=4.7,<5.0  # backports for older Python runtimes
+
+# Planning & graph utilities
+networkx>=2.8,<4.0           # action graph/DAG planning (range allows Py>=3.8+)
+
+# Workbook I/O (Excel)
+openpyxl>=3.1,<4.0           # read/write XLSX; formula-friendly
+
+# Natural language helpers (lightweight)
+rapidfuzz>=3.0,<4.0          # intent fuzzy matching & heuristics
+lark>=1.1,<2.0               # optional grammar parsing for formulas/commands
+
+# LLM/provider abstraction (optional but recommended)
+litellm>=1.46,<2.0           # unify OpenAI/Anthropic/Bedrock/xAI, etc.
+tenacity>=8.2,<9.0           # robust retries around model/tool calls
+python-dotenv>=1.0,<2.0      # load API keys and config from .env
+
+# Templating & explanations
+Jinja2>=3.1,<4.0             # human-readable explanations/rendering
+
+# Logging (nice-to-have)
+loguru>=0.7,<1.0             # structured, colorful logs for agents
+
+# Testing (if you install dev tools from this file; otherwise put these in requirements-dev.txt)
+pytest>=8.0,<9.0             # test runner
+pytest-asyncio>=0.23,<0.24   # asyncio tests for agents if needed
