@@ -1,0 +1,26 @@
+services:
+  nextcloud:
+    image: nextcloud:latest
+    container_name: nextcloud
+    restart: always
+    ports:
+      - "8081:80"
+    volumes:
+      - nextcloud_data:/var/www/html
+
+  collabora_online:
+    build:
+      context: ./src/view
+      dockerfile: docker/from-packages/Dockerfile
+    image: collabora/code
+    container_name: collabora_online
+    restart: always
+    tty: true
+    ports:
+      - "9980:9980"
+    environment:
+      - extra_params=--o:ssl.enable=false --o:user_interface.use_integration_theme=false
+
+volumes:
+  nextcloud_data:
+

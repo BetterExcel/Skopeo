@@ -1,0 +1,3 @@
+[submodule "src/view"]
+	path = src/view
+	url = https://github.com/CollaboraOnline/online.git
