@@ -20,6 +20,7 @@ services:
       - "9980:9980"
     environment:
       - extra_params=--o:ssl.enable=false --o:user_interface.use_integration_theme=false
+      - aliasgroups1=http://nextcloud:80,http://192.168.0.206:8081,http://localhost:8081
 
 volumes:
   nextcloud_data:
