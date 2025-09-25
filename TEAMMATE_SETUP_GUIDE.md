@@ -4,8 +4,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone --recurse-submodules <your-repo-url>
-cd Skopeo-new
+git clone --recurse-submodules ...
+cd Skopeo
 ```
 
 ### 2. Update docker-compose.yml
