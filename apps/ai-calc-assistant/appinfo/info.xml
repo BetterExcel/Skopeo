@@ -11,4 +11,7 @@
     <nextcloud min-version="26" max-version="30"/>
     <app>richdocuments</app>
   </dependencies>
+    <routes>
+      <resource>appinfo/routes.php</resource>
+    </routes>
 </info>

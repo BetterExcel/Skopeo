@@ -208,3 +208,9 @@ __marimo__/
 
 *.yml
 .kiro/
+
+# Node / JS build artifacts
+node_modules/
+**/node_modules/
+**/dist/
+**/js/*.map
