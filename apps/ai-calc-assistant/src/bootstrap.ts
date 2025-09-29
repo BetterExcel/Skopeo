@@ -52,8 +52,9 @@ import { ToolExecutor } from './agent/executor';
         const executor = new ToolExecutor(tools);
 
         // Provide config and executor to Vue app
-        (app as any).provide && (app as any).provide('appConfig', cfg);
-        (app as any).provide && (app as any).provide('toolExecutor', executor);
+  (app as any).provide && (app as any).provide('appConfig', cfg);
+  (app as any).provide && (app as any).provide('toolExecutor', executor);
+  (app as any).provide && (app as any).provide('tools', tools);
         (app as any).mount && (app as any).mount('#ai-calc-assistant-sidebar');
       })
       .catch(() => {

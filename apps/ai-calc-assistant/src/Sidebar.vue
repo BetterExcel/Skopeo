@@ -7,7 +7,7 @@
         <span class="content">{{ m.content }}</span>
       </div>
     </section>
-    <footer class="composer">
+  <footer class="composer">
       <input
         id="ai-input"
         v-model="input"
@@ -17,12 +17,15 @@
       />
       <button id="ai-send" :disabled="isProcessing || !input.trim()" @click="onSend">Send</button>
     </footer>
+    <ConfirmDialog v-if="confirmOpen" :summary="confirmSummary" @confirm="confirmExecute" @cancel="cancelConfirm" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, nextTick, inject } from 'vue';
 import { OrchestratorClient, type PlanRequest } from './client/orchestrator';
+import ConfirmDialog from './components/ConfirmDialog.vue';
+import { summarizePreview, type PreviewSummary } from './agent/preview';
 
 type MsgType = 'user' | 'assistant' | 'system';
 type ChatMessage = { id: string; type: MsgType; content: string };
@@ -41,6 +44,10 @@ const appConfig = inject<any>('appConfig', null);
 const client = ref<OrchestratorClient | null>(null);
 const debug = !!appConfig?.debug;
 const executor = inject<any>('toolExecutor', null);
+const tools = inject<any>('tools', null);
+const confirmOpen = ref(false);
+const confirmSummary = ref<PreviewSummary>({ totalCells: 0, ranges: [], requiresConfirmation: false });
+let confirmCalls: any[] = [];
 
 onMounted(async () => {
   if (appConfig?.orchestratorUrl) {
@@ -71,13 +78,20 @@ async function onSend() {
   const parsed = parseCommand(content);
   if (parsed && executor) {
     try {
-      isProcessing.value = true;
-      messages.value.push({ id: uid(), type: 'assistant', content: `Executing: ${parsed.name}` });
-      await executor.run([parsed], (u: any) => {
-        if (!u.success) messages.value.push({ id: uid(), type: 'system', content: `Error: ${u.error}` });
-      });
-      messages.value.push({ id: uid(), type: 'assistant', content: 'Done.' });
-      isProcessing.value = false;
+      const summary = summarizePreview([parsed], { maxCellsWithoutConfirmation: appConfig?.maxCellsWithoutConfirmation || 1000 });
+      if (summary.requiresConfirmation) {
+        confirmSummary.value = summary;
+        confirmCalls = [parsed];
+        confirmOpen.value = true;
+      } else {
+        isProcessing.value = true;
+        messages.value.push({ id: uid(), type: 'assistant', content: `Executing: ${parsed.name}` });
+        await executor.run([parsed], (u: any) => {
+          if (!u.success) messages.value.push({ id: uid(), type: 'system', content: `Error: ${u.error}` });
+        });
+        messages.value.push({ id: uid(), type: 'assistant', content: 'Done.' });
+        isProcessing.value = false;
+      }
       return;
     } catch (e: any) {
       messages.value.push({ id: uid(), type: 'system', content: `Failed: ${e?.message || e}` });
@@ -129,6 +143,28 @@ async function onSend() {
   } catch (e: any) {
     if (debug) console.debug('[assistant] failed', e);
     messages.value.push({ id: uid(), type: 'system', content: `Failed: ${e?.message || e}` });
+    isProcessing.value = false;
+  }
+}
+
+function cancelConfirm() { confirmOpen.value = false; }
+async function confirmExecute() {
+  confirmOpen.value = false;
+  isProcessing.value = true;
+  try {
+    // Optional: preview highlight
+    for (const c of confirmCalls) {
+      if (c.arguments?.range && tools?.select_range) {
+        try { await tools.select_range(c.arguments.range); } catch {}
+      }
+    }
+    await executor.run(confirmCalls, (u: any) => {
+      if (!u.success) messages.value.push({ id: uid(), type: 'system', content: `Error: ${u.error}` });
+    });
+    messages.value.push({ id: uid(), type: 'assistant', content: 'Done.' });
+  } catch (e: any) {
+    messages.value.push({ id: uid(), type: 'system', content: `Failed: ${e?.message || e}` });
+  } finally {
     isProcessing.value = false;
   }
 }

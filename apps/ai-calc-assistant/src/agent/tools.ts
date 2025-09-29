@@ -104,4 +104,10 @@ export class BasicTools {
     // Placeholder: The actual UNO command for DefineName can be integrated later in 3.3 or 3.4
     // await this.bridge.uno('.uno:DefineName', [ ... ]);
   }
+
+  // Selection helper for preview/highlight
+  async select_range(range: string) {
+    validateRange(range);
+    await this.bridge.uno(UNO_COMMANDS.GO_TO_CELL, [{ name: 'ToPoint', value: range }]);
+  }
 }
