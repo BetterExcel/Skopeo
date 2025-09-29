@@ -39,10 +39,15 @@ function uid() { return Math.random().toString(36).slice(2); }
 
 const appConfig = inject<any>('appConfig', null);
 const client = ref<OrchestratorClient | null>(null);
+const debug = !!appConfig?.debug;
 
 onMounted(async () => {
   if (appConfig?.orchestratorUrl) {
-    client.value = new OrchestratorClient(appConfig.orchestratorUrl);
+    client.value = new OrchestratorClient(appConfig.orchestratorUrl, {
+      debug,
+      reconnectMs: appConfig?.sse?.reconnectMs,
+      maxDurationMs: appConfig?.sse?.maxDurationMs,
+    });
     const health = await client.value.health();
     if (health !== 'ok') {
       messages.value.push({ id: uid(), type: 'system', content: 'Orchestrator unavailable.' });
@@ -65,7 +70,9 @@ async function onSend() {
   try {
     if (!client.value) throw new Error('NO_CLIENT');
     const req: PlanRequest = { userPrompt: content };
-    const planId = await client.value.plan(req);
+  if (debug) console.debug('[assistant] plan request', req);
+  const planId = await client.value.plan(req);
+  if (debug) console.debug('[assistant] plan id', planId);
 
     messages.value.push({ id: uid(), type: 'assistant', content: 'Planning…' });
     await nextTick();
@@ -77,6 +84,7 @@ async function onSend() {
 
     const sub = client.value.stream(planId, {
       onEvent: (name, payload) => {
+        if (debug) console.debug('[assistant] event', name, payload);
         if (name === 'response.output_text.delta' && payload?.delta) {
           buffer += String(payload.delta);
           const idx = messages.value.findIndex((m) => m.id === bufferId);
@@ -87,9 +95,11 @@ async function onSend() {
         }
       },
       onError: () => {
+        if (debug) console.debug('[assistant] stream error');
         messages.value.push({ id: uid(), type: 'system', content: 'Stream error.' });
       },
       onDone: () => {
+        if (debug) console.debug('[assistant] stream done');
         isProcessing.value = false;
       },
     });
@@ -97,6 +107,7 @@ async function onSend() {
     // Safety timeout for done
     setTimeout(() => { try { sub.close(); } catch {} }, 180000);
   } catch (e: any) {
+    if (debug) console.debug('[assistant] failed', e);
     messages.value.push({ id: uid(), type: 'system', content: `Failed: ${e?.message || e}` });
     isProcessing.value = false;
   }

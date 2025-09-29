@@ -16,7 +16,7 @@ export type StreamHandlers = {
 };
 
 export class OrchestratorClient {
-  constructor(private baseUrl: string) {}
+  constructor(private baseUrl: string, private opts: { debug?: boolean; reconnectMs?: number; maxDurationMs?: number } = {}) {}
 
   async health(): Promise<'ok' | 'fail'> {
     try {
@@ -45,41 +45,65 @@ export class OrchestratorClient {
   }
 
   stream(planId: string, handlers: StreamHandlers = {}) {
-    const src = new EventSource(`${this.baseUrl}/api/stream/${encodeURIComponent(planId)}`);
+    let closed = false;
+    let src: EventSource | null = null;
+    let timer: any = null;
 
-    const forward = (name: string, e: MessageEvent) => {
+    const open = () => {
+      if (closed) return;
+      src = new EventSource(`${this.baseUrl}/api/stream/${encodeURIComponent(planId)}`);
+
+      const forward = (name: string, e: MessageEvent) => {
       try {
         const payload = e.data ? JSON.parse(e.data) : undefined;
+          if (this.opts.debug) console.debug('[orchestrator]', name, payload);
         handlers.onEvent?.(name, payload);
       } catch {
+          if (this.opts.debug) console.debug('[orchestrator]', name, e.data);
         handlers.onEvent?.(name, e.data);
       }
+      };
+
+      src.onmessage = (e) => forward('message', e);
+
+      // Also listen for common custom event names
+      const events = [
+        'event',
+        'error',
+        'response.output_text.delta',
+        'response.completed',
+        'response.error',
+      ];
+      for (const ev of events) {
+        src!.addEventListener(ev, (e) => forward(ev, e as MessageEvent));
+      }
+
+      src.onerror = () => {
+        handlers.onError?.(new Error('STREAM_ERROR'));
+        try { src && src.close(); } catch {}
+        src = null;
+        if (!closed && this.opts.reconnectMs) {
+          setTimeout(() => open(), this.opts.reconnectMs);
+        } else {
+          handlers.onDone?.();
+        }
+      };
+
+      if (this.opts.maxDurationMs) {
+        timer = setTimeout(() => {
+          try { src && src.close(); } catch {}
+          src = null;
+          handlers.onDone?.();
+        }, this.opts.maxDurationMs);
+      }
     };
-
-    src.onmessage = (e) => forward('message', e);
-
-    // Also listen for common custom event names
-    const events = [
-      'event',
-      'error',
-      'response.output_text.delta',
-      'response.completed',
-      'response.error',
-    ];
-    for (const ev of events) {
-      src.addEventListener(ev, (e) => forward(ev, e as MessageEvent));
-    }
-
-    src.onerror = () => {
-      handlers.onError?.(new Error('STREAM_ERROR'));
-      // Close; this is a one-shot stream
-      try { src.close(); } catch {}
-      handlers.onDone?.();
-    };
+    open();
 
     return {
       close: () => {
-        try { src.close(); } catch {}
+        closed = true;
+        try { src && src.close(); } catch {}
+        if (timer) { try { clearTimeout(timer); } catch {} }
       },
     };
   }
