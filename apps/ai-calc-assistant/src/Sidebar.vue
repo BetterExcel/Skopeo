@@ -40,6 +40,7 @@ function uid() { return Math.random().toString(36).slice(2); }
 const appConfig = inject<any>('appConfig', null);
 const client = ref<OrchestratorClient | null>(null);
 const debug = !!appConfig?.debug;
+const executor = inject<any>('toolExecutor', null);
 
 onMounted(async () => {
   if (appConfig?.orchestratorUrl) {
@@ -65,6 +66,25 @@ async function onSend() {
   isProcessing.value = true;
   await nextTick();
   messagesRef.value?.scrollTo({ top: messagesRef.value.scrollHeight });
+
+  // First, try to parse a direct command for basic operations (fast-path)
+  const parsed = parseCommand(content);
+  if (parsed && executor) {
+    try {
+      isProcessing.value = true;
+      messages.value.push({ id: uid(), type: 'assistant', content: `Executing: ${parsed.name}` });
+      await executor.run([parsed], (u: any) => {
+        if (!u.success) messages.value.push({ id: uid(), type: 'system', content: `Error: ${u.error}` });
+      });
+      messages.value.push({ id: uid(), type: 'assistant', content: 'Done.' });
+      isProcessing.value = false;
+      return;
+    } catch (e: any) {
+      messages.value.push({ id: uid(), type: 'system', content: `Failed: ${e?.message || e}` });
+      isProcessing.value = false;
+      return;
+    }
+  }
 
   // Send to orchestrator and stream plan events
   try {
@@ -111,6 +131,32 @@ async function onSend() {
     messages.value.push({ id: uid(), type: 'system', content: `Failed: ${e?.message || e}` });
     isProcessing.value = false;
   }
+}
+
+// Very simple NL parser for common commands (fast-path)
+function parseCommand(text: string): { name: string; arguments: Record<string, any> } | null {
+  const t = text.trim();
+  // Put "X" in A1
+  let m = t.match(/^put\s+\"(.+?)\"\s+in\s+([A-Za-z]{1,3}\d{1,7})$/i);
+  if (m) return { name: 'set_cell_text', arguments: { address: m[2], text: m[1] } };
+
+  // Apply formula =X to A1
+  m = t.match(/^apply\s+formula\s+(=.+)\s+to\s+([A-Za-z]{1,3}\d{1,7})$/i);
+  if (m) return { name: 'apply_formula', arguments: { address: m[2], formula: m[1] } };
+
+  // Go to cell A1
+  m = t.match(/^go\s+to\s+cell\s+([A-Za-z]{1,3}\d{1,7})$/i);
+  if (m) return { name: 'go_to_cell', arguments: { address: m[1] } };
+
+  // Make column B currency format
+  m = t.match(/^make\s+column\s+([A-Za-z]{1,3})\s+currency\s+format$/i);
+  if (m) return { name: 'format_range_currency', arguments: { range: `${m[1].toUpperCase()}1:${m[1].toUpperCase()}1048576` } };
+
+  // Sort A1:C10 by B ascending|descending
+  m = t.match(/^sort\s+([A-Za-z]{1,3}\d{1,7}:[A-Za-z]{1,3}\d{1,7})\s+by\s+([A-Za-z]{1,3})\s+(ascending|descending)$/i);
+  if (m) return { name: 'sort_range', arguments: { range: m[1], column: m[2], ascending: m[3].toLowerCase() === 'ascending' } };
+
+  return null;
 }
 
 </script>

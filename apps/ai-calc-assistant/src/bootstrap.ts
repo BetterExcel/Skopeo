@@ -5,6 +5,9 @@ declare const OC: any;
 
 import { createApp } from 'vue';
 import AppRoot from './AppRoot';
+import { UNOBridge } from './agent/bridge';
+import { BasicTools } from './agent/tools';
+import { ToolExecutor } from './agent/executor';
 
 (function () {
   // Detect Richdocuments Calc by looking for Collabora iframe and MIME context
@@ -39,11 +42,19 @@ import AppRoot from './AppRoot';
         try { await fetch(`${cfg.orchestratorUrl}/health`).then((r) => r.json()); } catch {}
 
         // Mount the Vue Sidebar
-  const app = createApp(AppRoot as any);
-  // Pass config via global property for simplicity
-  app.config = app.config || {};
-  (app as any).provide && (app as any).provide('appConfig', cfg);
-  (app as any).mount && (app as any).mount('#ai-calc-assistant-sidebar');
+        const app = createApp(AppRoot as any);
+        // Prepare UNO bridge and tools
+        const bridge = new UNOBridge({
+          frame: collaboraIframe as HTMLIFrameElement,
+          allowedOrigin: cfg.postMessageOrigin || '*',
+        });
+        const tools = new BasicTools(bridge);
+        const executor = new ToolExecutor(tools);
+
+        // Provide config and executor to Vue app
+        (app as any).provide && (app as any).provide('appConfig', cfg);
+        (app as any).provide && (app as any).provide('toolExecutor', executor);
+        (app as any).mount && (app as any).mount('#ai-calc-assistant-sidebar');
       })
       .catch(() => {
         // Fallback: still mount UI; 4.3 will surface config errors in the UI
