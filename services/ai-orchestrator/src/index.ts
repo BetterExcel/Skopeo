@@ -1,17 +1,5 @@
-import express, { Request, Response } from 'express';
-import { config } from './lib/config';
-import { registerPlanRoutes } from './routes/plan';
-
-const app = express();
-app.use(express.json());
-
-// Health check
-app.get('/health', (_req: Request, res: Response) => {
-  res.json({ status: 'ok', service: 'ai-orchestrator' });
-});
-
-// API routes
-app.use(registerPlanRoutes());
+import { config } from './lib/config.js';
+import { app } from './app.js';
 
 const port = config.PORT;
 app.listen(port, () => {

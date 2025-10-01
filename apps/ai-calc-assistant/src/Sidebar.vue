@@ -1,7 +1,32 @@
 <template>
-  <div class="sidebar-root">
+  <div id="ai-calc-assistant-root" class="sidebar-root">
     <header class="sidebar-header">AI Calc Assistant</header>
-    <section class="messages" ref="messagesRef">
+    <div class="toasts">
+      <div
+        v-for="t in toasts.state.items"
+        :key="t.id"
+        class="toast"
+        :class="t.type"
+        :data-test="`toast-${t.type}`"
+      >
+        {{ t.message }}
+      </div>
+    </div>
+    <div v-if="diagWarnings.length" class="diag" data-test="diagnostics-section">
+      <div class="diag-title">Configuration checks</div>
+      <ul>
+        <li v-for="w in diagWarnings" :key="w">{{ w }}</li>
+      </ul>
+    </div>
+    <div v-if="serverDiag" class="diag" data-test="diagnostics-section">
+      <div class="diag-title">Server diagnostics</div>
+      <ul>
+        <li>Orchestrator URL: {{ appConfig?.orchestratorUrl || 'not set' }}</li>
+        <li>Status: {{ serverDiag.status }} (reachable: {{ serverDiag.reachable ? 'yes' : 'no' }})</li>
+        <li v-if="serverDiag.message">Message: {{ serverDiag.message }}</li>
+      </ul>
+    </div>
+    <section class="messages" ref="messagesRef" data-test="progress-log">
       <div v-for="m in messages" :key="m.id" class="msg" :class="m.type">
         <span class="role">{{ m.type }}</span>
         <span class="content">{{ m.content }}</span>
@@ -10,19 +35,20 @@
   <footer class="composer">
       <input
         id="ai-input"
+        data-test="chat-input"
         v-model="input"
         type="text"
         :placeholder="placeholder"
         @keydown.enter.prevent="onSend"
       />
-      <button id="ai-send" :disabled="isProcessing || !input.trim()" @click="onSend">Send</button>
+      <button id="ai-send" data-test="send-btn" :disabled="isProcessing || !input.trim()" @click="onSend">Send</button>
     </footer>
     <ConfirmDialog v-if="confirmOpen" :summary="confirmSummary" @confirm="confirmExecute" @cancel="cancelConfirm" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, nextTick, inject } from 'vue';
+import { ref, onMounted, nextTick, inject, computed } from 'vue';
 import { OrchestratorClient, type PlanRequest } from './client/orchestrator';
 import ConfirmDialog from './components/ConfirmDialog.vue';
 import { summarizePreview, type PreviewSummary } from './agent/preview';
@@ -45,9 +71,35 @@ const client = ref<OrchestratorClient | null>(null);
 const debug = !!appConfig?.debug;
 const executor = inject<any>('toolExecutor', null);
 const tools = inject<any>('tools', null);
+const toasts = inject<any>('toasts', null);
 const confirmOpen = ref(false);
 const confirmSummary = ref<PreviewSummary>({ totalCells: 0, ranges: [], requiresConfirmation: false });
 let confirmCalls: any[] = [];
+
+// Basic diagnostics for WOPI/Origin config
+const diagWarnings = computed<string[]>(() => {
+  const out: string[] = [];
+  const expected = window.location.origin;
+  const actual = appConfig?.postMessageOrigin;
+  if (!actual) {
+    out.push('PostMessageOrigin is not configured. Set it to ' + expected + ' in Richdocuments CheckFileInfo.');
+  } else if (actual !== expected) {
+    out.push(`PostMessageOrigin mismatch. Expected ${expected} but got ${actual}. Cross-frame messaging may fail.`);
+  }
+  out.push('Ensure WOPI CheckFileInfo includes EnableRemoteAIContent: true for Calc documents.');
+  // Orchestrator URL/health checks from server diagnostics
+  if (!appConfig?.orchestratorUrl) {
+    out.push('Orchestrator URL is not configured on the server. Set ai-calc-assistant:orchestrator_url.');
+  } else if (appConfig?.diagnostics?.orchestrator) {
+    const d = appConfig.diagnostics.orchestrator;
+    if (!d.reachable) {
+      out.push(`Orchestrator health check failed (status: ${d.status}${d.message ? ', ' + d.message : ''}).`);
+    }
+  }
+  return out;
+});
+
+const serverDiag = computed<any>(() => appConfig?.diagnostics?.orchestrator || null);
 
 onMounted(async () => {
   if (appConfig?.orchestratorUrl) {
@@ -87,14 +139,20 @@ async function onSend() {
         isProcessing.value = true;
         messages.value.push({ id: uid(), type: 'assistant', content: `Executing: ${parsed.name}` });
         await executor.run([parsed], (u: any) => {
-          if (!u.success) messages.value.push({ id: uid(), type: 'system', content: `Error: ${u.error}` });
+          if (!u.success) {
+            messages.value.push({ id: uid(), type: 'system', content: `Error: ${u.error}` });
+            toasts?.error?.(u.error || 'Operation failed');
+          }
         });
         messages.value.push({ id: uid(), type: 'assistant', content: 'Done.' });
+        toasts?.success?.('Operation completed');
         isProcessing.value = false;
       }
       return;
     } catch (e: any) {
-      messages.value.push({ id: uid(), type: 'system', content: `Failed: ${e?.message || e}` });
+      const msg = e?.message || String(e);
+      messages.value.push({ id: uid(), type: 'system', content: `Failed: ${msg}` });
+      toasts?.error?.(msg);
       isProcessing.value = false;
       return;
     }
@@ -131,10 +189,12 @@ async function onSend() {
       onError: () => {
         if (debug) console.debug('[assistant] stream error');
         messages.value.push({ id: uid(), type: 'system', content: 'Stream error.' });
+        toasts?.error?.('Stream error');
       },
       onDone: () => {
         if (debug) console.debug('[assistant] stream done');
         isProcessing.value = false;
+        toasts?.info?.('Plan streaming finished');
       },
     });
 
@@ -142,7 +202,9 @@ async function onSend() {
     setTimeout(() => { try { sub.close(); } catch {} }, 180000);
   } catch (e: any) {
     if (debug) console.debug('[assistant] failed', e);
-    messages.value.push({ id: uid(), type: 'system', content: `Failed: ${e?.message || e}` });
+    const msg = e?.message || String(e);
+    messages.value.push({ id: uid(), type: 'system', content: `Failed: ${msg}` });
+    toasts?.error?.(msg);
     isProcessing.value = false;
   }
 }
@@ -159,11 +221,17 @@ async function confirmExecute() {
       }
     }
     await executor.run(confirmCalls, (u: any) => {
-      if (!u.success) messages.value.push({ id: uid(), type: 'system', content: `Error: ${u.error}` });
+      if (!u.success) {
+        messages.value.push({ id: uid(), type: 'system', content: `Error: ${u.error}` });
+        toasts?.error?.(u.error || 'Operation failed');
+      }
     });
     messages.value.push({ id: uid(), type: 'assistant', content: 'Done.' });
+    toasts?.success?.('Operation completed');
   } catch (e: any) {
-    messages.value.push({ id: uid(), type: 'system', content: `Failed: ${e?.message || e}` });
+    const msg = e?.message || String(e);
+    messages.value.push({ id: uid(), type: 'system', content: `Failed: ${msg}` });
+    toasts?.error?.(msg);
   } finally {
     isProcessing.value = false;
   }
@@ -201,6 +269,8 @@ function parseCommand(text: string): { name: string; arguments: Record<string, a
 .sidebar-root { display: flex; flex-direction: column; height: 100%; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 .sidebar-header { padding: 12px; border-bottom: 1px solid #eee; font-weight: 600; }
 .messages { flex: 1; overflow: auto; padding: 12px; background: #fafafa; }
+.diag { background: #fff7e6; color: #8a6d3b; border: 1px solid #ffe0a3; padding: 8px 12px; margin: 8px 12px; border-radius: 6px; }
+.diag-title { font-weight: 600; margin-bottom: 4px; }
 .msg { margin-bottom: 8px; display: flex; gap: 8px; }
 .msg .role { text-transform: capitalize; font-weight: 600; width: 80px; color: #666; }
 .msg.user .role { color: #0073e6; }
@@ -209,4 +279,9 @@ function parseCommand(text: string): { name: string; arguments: Record<string, a
 .composer input { flex: 1; padding: 8px 10px; border: 1px solid #ddd; border-radius: 6px; }
 .composer button { padding: 8px 12px; border-radius: 6px; border: 1px solid #ddd; background: #fff; cursor: pointer; }
 .composer button:disabled { opacity: 0.5; cursor: not-allowed; }
+.toasts { position: fixed; top: 72px; right: 372px; display: flex; flex-direction: column; gap: 8px; z-index: 10000; }
+.toast { padding: 8px 12px; border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); background: #fff; border: 1px solid #eee; font-size: 13px; }
+.toast.success { border-color: #b7eb8f; background: #f6ffed; color: #135200; }
+.toast.error { border-color: #ffa39e; background: #fff1f0; color: #a8071a; }
+.toast.info { border-color: #91d5ff; background: #e6f7ff; color: #004a7c; }
 </style>

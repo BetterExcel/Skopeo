@@ -8,6 +8,7 @@ import AppRoot from './AppRoot';
 import { UNOBridge } from './agent/bridge';
 import { BasicTools } from './agent/tools';
 import { ToolExecutor } from './agent/executor';
+import { createToastStore } from './ui/toast';
 
 (function () {
   // Detect Richdocuments Calc by looking for Collabora iframe and MIME context
@@ -41,20 +42,22 @@ import { ToolExecutor } from './agent/executor';
         // Optional: health check for orchestrator; we proceed to mount UI regardless
         try { await fetch(`${cfg.orchestratorUrl}/health`).then((r) => r.json()); } catch {}
 
-        // Mount the Vue Sidebar
+  // Mount the Vue Sidebar
         const app = createApp(AppRoot as any);
         // Prepare UNO bridge and tools
         const bridge = new UNOBridge({
           frame: collaboraIframe as HTMLIFrameElement,
           allowedOrigin: cfg.postMessageOrigin || '*',
         });
-        const tools = new BasicTools(bridge);
+    const tools = new BasicTools(bridge);
         const executor = new ToolExecutor(tools);
+    const toasts = createToastStore();
 
         // Provide config and executor to Vue app
   (app as any).provide && (app as any).provide('appConfig', cfg);
   (app as any).provide && (app as any).provide('toolExecutor', executor);
   (app as any).provide && (app as any).provide('tools', tools);
+  (app as any).provide && (app as any).provide('toasts', toasts);
         (app as any).mount && (app as any).mount('#ai-calc-assistant-sidebar');
       })
       .catch(() => {

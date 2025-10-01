@@ -4,6 +4,8 @@ import {
   validateFormula,
   validateRange,
   validateColumnId,
+  validateSafeText,
+  validateSafeFormula,
 } from './validators';
 import { UNO_COMMANDS, type UNOArgument } from './types';
 
@@ -18,6 +20,7 @@ export class BasicTools {
 
   async set_cell_text(address: string, text: string) {
     validateCellAddress(address);
+    validateSafeText(text);
     await this.go_to_cell(address);
     const args: UNOArgument[] = [{ name: 'StringName', value: String(text) }];
     await this.bridge.uno(UNO_COMMANDS.ENTER_STRING, args);
@@ -25,7 +28,7 @@ export class BasicTools {
 
   async apply_formula(address: string, formula: string) {
     validateCellAddress(address);
-    validateFormula(formula);
+    validateSafeFormula(formula);
     await this.go_to_cell(address);
     const args: UNOArgument[] = [{ name: 'StringName', value: formula }];
     await this.bridge.uno(UNO_COMMANDS.ENTER_STRING, args);

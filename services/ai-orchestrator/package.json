@@ -7,7 +7,9 @@
     "build": "tsc -p tsconfig.json",
     "dev": "tsx watch src/index.ts",
     "lint": "eslint .",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
@@ -18,9 +20,12 @@
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.11.30",
+    "@types/supertest": "^6.0.3",
     "eslint": "^9.9.0",
     "prettier": "^3.3.3",
+    "supertest": "^7.0.0",
     "tsx": "^4.19.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   }
 }

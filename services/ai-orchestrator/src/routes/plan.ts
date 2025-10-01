@@ -1,8 +1,9 @@
 import { Router, Request, Response } from 'express';
 import { z } from 'zod';
 import crypto from 'node:crypto';
-import { planFromPrompt } from '../services/planningService';
-import { pipeResponseStreamToSSE } from '../services/streaming';
+import { planFromPrompt } from '../services/planningService.js';
+import { pipeResponseStreamToSSE } from '../services/streaming.js';
+import { rateLimit } from '../middleware/rateLimit.js';
 
 // Validate plan requests
 const PlanRequestSchema = z.object({
@@ -60,7 +61,7 @@ export function registerPlanRoutes(): Router {
   const router = Router();
 
   // POST /api/plan — validate and stage a plan; returns planId
-  router.post('/api/plan', (req: Request, res: Response) => {
+  router.post('/api/plan', rateLimit(), (req: Request, res: Response) => {
     const parsed = PlanRequestSchema.safeParse(req.body);
     if (!parsed.success) {
       return res.status(400).json({ error: 'invalid_request', details: parsed.error.flatten() });

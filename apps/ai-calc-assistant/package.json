@@ -5,18 +5,26 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "vite build && tsc -p tsconfig.json",
+    "build": "vite build",
     "dev": "vite dev",
     "lint": "eslint .",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "npm run build && playwright test",
+    "test:e2e:headed": "npm run build && playwright test --headed",
+    "test:e2e:install": "playwright install"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
     "@vitejs/plugin-vue": "^5.1.4",
+    "@playwright/test": "^1.47.2",
     "eslint": "^9.9.0",
+    "jsdom": "^24.1.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
     "vite": "^5.4.8",
+    "vitest": "^2.0.5",
     "vue": "^3.5.8"
   }
 }

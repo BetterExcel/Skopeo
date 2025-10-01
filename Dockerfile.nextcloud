@@ -1,0 +1,14 @@
+FROM nextcloud:latest
+
+# Install richdocuments app and other dependencies
+RUN apt-get update && apt-get install -y wget unzip \
+    && cd /tmp \
+    && wget -O richdocuments.tar.gz "https://github.com/nextcloud/richdocuments/archive/refs/tags/v8.4.6.tar.gz" \
+    && tar -xzf richdocuments.tar.gz \
+    && mv richdocuments-8.4.6 /usr/src/nextcloud/apps/richdocuments \
+    && chown -R www-data:www-data /usr/src/nextcloud/apps/richdocuments \
+    && rm richdocuments.tar.gz \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Ensure the app is properly set up
+RUN chmod -R 755 /usr/src/nextcloud/apps/richdocuments

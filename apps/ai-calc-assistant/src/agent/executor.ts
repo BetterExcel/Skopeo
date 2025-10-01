@@ -1,4 +1,5 @@
 import { BasicTools } from './tools';
+import { classifyError, userMessage } from './errors';
 
 export type ToolCall = {
   id?: string;
@@ -10,6 +11,7 @@ export type ExecResult = {
   toolCallId: string;
   success: boolean;
   error?: string;
+  message?: string;
 };
 
 export class ToolExecutor {
@@ -19,10 +21,11 @@ export class ToolExecutor {
     for (const call of calls) {
       const id = call.id || Math.random().toString(36).slice(2);
       try {
-        await this.dispatch(call);
-        onProgress?.({ toolCallId: id, success: true });
+        await this.executeWithRetry(call);
+        onProgress?.({ toolCallId: id, success: true, message: describeCall(call) });
       } catch (e: any) {
-        const message = e?.message || String(e);
+        const classified = classifyError(e);
+        const message = userMessage(classified.code) + (classified.code === 'UNKNOWN' ? ` (${classified.technical})` : '');
         // Attempt automatic undo for data modification operations
         try {
           if (['set_cell_text', 'apply_formula', 'sort_range'].includes(call.name)) {
@@ -36,6 +39,29 @@ export class ToolExecutor {
         throw new Error(message);
       }
     }
+  }
+
+  private async executeWithRetry(call: ToolCall) {
+    const maxAttempts = 2; // one retry for transient/timeout scenarios
+    let attempt = 0;
+    let lastErr: any;
+    while (attempt < maxAttempts) {
+      try {
+        await this.dispatch(call);
+        return;
+      } catch (err) {
+        lastErr = err;
+        const c = classifyError(err);
+        if (c.retryable) {
+          // backoff a bit and retry
+          await new Promise((r) => setTimeout(r, 300 + attempt * 300));
+          attempt += 1;
+          continue;
+        }
+        throw err;
+      }
+    }
+    throw lastErr;
   }
 
   private async dispatch(call: ToolCall) {
@@ -60,5 +86,29 @@ export class ToolExecutor {
       default:
         throw new Error(`UNKNOWN_TOOL: ${call.name}`);
     }
+  }
+}
+
+function describeCall(call: ToolCall): string {
+  const a = call.arguments || {};
+  switch (call.name) {
+    case 'set_cell_text':
+      return `Set text in ${a.address}`;
+    case 'apply_formula':
+      return `Applied formula in ${a.address}`;
+    case 'go_to_cell':
+      return `Moved to ${a.address}`;
+    case 'sort_range':
+      return `Sorted ${a.range} by ${a.column} ${a.ascending ? 'ascending' : 'descending'}`;
+    case 'format_range_currency':
+      return `Applied currency format to ${a.range}`;
+    case 'format_range_bold':
+      return `Toggled bold on ${a.range}`;
+    case 'undo':
+      return 'Undo';
+    case 'redo':
+      return 'Redo';
+    default:
+      return call.name;
   }
 }

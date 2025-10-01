@@ -1,0 +1,43 @@
+*** Begin Patch
+*** Update File: apps/richdocuments/lib/Controller/WopiController.php
+@@
+     public function checkFileInfo(string $fileId): Http\JsonResponse {
+         // ... existing code that builds $response ...
+-        // return new JsonResponse($response);
++        // Enable AI content for Calc documents only
++        try {
++            $mimeType = $response['BaseFileMimeType'] ?? ($response['UserCanWrite'] ? ($response['FileExtension'] ?? '') : '');
++            $isCalc = false;
++            if (isset($response['BaseFileMimeType'])) {
++                $isCalc = stripos($response['BaseFileMimeType'], 'spreadsheet') !== false
++                    || stripos($response['BaseFileMimeType'], 'oasis.opendocument.spreadsheet') !== false;
++            } elseif (isset($response['FileExtension'])) {
++                $ext = strtolower((string)$response['FileExtension']);
++                $isCalc = in_array($ext, ['ods','fods','uos','xls','xlsx','xlsm','xlt','xltx'], true);
++            }
++
++            if ($isCalc) {
++                // Set EnableRemoteAIContent
++                $response['EnableRemoteAIContent'] = true;
++
++                // Determine PostMessageOrigin from config or server request
++                $origin = (string)$this->config->getAppValue('richdocuments', 'post_message_origin', '');
++                if ($origin === '' && method_exists($this, 'request')) {
++                    $scheme = $this->request->getServerProtocol();
++                    $host = $this->request->getServerHost();
++                    if ($scheme && $host) {
++                        $origin = $scheme . '://' . $host;
++                    }
++                }
++                if ($origin !== '') {
++                    $response['PostMessageOrigin'] = $origin;
++                }
++            }
++        } catch (\Throwable $e) {
++            // Non-fatal: do not break CheckFileInfo if our fields fail to compute
++        }
++
++        // return new JsonResponse($response);
+         return new Http\JsonResponse($response);
+     }
+*** End Patch

@@ -110,3 +110,24 @@ $CONFIG = array (
 Congratulations. Things should be setup for you now. You can go to `Files` (Folder icon on top left) and select `+ New` to create a spreadsheet. The spreadsheet will open using Collabora Backend.
 
 Happy coding :)
+
+## macOS bootstrap (Homebrew + Node/npm)
+
+If your terminal shows "brew: command not found" or "npm: command not found", run the helper script:
+
+```zsh
+./scripts/macos-bootstrap.sh
+```
+
+This will install Homebrew (if missing), fix your PATH, and install Node (which includes npm). After it finishes, open a new terminal or run:
+
+```zsh
+source ~/.zprofile
+```
+
+Then install JavaScript dependencies where needed, for example the Nextcloud app:
+
+```zsh
+cd apps/ai-calc-assistant
+npm install
+```

@@ -1,9 +1,10 @@
-import type OpenAI from 'openai';
 import type { Response } from 'express';
-import { initSSE } from '../lib/sse';
+import { initSSE } from '../lib/sse.js';
 
 export async function pipeResponseStreamToSSE(
-  stream: OpenAI.Stream<OpenAI.Beta.Responses.Response>,
+  // Using any to remain compatible with OpenAI SDK stream implementation
+  // which exposes an event-emitter-like interface at runtime
+  stream: any,
   res: Response,
 ) {
   const sse = initSSE(res);

@@ -1,26 +1,51 @@
 services:
   nextcloud:
-    image: nextcloud:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.nextcloud
+    image: skopeo/nextcloud:local
     container_name: nextcloud
     restart: always
     ports:
       - "8081:80"
     volumes:
       - nextcloud_data:/var/www/html
+      # Mount custom app for development
+      - ./apps/ai-calc-assistant:/var/www/html/custom_apps/ai-calc-assistant:rw
+    environment:
+      # Make orchestrator URL available to the app server-side
+      - AI_ORCHESTRATOR_URL=http://ai_orchestrator:3101
 
   collabora_online:
-    build:
-      context: ./src/view
-      dockerfile: docker/from-packages/Dockerfile
-    image: collabora/code
+    image: collabora/code:latest
     container_name: collabora_online
     restart: always
     tty: true
     ports:
       - "9980:9980"
     environment:
-      - extra_params=--o:ssl.enable=false --o:user_interface.use_integration_theme=false
-      - aliasgroups1=http://nextcloud:80,http://192.168.0.206:8081,http://localhost:8081
+      - extra_params=--o:ssl.enable=false --o:ssl.termination=false --o:user_interface.use_integration_theme=false
+      - aliasgroups1=http://nextcloud:80,http://localhost:8081,http://127.0.0.1:8081,http://10.130.5.205:8081
+      - domain=nextcloud:80|localhost:8081|127.0.0.1:8081
+
+  ai_orchestrator:
+    build:
+      context: ./services/ai-orchestrator
+    image: skopeo/ai-orchestrator:local
+    container_name: ai_orchestrator
+    restart: unless-stopped
+    environment:
+      - PORT=3101
+      # Set your key in a local .env or export before compose up
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    ports:
+      - "3101:3101"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3101/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
 
 volumes:
   nextcloud_data:

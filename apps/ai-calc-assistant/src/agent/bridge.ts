@@ -33,6 +33,11 @@ export class UNOBridge {
     return new Promise<UNOResult>((resolve, reject) => {
       const id = crypto.randomUUID();
 
+      if (!this.collaboraFrame || !this.collaboraFrame.contentWindow) {
+        reject(new Error('COLLABORA_NOT_READY: iframe contentWindow unavailable'));
+        return;
+      }
+
       const timeoutId = window.setTimeout(() => {
         this.pending.delete(id);
         reject(new Error('UNO command timeout'));
@@ -40,7 +45,7 @@ export class UNOBridge {
 
       this.pending.set(id, { resolve, reject, timeoutId });
 
-      this.collaboraFrame.contentWindow?.postMessage(
+      this.collaboraFrame.contentWindow.postMessage(
         { MessageId: 'uno', id, args: { command, arguments: args } },
         this.allowedOrigin,
       );
@@ -68,7 +73,9 @@ export class UNOBridge {
 
   private onMessage = (event: MessageEvent) => {
     // Origin validation
-    if (event.origin !== this.allowedOrigin) return;
+    if (event.origin !== this.allowedOrigin) {
+      return; // Ignore silently; sender is not allowed origin
+    }
     const data = event.data;
     if (!data || typeof data !== 'object') return;
 
@@ -81,7 +88,12 @@ export class UNOBridge {
   this.pending.delete(String(data.id));
 
     if (data.error) {
-      pending.reject(new Error(String(data.error)));
+      const errStr = String(data.error);
+      // Surface origin mismatches if backend signals them
+      const message = (event.origin !== this.allowedOrigin)
+        ? `ORIGIN_MISMATCH: expected ${this.allowedOrigin}, got ${event.origin}`
+        : errStr;
+      pending.reject(new Error(message));
     } else {
       const result: UNOResult = { success: true, data: data.result };
       pending.resolve(result);

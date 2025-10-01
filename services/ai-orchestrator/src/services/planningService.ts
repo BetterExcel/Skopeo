@@ -1,5 +1,5 @@
-import { getOpenAI, createPlanningStream, withRetry } from '../lib/openai';
-import { toOpenAITools } from '../lib/tools';
+import { getOpenAI, createPlanningStream, withRetry } from '../lib/openai.js';
+import { toOpenAITools } from '../lib/tools.js';
 
 export async function planFromPrompt(prompt: string) {
   const client = getOpenAI();
