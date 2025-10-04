@@ -12,26 +12,23 @@ services:
 
   collabora_online:
     build:
-      context: ./src/view/docker/from-packages
+      context: ./src/view
     image: collabora:latest
     container_name: collabora_online
     restart: always
     ports:
       - "9980:9980"
     cap_add:
-      - MKNOD
-    command:
-      - /start-collabora-online.sh
-      - --o:server_name=localhost:9980
-      - --o:ssl.enable=false
-      - --o:wopi.host='.*'
+      - SYS_ADMIN
+    environment:
+      - extra_params=--o:ssl.enable=false --o:ssl.termination=false --o:user_interface.use_integration_theme=false --o:storage.wopi.alias_groups.mode=groups
     networks:
       - app-network
     depends_on:
       - nextcloud
-      - ai_controller
+      - skopeo_controller
 
-  ai_controller:
+  skopeo_controller:
     build:
       context: .
       dockerfile: Dockerfile
