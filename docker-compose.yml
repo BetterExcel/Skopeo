@@ -7,45 +7,23 @@ services:
       - "8081:80"
     volumes:
       - nextcloud_data:/var/www/html
-    networks:
-      - app-network
 
   collabora_online:
     build:
-      context: ./src/view/docker/from-packages
-    image: collabora:latest
+      context: ./src/view
+      dockerfile: docker/from-packages/Dockerfile
+    image: collabora/code
     container_name: collabora_online
     restart: always
+    tty: true
     ports:
       - "9980:9980"
-    cap_add:
-      - MKNOD
-    command:
-      - /start-collabora-online.sh
-      - --o:server_name=localhost:9980
-      - --o:ssl.enable=false
-      - --o:wopi.host='.*'
-    networks:
-      - app-network
+    environment:
+      - extra_params=--o:ssl.enable=false --o:user_interface.use_integration_theme=false --o:storage.wopi.alias_groups.mode=groups
+      - aliasgroups1=http://nextcloud:80,http://192.168.0.206:8081,http://localhost:8081
     depends_on:
       - nextcloud
-      - ai_controller
-
-  ai_controller:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: skopeo-controller:latest
-    container_name: skopeo_controller
-    restart: always
-    ports:
-      - "9000:9000"
-    networks:
-      - app-network
 
 volumes:
   nextcloud_data:
 
-networks:
-  app-network:
-    driver: bridge
