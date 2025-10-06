@@ -12,7 +12,8 @@ services:
 
   collabora_online:
     build:
-      context: ./src/view
+      context: .
+      dockerfile: ./src/view/Dockerfile
     image: collabora:latest
     container_name: collabora_online
     restart: always
@@ -21,7 +22,7 @@ services:
     cap_add:
       - SYS_ADMIN
     environment:
-      - extra_params=--o:ssl.enable=false --o:ssl.termination=false --o:user_interface.use_integration_theme=false --o:storage.wopi.alias_groups.mode=groups
+      - extra_params=--o:ssl.enable=false --o:ssl.termination=false --o:storage.wopi.host=192.168.5.11 --o:server_name=192.168.5.11:9980 --o:storage.wopi.host_allow_list=nextcloud,192.168.5.11
     networks:
       - app-network
     depends_on:
