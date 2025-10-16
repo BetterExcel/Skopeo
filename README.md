@@ -7,7 +7,7 @@ This is the main repository for the Skopeo project
 Since we have a submodule added in the project, you must clone the repo by
 
 ```
-git clone --recurse-submodules ...
+git clone --recurse-submodules https://github.com/BetterExcel/Skopeo.git
 ```
 
 Make sure you have the following installed 
