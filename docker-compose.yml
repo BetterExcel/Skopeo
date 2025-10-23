@@ -12,18 +12,8 @@ services:
     networks:
       - app-network
     depends_on:
-      - nextcloud
       - collabora_online
       - skopeo_controller
-
-  nextcloud:
-    image: nextcloud:latest
-    container_name: nextcloud
-    restart: always
-    volumes:
-      - nextcloud_data:/var/www/html
-    networks:
-      - app-network
 
   collabora_online:
     build:
@@ -35,11 +25,10 @@ services:
     cap_add:
       - SYS_ADMIN
     environment:
-      - extra_params=--o:ssl.enable=false --o:ssl.termination=true --o:storage.wopi.host=nextcloud --o:server_name=localhost --o:storage.wopi.host_allow_list=nextcloud,localhost
+      - extra_params=--o:ssl.enable=false --o:ssl.termination=true --o:storage.wopi.host=office.localhost --o:server_name=office.localhost --o:storage.wopi.host_allow_list=office.localhost
     networks:
       - app-network
     depends_on:
-      - nextcloud
       - skopeo_controller
 
   skopeo_controller:
