@@ -1,35 +1,59 @@
 services:
-  collabora_online:
-    build:
-      context: .
-      dockerfile: ./src/view/Dockerfile
-    image: collabora:latest
-    container_name: collabora_online
+  db:
+    image: mariadb:10.6
+    platform: linux/arm64
+    container_name: nextcloud_db
     restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=nextcloud
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      retries: 10
+
+  collabora:
+    image: lscr.io/linuxserver/collabora-code:24.04.5
+    container_name: collabora
+    platform: linux/arm64
+    restart: always
+    environment:
+      - extra_params=--o:ssl.enable=false --o:net.listen=0.0.0.0:9980
+      - domain=nextcloud
     ports:
       - "9980:9980"
-    cap_add:
-      - SYS_ADMIN
-    environment:
-      - extra_params=--o:ssl.enable=false --o:ssl.termination=true
-    networks:
-      - app-network
-    depends_on:
-      - skopeo_controller
 
-  skopeo_controller:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: skopeo-controller:latest
-    container_name: skopeo_controller
+
+
+  nextcloud:
+    image: nextcloud:29.0.2
+    platform: linux/arm64
+    container_name: nextcloud
     restart: always
-    networks:
-      - app-network
+    depends_on:
+      db:
+        condition: service_healthy
+      collabora:
+        condition: service_started
+    ports:
+      - "8080:80"
+    environment:
+      - NEXTCLOUD_ADMIN_USER=karman
+      - NEXTCLOUD_ADMIN_PASSWORD=Elonis110%smart
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=nextcloud
+      - NEXTCLOUD_TRUSTED_DOMAINS=localhost,nextcloud,127.0.0.1
+      - NEXTCLOUD_OVERWRITEHOST=localhost:8080
+      - NEXTCLOUD_OVERWRITEPROTOCOL=http
+    volumes:
+      - nextcloud_data:/var/www/html
 
 volumes:
+  db_data:
   nextcloud_data:
-
-networks:
-  app-network:
-    driver: bridge

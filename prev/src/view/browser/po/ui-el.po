@@ -1,0 +1,5505 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-26 14:55+0200\n"
+"PO-Revision-Date: 2025-02-13 19:45+0000\n"
+"Last-Translator: Vangelis Papanastasatos <vagpap@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/collabora-online/"
+"ui/el/>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-rc\n"
+
+#: admin/admin.strings.js:15
+msgid "Admin console"
+msgstr "Κονσόλα διαχειριστή"
+
+#: admin/admin.strings.js:16
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: admin/admin.strings.js:17
+msgid "Overview"
+msgstr "Επισκόπηση"
+
+#: admin/admin.strings.js:18
+msgid "(current)"
+msgstr "(τρέχουσα)"
+
+#: admin/admin.strings.js:19
+msgid "Analytics"
+msgstr "Αναλυτική"
+
+#: admin/admin.strings.js:20
+msgid "History"
+msgstr "Ιστορικό"
+
+#: admin/admin.strings.js:21
+msgid "Log"
+msgstr "Σύνδεση"
+
+#: admin/admin.strings.js:22
+msgid "Dashboard"
+msgstr "Πίνακας εργαλείων"
+
+#: admin/admin.strings.js:23
+msgid "Users online"
+msgstr "Συνδεμένοι χρήστες"
+
+#: admin/admin.strings.js:24
+msgid "User Name"
+msgstr "Όνομα χρήστη"
+
+#: admin/admin.strings.js:25
+msgid "Documents open"
+msgstr "Ανοιγμένα έγγραφα"
+
+#: admin/admin.strings.js:26 admin/src/AdminSocketOverview.js:82
+#: admin/src/AdminSocketOverview.js:131 admin/src/AdminSocketOverview.js:358
+msgid " user(s)."
+msgstr " χρήστης(ες)."
+
+#: admin/admin.strings.js:27 admin/src/AdminSocketOverview.js:214
+msgid " document(s) open."
+msgstr " ανοιγμένα έγγραφα."
+
+#: admin/admin.strings.js:28
+msgid "Number of Documents"
+msgstr "Αριθμός εγγράφων"
+
+#: admin/admin.strings.js:29
+msgid "Memory consumed"
+msgstr "Χρησιμοποιούμενη μνήμη"
+
+#: admin/admin.strings.js:30
+msgid "Bytes sent"
+msgstr "Αποσταλμένα Bytes"
+
+#: admin/admin.strings.js:31
+msgid "Bytes received"
+msgstr "Ληφθέντα Bytes"
+
+#: admin/admin.strings.js:32
+msgid "PID"
+msgstr "PID"
+
+#: admin/admin.strings.js:33 admin/src/AdminClusterOverview.js:352
+msgid "Document"
+msgstr "Έγγραφο"
+
+#: admin/admin.strings.js:34
+msgid "Views"
+msgstr "Προβολές"
+
+#: admin/admin.strings.js:35
+msgid "Elapsed time"
+msgstr "Χρόνος που πέρασε"
+
+#: admin/admin.strings.js:36
+msgid "Idle time"
+msgstr "Αδρανής χρόνος"
+
+#: admin/admin.strings.js:37
+msgid "Modified"
+msgstr "Τροποποιήθηκε"
+
+#: admin/admin.strings.js:38
+msgid "Uploaded"
+msgstr "Μεταφορτώθηκε"
+
+#: admin/admin.strings.js:39
+msgid "WOPI host"
+msgstr "Διακομιστής WOPI"
+
+#: admin/admin.strings.js:40
+msgid "Kill"
+msgstr "Τερματισμός"
+
+#: admin/admin.strings.js:41
+msgid "Graphs"
+msgstr "Γραφήματα"
+
+#: admin/admin.strings.js:42
+msgid "Memory Graph"
+msgstr "Γράφημα μνήμης"
+
+#: admin/admin.strings.js:43
+msgid "CPU Graph"
+msgstr "Γράφημα CPU"
+
+#: admin/admin.strings.js:44
+msgid "Network Graph"
+msgstr "Γράφημα δικτύου"
+
+#: admin/admin.strings.js:45
+#: admin/src/integrator/AdminIntegratorSettings.ts:731
+#: admin/src/integrator/AdminIntegratorSettings.ts:1425
+#: admin/src/integrator/WordBook.ts:394
+#: src/canvas/sections/CommentListSection.ts:514
+#: src/canvas/sections/CommentSection.ts:178
+#: src/control/Control.Notebookbar.js:307
+#: src/control/Control.NotebookbarDraw.js:29
+#: src/control/Control.NotebookbarDraw.js:163
+#: src/control/Control.NotebookbarImpress.js:30
+#: src/map/handler/Map.Settings.ts:83
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: admin/admin.strings.js:46
+msgid "Cache size of memory statistics"
+msgstr "Μέγεθος κρυφής μνήμης των στατιστικών μνήμης"
+
+#: admin/admin.strings.js:47
+msgid "Time interval of memory statistics (in ms)"
+msgstr "Χρονικό διάστημα των στατιστικών μνήμης (σε ms)"
+
+#: admin/admin.strings.js:48
+msgid "Cache size of CPU statistics"
+msgstr "Μέγεθος κρυφής μνήμης της στατιστικής CPU"
+
+#: admin/admin.strings.js:49
+msgid "Time interval of CPU statistics (in ms)"
+msgstr "Χρονικό διάστημα της στατιστικής CPU (σε ms)"
+
+#: admin/admin.strings.js:50 admin/src/AdminSocketOverview.js:100
+msgid "Kill session."
+msgstr "Τερματισμός συνεδρίας."
+
+#: admin/admin.strings.js:51
+msgid "Maximum Document process virtual memory (in MB) - reduce only"
+msgstr "Μέγιστη εικονική μνήμη επεξεργασίας εγγράφου (σε MB) - μόνο μείωση"
+
+#: admin/admin.strings.js:52
+msgid "Maximum Document process stack memory (in KB) - reduce only"
+msgstr "Μέγιστη μνήμη στοίβας επεξεργασίας εγγράφου (σε KB) - μόνο μείωση"
+
+#: admin/admin.strings.js:53
+msgid "Maximum file size allowed to write to disk (in MB) - reduce only"
+msgstr ""
+"Μέγιστο επιτρεπόμενο μέγεθος αρχείου για εγγραφή στον δίσκο (σε MB) - μόνο "
+"μείωση"
+
+#: admin/admin.strings.js:54
+msgid "Documents:"
+msgstr "Έγγραφα:"
+
+#: admin/admin.strings.js:55
+msgid "Expired:"
+msgstr "Έληξε:"
+
+#: admin/admin.strings.js:56 admin/src/AdminSocketBase.js:61
+#: src/control/Control.Zotero.js:211
+msgid "Refresh"
+msgstr "Ανανέωση"
+
+#: admin/admin.strings.js:57
+msgid "Shutdown Server"
+msgstr "Διακομιστής τερματισμού"
+
+#: admin/admin.strings.js:58
+msgid "Server uptime"
+msgstr "Χρόνος λειτουργίας διακομιστή"
+
+#: admin/admin.strings.js:59
+msgid "Refresh Log"
+msgstr "Ανανέωση σύνδεσης"
+
+#: admin/admin.strings.js:60
+msgid "Channel Filter:"
+msgstr "Φίλτρο καναλιού:"
+
+#: admin/admin.strings.js:61 src/control/Control.JSDialogBuilder.js:501
+#: src/control/Control.StatusBar.js:194 src/control/Control.StatusBar.js:199
+msgid "None"
+msgstr "Καμία"
+
+#: admin/admin.strings.js:62
+msgid "Set Log Levels"
+msgstr "Ορισμός επιπέδων σύνδεσης"
+
+#: admin/admin.strings.js:63
+msgid "Log Levels"
+msgstr "Επίπεδα σύνδεσης"
+
+#: admin/admin.strings.js:64 src/canvas/sections/CommentListSection.ts:166
+#: src/control/Control.AlertDialog.js:32 src/control/Control.AlertDialog.js:38
+#: src/control/Control.AlertDialog.js:101
+#: src/control/Control.AlertDialog.js:108 src/control/Control.Zotero.js:191
+#: src/core/Socket.js:436 src/core/Socket.js:1217 src/core/Socket.js:1222
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.div:51-7
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: admin/admin.strings.js:65
+msgid "Update Log Levels"
+msgstr "Ενημέρωση επιπέδων σύνδεσης"
+
+#: admin/admin.strings.js:66
+msgid "Version Information"
+msgstr "Πληροφορίες έκδοσης"
+
+#: admin/admin.strings.js:67
+msgid "License"
+msgstr "Άδεια"
+
+#: admin/admin.strings.js:68 src/control/Control.Menubar.ts:421
+#: src/control/Control.Menubar.ts:598 src/control/Control.Menubar.ts:737
+#: src/control/Control.Menubar.ts:1030 src/control/Control.Menubar.ts:1098
+#: src/control/Control.Menubar.ts:1163 src/control/Control.Menubar.ts:1218
+#: src/control/Control.Menubar.ts:1293
+#: src/control/Control.NotebookbarWriter.js:551
+msgid "About"
+msgstr "Περί"
+
+#: admin/src/AdminClusterOverview.js:105
+msgid "CPU History"
+msgstr "Ιστορικό ΚΜΕ"
+
+#: admin/src/AdminClusterOverview.js:116
+msgid "Memory History"
+msgstr "Ιστορικό Μνήμης"
+
+#: admin/src/AdminClusterOverview.js:356
+msgid "Memory"
+msgstr "Μνήμη"
+
+#: admin/src/AdminClusterOverview.js:540
+msgid "Please wait kubernetes cluster is scaling..."
+msgstr "Παρακαλώ περιμένετε όσο  η συστάδα kubernetes  κλιμακώνεται..."
+
+#: admin/src/AdminClusterOverview.js:550 admin/src/AdminSocketOverview.js:420
+msgid "Failed to set jwt authentication cookie over insecure connection"
+msgstr ""
+"Απέτυχε ο ορισμός του cookie ελέγχου ταυτότητας jwt μέσω μη ασφαλούς σύνδεσης"
+
+#: admin/src/AdminClusterOverview.js:553 admin/src/AdminSocketOverview.js:424
+msgid "Failed to authenticate this session over protocol {0}"
+msgstr "Αποτυχία αυθεντικοποίησης αυτής της συνεδρίας στο πρωτόκολλο {0}"
+
+#: admin/src/AdminClusterOverview.js:558 admin/src/AdminSocketOverview.js:429
+msgid "Warning"
+msgstr "Προειδοποίηση"
+
+#: admin/src/AdminClusterOverview.js:560 admin/src/AdminSocketBase.js:63
+#: admin/src/AdminSocketBase.js:74 admin/src/AdminSocketOverview.js:108
+#: admin/src/AdminSocketOverview.js:431 admin/src/AdminSocketSettings.js:47
+#: admin/src/integrator/AdminIntegratorSettings.ts:1609 src/app/Debug.ts:1391
+#: src/canvas/sections/CommentListSection.ts:1474
+#: src/control/Control.AboutDialog.ts:155
+#: src/control/Control.AlertDialog.js:54
+#: src/control/Control.DocumentRepair.js:77
+#: src/control/Control.ESignatureDialog.ts:132
+#: src/control/Control.LanguageDialog.js:119
+#: src/control/Control.ServerAuditDialog.ts:317
+#: src/control/Control.Tabs.js:397 src/control/Control.Tabs.js:406
+#: src/control/Control.Zotero.js:365 src/control/Control.Zotero.js:411
+#: src/control/Parts.js:483 src/control/Permission.js:89
+#: src/control/Permission.js:99 src/control/Permission.js:149
+#: src/control/Toolbar.js:746 src/core/Socket.js:721 src/core/Socket.js:1187
+#: src/core/Socket.js:1257 src/core/Socket.js:1433 src/core/Socket.js:1437
+#: src/docdispatcher.ts:543 src/main.js:88 src/main.js:91 src/main.js:131
+#: src/map/Clipboard.js:1295 src/map/handler/Map.Feedback.js:96
+#: src/map/handler/Map.SlideShow.js:60 src/map/handler/Map.SlideShow.js:169
+#: src/map/handler/Map.SlideShow.js:297 src/map/handler/Map.SlideShow.js:308
+#: src/map/handler/Map.WOPI.js:695 src/slideshow/SlideShowPresenter.ts:1007
+#: src/slideshow/SlideShowPresenter.ts:1022
+#: src/slideshow/SlideShowPresenter.ts:1037
+#: src/slideshow/SlideShowPresenter.ts:1060
+msgid "OK"
+msgstr "Εντάξει"
+
+#: admin/src/AdminClusterOverview.js:561 admin/src/AdminSocketOverview.js:109
+#: admin/src/AdminSocketOverview.js:432 admin/src/AdminSocketSettings.js:48
+#: admin/src/integrator/WordBook.ts:386
+#: src/canvas/sections/CommentListSection.ts:509
+#: src/canvas/sections/CommentSection.ts:177
+#: src/canvas/sections/CommentSection.ts:180
+#: src/control/Control.DocumentRepair.js:71
+#: src/control/Control.DownloadProgress.js:83
+#: src/control/Control.LanguageDialog.js:113
+#: src/control/Control.MobileTopBar.ts:43
+#: src/control/Control.UIManager.ts:1751 src/control/Control.UIManager.ts:1832
+#: src/control/Control.UIManager.ts:1986 src/control/Control.UIManager.ts:2164
+#: src/control/Control.Zotero.js:360 src/core/Socket.js:1458
+#: src/map/handler/Map.Settings.ts:78
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: admin/src/AdminSocketAnalytics.js:247
+msgid "Received"
+msgstr "Ελήφθησαν"
+
+#: admin/src/AdminSocketAnalytics.js:251
+msgid "Sent"
+msgstr "Απεστάλησαν"
+
+#: admin/src/AdminSocketAnalytics.js:255
+msgid "Connections"
+msgstr "Συνδέσεις"
+
+#: admin/src/AdminSocketBase.js:62
+msgid "Server has been shut down; please reload the page."
+msgstr ""
+"Έχει τερματιστεί η λειτουργία του διακομιστή. Παρακαλώ φορτώστε ξανά τη "
+"σελίδα."
+
+#: admin/src/AdminSocketBase.js:72 admin/src/AdminSocketBase.js:73
+msgid "Connection error"
+msgstr "Σφάλμα σύνδεσης"
+
+#: admin/src/AdminSocketOverview.js:106 admin/src/AdminSocketSettings.js:45
+msgid "Confirmation"
+msgstr "Επιβεβαίωση"
+
+#: admin/src/AdminSocketOverview.js:107
+msgid "Are you sure you want to terminate this session?"
+msgstr "Είστε βέβαιοι ότι θέλετε να τερματίσετε αυτήν τη συνεδρία;"
+
+#: admin/src/AdminSocketSettings.js:46
+msgid "Are you sure you want to shut down the server?"
+msgstr "Θέλετε σίγουρα να τερματίσετε τον διακομιστή;"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:143
+msgid "Accessibility"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:147
+#: src/control/Control.Menubar.ts:171 src/control/Control.Menubar.ts:496
+#: src/control/Control.Menubar.ts:653 src/control/Control.Menubar.ts:800
+#: src/control/Control.Menubar.ts:1082 src/control/Control.Menubar.ts:1135
+#: src/control/Control.Menubar.ts:1196 src/control/Control.Menubar.ts:1256
+#: src/control/Control.NotebookbarCalc.js:1548
+#: src/control/Control.NotebookbarDraw.js:554
+#: src/control/Control.NotebookbarImpress.js:674
+#: src/control/Control.NotebookbarWriter.js:1763
+msgid "Dark Mode"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:148
+msgid "Compact layout"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:149
+#, fuzzy
+msgid "Show status bar"
+msgstr "Εμφάνιση επιλεγμένων φύλλων"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:150
+#: src/control/Control.Menubar.ts:168 src/control/Control.Menubar.ts:492
+msgid "Show Ruler"
+msgstr "Εμφάνιση χάρακα"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:151
+msgid "Accessibility Checker"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:152
+#: src/control/Control.NavigatorPanel.ts:216
+msgid "Navigator"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:153
+msgid "Show Sidebar"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:154
+msgid "Custom Animation"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:155
+msgid "Master Pages"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:156
+msgid "Slide Transition"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:157
+#, fuzzy
+msgid "Style List"
+msgstr "Λίστα στυλ"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:160
+#: src/control/Control.NotebookbarCalc.js:1143
+#: src/control/Control.NotebookbarDraw.js:525
+#: src/control/Control.NotebookbarImpress.js:645
+msgid "Grid"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:161
+msgid "Print"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:162
+msgid "Other"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:163
+#: src/control/Control.NotebookbarImpress.js:654
+msgid "Show Grid"
+msgstr "Εμφάνιση πλέγματος"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:164
+msgid "Snap to grid"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:165
+#: admin/src/integrator/AdminIntegratorSettings.ts:171
+msgid "Size to grid"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:166
+msgid "Synchronize axes"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:167
+msgid "Snap grid"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:168
+msgid "Empty Pages"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:169
+msgid "Force Breaks"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:170
+#: src/control/Control.Menubar.ts:769 src/control/Control.TopToolbar.js:110
+#: src/control/jsdialog/Definitions.Menu.ts:1573
+msgid "All Sheets"
+msgstr "Όλα τα Φύλλα"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:172
+msgid "Content"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:173
+msgid "Drawing"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:174
+#: src/control/Control.NotebookbarDraw.js:1224
+#: src/control/Control.NotebookbarDraw.js:1424
+#: src/control/Control.NotebookbarWriter.js:1223
+msgid "Page"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:175
+msgid "Fit to page"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:176
+msgid "Tile pages"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:177
+msgid "Booklet"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:178
+msgid "Booklet front"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:179
+msgid "Booket back"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:180
+msgid "Page name"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:181
+#: src/control/Control.NotebookbarCalc.js:775
+#: src/control/Control.NotebookbarWriter.js:1626
+#: src/control/Control.Zotero.js:1152 src/control/Control.Zotero.js:1604
+msgid "Date"
+msgstr "Ημερομηνία"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:182
+#: src/control/Control.NotebookbarCalc.js:776
+msgid "Time"
+msgstr "Ώρα"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:183
+msgid "Hidden pages"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:184
+msgid "From printer setup"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:185
+msgid "Presentation"
+msgstr "Παρουσίαση"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:186
+#: src/control/Control.Zotero.js:1340 src/slideshow/PresenterConsole.js:33
+msgid "Notes"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:187
+msgid "Handouts"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:188
+#: src/control/Control.NavigatorPanel.ts:178
+msgid "Outline"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:189
+msgid "Handout horizontal"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:190
+msgid "Images"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:191
+#, fuzzy
+msgid "Tables"
+msgstr "Πίνακας"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:192
+msgid "Controls"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:193
+msgid "Background"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:194
+msgid "Print Black"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:195
+msgid "Hidden text"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:196
+msgid "Placeholders"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:197
+msgid "Left pages"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:198
+msgid "Right pages"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:199
+msgid "Brochure"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:200
+msgid "Brochure Right to Left"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:201
+msgid "Images and Objects"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:296
+msgid "Invalid JSON file"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:300
+msgid "Error reading file"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:312
+msgid "Autotext"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:314
+msgid ""
+"Upload reusable text snippets (.bau). To insert the text in your document, "
+"type the shortcut for an AutoText entry and press F3."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:320
+msgid "Upload Autotext"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:324
+msgid "Custom dictionaries"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:326
+msgid ""
+"Add or edit words in a spell check dictionary. Words in your wordbook (."
+"dic) will be available for spelling checks."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:332
+msgid "Upload Wordbook"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:336
+msgid "Document settings"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:337
+#: admin/src/integrator/Xcu.ts:316
+msgid "Adjust how office documents behave."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:343
+msgid "Upload Xcu"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:394
+msgid "Shared Config URL is missing in initial variables."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:400
+msgid "Access token is missing in initial variables."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:436
+msgid "Something went wrong. Please try to refresh the page."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:553
+msgid ""
+"Something went wrong while fetching setting file. Please try to refresh the "
+"page."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:578
+msgid ""
+"Something went wrong while fetching wordbook. Please try to refresh the "
+"page."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:588
+msgid "Interface Settings"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:590
+msgid "Set default interface preferences."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:698
+msgid "Select a tab to browser settings."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:711
+#: admin/src/integrator/Xcu.ts:376
+msgid "Reset to default Document settings"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:715
+#: admin/src/integrator/Xcu.ts:390
+msgid "Are you sure you want to reset Document settings?"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:732
+#: admin/src/integrator/Xcu.ts:405
+msgid "Save Document settings"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1073
+msgid "Notebookbar view"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1080
+#: src/control/Control.NotebookbarCalc.js:1510
+#: src/control/Control.NotebookbarDraw.js:481
+#: src/control/Control.NotebookbarImpress.js:578
+#: src/control/Control.NotebookbarWriter.js:1718
+msgid "Compact view"
+msgstr "Συμπαγής προβολή"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1153
+msgid "Something went wrong while uploading the file. Please try again."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1229
+#: src/control/Control.ContextMenu.js:250 src/docdispatcher.ts:540
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1267
+msgid ""
+"Something went wrong while deleting the file. Please try refreshing the "
+"page."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1282
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1308
+msgid "View Settings"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1309
+msgid "Adjust view settings."
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1319
+msgid "Option"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1365
+msgid "(Warning: Server accessibility must be enabled to toggle)"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1399
+msgid "Reset to default View settings"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1403
+msgid "Are you sure you want to reset View Settings?"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1426
+msgid "Save View Settings"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1570
+msgid "Enter Zotero API Key"
+msgstr ""
+
+#: admin/src/integrator/AdminIntegratorSettings.ts:1597
+#: src/map/handler/Map.WOPI.js:695
+msgid "Error"
+msgstr "Σφάλμα"
+
+#: admin/src/integrator/WordBook.ts:117
+msgid "Standard dictionary"
+msgstr ""
+
+#: admin/src/integrator/WordBook.ts:118
+msgid "Words are ignored by the spell checker"
+msgstr ""
+
+#: admin/src/integrator/WordBook.ts:122
+msgid "Dictionary of exceptions"
+msgstr ""
+
+#: admin/src/integrator/WordBook.ts:123
+msgid "Exception words are underlined while checking spelling"
+msgstr ""
+
+#: admin/src/integrator/WordBook.ts:132
+msgid "Loading Wordbook..."
+msgstr ""
+
+#: admin/src/integrator/WordBook.ts:333
+msgid "Type to add a word"
+msgstr ""
+
+#: admin/src/integrator/WordBook.ts:338
+msgid "Add"
+msgstr ""
+
+#: admin/src/integrator/WordBook.ts:466
+msgid "Invalid dictionary format. Please check the file."
+msgstr ""
+
+#: admin/src/integrator/WordBook.ts:486
+msgid "Something went wrong while uploading dictionary file"
+msgstr ""
+
+#: admin/src/integrator/Xcu.ts:160 admin/src/integrator/Xcu.ts:172
+msgid "Something went wrong while loading Document settings."
+msgstr ""
+
+#: admin/src/integrator/Xcu.ts:312
+msgid "Document Settings"
+msgstr ""
+
+#: admin/src/integrator/Xcu.ts:363
+msgid "Select a tab to view settings."
+msgstr ""
+
+#: admin/src/Util.js:26
+msgid "kB"
+msgstr "kB"
+
+#: admin/src/Util.js:26
+msgid "MB"
+msgstr "MB"
+
+#: admin/src/Util.js:26
+msgid "GB"
+msgstr "GB"
+
+#: admin/src/Util.js:26
+msgid "TB"
+msgstr "TB"
+
+#: admin/src/Util.js:26
+msgid "PB"
+msgstr "PB"
+
+#: admin/src/Util.js:26
+msgid "EB"
+msgstr "EB"
+
+#: admin/src/Util.js:26
+msgid "ZB"
+msgstr "ZB"
+
+#: admin/src/Util.js:26
+msgid "YB"
+msgstr "YB"
+
+#: admin/src/Util.js:26
+msgid "BB"
+msgstr "BB"
+
+#: admin/src/Util.js:86 admin/src/Util.js:88
+msgid " hrs"
+msgstr " ώρες"
+
+#: admin/src/Util.js:92 admin/src/Util.js:94
+msgid " mins"
+msgstr " λεπτά"
+
+#: admin/src/Util.js:97
+msgid " s"
+msgstr " δευτερόλεπτα"
+
+#: js/global.js:1592
+msgid ""
+"The system is currently adjusting resources. Please wait a moment while we "
+"retry your request..."
+msgstr ""
+
+#: js/global.js:1594
+msgid "The document is being migrated to a new server. Retrying shortly..."
+msgstr ""
+
+#: js/global.js:1596
+msgid "Failed to get RouteToken from controller"
+msgstr ""
+
+#: src/app/Debug.ts:136
+msgid "Debug Tools"
+msgstr "Εργαλεία εντοπισμού σφαλμάτων"
+
+#: src/app/Debug.ts:138
+msgid "Ctrl+Shift+Alt+D to exit"
+msgstr "Ctrl+Shift+Alt+D για έξοδο"
+
+#: src/app/Debug.ts:1384
+msgid "Event handling has been delayed for an unexpectedly long time: {0}ms"
+msgstr ""
+
+#: src/canvas/sections/CommentListSection.ts:165
+msgid "A comment is being edited"
+msgstr "Ένα σχόλιο βρίσκεται υπό επεξεργασία"
+
+#: src/canvas/sections/CommentListSection.ts:166
+msgid "Please save or discard the comment currently being edited."
+msgstr ""
+"Παρακαλώ αποθηκεύστε ή απορρίψτε το σχόλιο που επεξεργάζεται αυτή τη στιγμή."
+
+#: src/canvas/sections/CommentListSection.ts:1175
+msgid "Modify"
+msgstr "Τροποποίηση"
+
+#: src/canvas/sections/CommentListSection.ts:1181
+#: src/canvas/sections/CommentSection.ts:181
+msgid "Reply"
+msgstr "Απάντηση"
+
+#: src/canvas/sections/CommentListSection.ts:1187
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#: src/canvas/sections/CommentListSection.ts:1193
+msgid "Remove Thread"
+msgstr "Αφαίρεση νήματος"
+
+#: src/canvas/sections/CommentListSection.ts:1199
+msgid "Resolve"
+msgstr "Επίλυση"
+
+#: src/canvas/sections/CommentListSection.ts:1199
+msgid "Unresolve"
+msgstr "Άλυτο"
+
+#: src/canvas/sections/CommentListSection.ts:1205
+msgid "Unresolve Thread"
+msgstr "Ανεπίλυτο νήμα"
+
+#: src/canvas/sections/CommentListSection.ts:1205
+msgid "Resolve Thread"
+msgstr "Επίλυση νήματος"
+
+#: src/canvas/sections/CommentListSection.ts:1211
+msgid "Promote to top comment"
+msgstr "Προαγωγή στο κορυφαίο σχόλιο"
+
+#: src/canvas/sections/CommentListSection.ts:1217
+msgid "Show on the side"
+msgstr "Εμφάνιση στο πλάι"
+
+#: src/canvas/sections/CommentListSection.ts:1217
+msgid "Open in full view"
+msgstr "Άνοιγμα σε πλήρη προβολή"
+
+#: src/canvas/sections/CommentListSection.ts:1223
+msgid "Show in navigator"
+msgstr ""
+
+#: src/canvas/sections/CommentListSection.ts:1251
+#: src/control/Control.JSDialogBuilder.js:1920
+#: src/layer/tile/CanvasTileLayer.js:3479
+#: src/layer/tile/CanvasTileLayer.js:3490
+msgid "Comment"
+msgstr "Σχόλιο"
+
+#: src/canvas/sections/CommentListSection.ts:1472
+#: src/canvas/sections/CommentListSection.ts:1485
+msgid "Comments Updated"
+msgstr "Τα σχόλια ενημερώθηκαν"
+
+#: src/canvas/sections/CommentListSection.ts:1473
+msgid "Another user has removed this comment."
+msgstr "Ένας άλλος χρήστης έχει αφαιρέσει αυτό το σχόλιο."
+
+#: src/canvas/sections/CommentListSection.ts:1486
+msgid ""
+"Another user has updated the comment. Would you like to overwrite those "
+"changes?"
+msgstr ""
+"Ένας άλλος χρήστης ενημέρωσε το σχόλιο. Θα θέλατε να αντικαταστήσετε αυτές "
+"τις αλλαγές;"
+
+#: src/canvas/sections/CommentListSection.ts:1487 src/core/Socket.js:1462
+msgid "Overwrite"
+msgstr "Αντικατάσταση"
+
+#: src/canvas/sections/CommentListSection.ts:1488
+msgid "Update"
+msgstr "Ενημέρωση"
+
+#: src/canvas/sections/CommentListSection.ts:1589
+#: src/canvas/sections/CommentListSection.ts:1663
+msgid "Autosaved"
+msgstr "Αυτόματα αποθηκευμένο"
+
+#: src/canvas/sections/CommentSection.ts:45
+#, fuzzy
+msgid "Edit comment"
+msgstr "Επεξεργασία εγγράφου"
+
+#: src/canvas/sections/CommentSection.ts:46
+msgid "Reply comment"
+msgstr ""
+
+#: src/canvas/sections/CommentSection.ts:47
+msgid "Open menu"
+msgstr "Άνοιγμα μενού"
+
+#: src/canvas/sections/CommentSection.ts:335
+msgid "Press Ctrl + Enter to post"
+msgstr ""
+
+#: src/canvas/sections/CommentSection.ts:399
+#: src/canvas/sections/CommentSection.ts:400
+msgid "Accept change"
+msgstr "Αποδοχή αλλαγής"
+
+#: src/canvas/sections/CommentSection.ts:406
+#: src/canvas/sections/CommentSection.ts:407
+msgid "Reject change"
+msgstr "Απόρριψη αλλαγής"
+
+#: src/canvas/sections/CommentSection.ts:430
+msgid "Resolved"
+msgstr "Επιλύθηκε"
+
+#: src/canvas/sections/ShapeHandlesSection.ts:458
+#, fuzzy
+msgid "Document contains unsupported media"
+msgstr "Το έγγραφο περιέχει βίντεο που δεν υποστηρίζεται"
+
+#: src/canvas/sections/URLPopUpSection.ts:66
+msgid "Copy link location"
+msgstr "Αντιγραφή τοποθεσίας συνδέσμου"
+
+#: src/canvas/sections/URLPopUpSection.ts:80
+msgid "Edit link"
+msgstr "Επεξεργασία συνδέσμου"
+
+#: src/canvas/sections/URLPopUpSection.ts:95
+msgid "Remove link"
+msgstr "Αφαίρεση συνδέσμου"
+
+#: src/control/ColorPicker.ts:270
+msgid "No color"
+msgstr "Χωρίς χρώμα"
+
+#: src/control/ColorPicker.ts:275
+msgid "Automatic color"
+msgstr "Αυτόματο χρώμα"
+
+#: src/control/Control.AboutDialog.ts:112
+msgid "This version of {productname} is powered by"
+msgstr "Αυτή η έκδοση του {productname} παρέχεται από"
+
+#: src/control/Control.AboutDialog.ts:135
+msgid "\"Slow Proxy\""
+msgstr "\"Αργός μεσολαβητής\""
+
+#: src/control/Control.AboutDialog.ts:147
+msgid "Time zone:"
+msgstr ""
+
+#: src/control/Control.AboutDialog.ts:185
+msgid "Copy all version information in English"
+msgstr "Αντιγράψτε όλες τις πληροφορίες έκδοσης στα Αγγλικά"
+
+#: src/control/Control.AddressInputField.ts:67
+msgid "cell address"
+msgstr "διεύθυνση κελιού"
+
+#: src/control/Control.AlertDialog.js:53
+msgid "External link"
+msgstr "Εξωτερικός σύνδεσμος"
+
+#: src/control/Control.AlertDialog.js:54
+msgid "Open link"
+msgstr "Άνοιγμα συνδέσμου"
+
+#: src/control/Control.AlertDialog.js:66
+msgid "Copied external sources are not allowed"
+msgstr "Δεν επιτρέπονται οι αντιγραμμένες εξωτερικές πηγές"
+
+#: src/control/Control.AlertDialog.js:67
+msgid "It seems you have copied a selection that includes external images."
+msgstr ""
+"Φαίνεται ότι έχετε αντιγράψει μια επιλογή που περιλαμβάνει εξωτερικές "
+"εικόνες."
+
+#: src/control/Control.AlertDialog.js:68
+msgid ""
+"Downloading external resources is forbidden but pasting images is still "
+"possible. Please right click in the image, choose \"Copy Image\" and paste "
+"it into the document instead."
+msgstr ""
+"Η λήψη εξωτερικών πόρων απαγορεύεται, αλλά η επικόλληση εικόνων εξακολουθεί "
+"να είναι δυνατή. Κάντε δεξί κλικ στην εικόνα, επιλέξτε \"Αντιγραφή εικόνας\" "
+"και επικολλήστε την στο έγγραφο."
+
+#: src/control/Control.AlertDialog.js:72
+msgid "External data source not allowed"
+msgstr "Δεν επιτρέπεται η εξωτερική πηγή δεδομένων"
+
+#: src/control/Control.AlertDialog.js:73
+msgid "It seems you have tried to insert external data."
+msgstr "Φαίνεται ότι προσπαθήσατε να εισαγάγετε εξωτερικά δεδομένα."
+
+#: src/control/Control.AlertDialog.js:74
+msgid ""
+"Selected external data source is forbidden. Please contact the system "
+"administrator."
+msgstr ""
+"Η επιλεγμένη εξωτερική πηγή δεδομένων απαγορεύεται. Επικοινωνήστε με τον "
+"διαχειριστή του συστήματος."
+
+#: src/control/Control.AlertDialog.js:86 src/map/Clipboard.js:1296
+msgid "Don’t show this again"
+msgstr "Να μην εμφανιστεί ξανά"
+
+#: src/control/Control.AlertDialog.js:105
+msgid "The server encountered a {0} error while parsing the {1} command."
+msgstr "Ο διακομιστής αντιμετώπισε σφάλμα {0} κατά την ανάλυση της εντολής {1}."
+
+#: src/control/Control.Command.js:90
+msgid "Unlock"
+msgstr "Ξεκλείδωμα"
+
+#: src/control/Control.ContextMenu.js:275
+msgid "Paste Special"
+msgstr "Ειδική επικόλληση"
+
+#: src/control/Control.ContextMenu.js:282
+msgid "Copy Cells"
+msgstr "Αντιγραφή Κελιών"
+
+#: src/control/Control.ContextMenu.js:287
+msgid "Fill Series"
+msgstr "Συμπλήρωση σειράς"
+
+#: src/control/Control.DocumentNameInput.js:113
+msgid "Path"
+msgstr "Διαδρομή"
+
+#: src/control/Control.DocumentRepair.js:27
+#: src/control/Control.DocumentRepair.js:28
+msgid "Repair Document"
+msgstr "Επισκευή εγγράφου"
+
+#: src/control/Control.DocumentRepair.js:124
+#: src/control/Control.UserList.ts:387
+msgid "You"
+msgstr "Εσείς"
+
+#: src/control/Control.DocumentRepair.js:140
+msgid "Type"
+msgstr "Τύπος"
+
+#: src/control/Control.DocumentRepair.js:140
+msgid "What?"
+msgstr "Τι;"
+
+#: src/control/Control.DocumentRepair.js:140
+msgid "Who?"
+msgstr "Ποιος/α;"
+
+#: src/control/Control.DocumentRepair.js:140
+msgid "When?"
+msgstr "Πότε;"
+
+#: src/control/Control.DocumentRepair.js:159
+msgid "You have not done anything to rollback yet..."
+msgstr "Δεν έχετε κάνει τίποτα για να επιστρέψετε ακόμα..."
+
+#: src/control/Control.DocumentRepair.js:169
+msgid "Redo"
+msgstr "Ακύρωση αναίρεσης"
+
+#: src/control/Control.DocumentRepair.js:170
+msgid "Undo"
+msgstr "Αναίρεση"
+
+#: src/control/Control.DownloadProgress.js:43
+msgid "Download Selection"
+msgstr "Λήψη επιλογής"
+
+#: src/control/Control.DownloadProgress.js:48
+msgid ""
+"If you want to share large elements outside of {productname} it's necessary "
+"to first download them."
+msgstr ""
+"Εάν θέλετε να μοιραστείτε μεγάλα στοιχεία εκτός του {productname}, είναι "
+"απαραίτητο να τα κατεβάσετε πρώτα."
+
+#: src/control/Control.DownloadProgress.js:61
+#: src/control/Control.NotebookbarCalc.js:298
+#: src/control/Control.NotebookbarDraw.js:298
+#: src/control/Control.NotebookbarImpress.js:361
+#: src/control/Control.NotebookbarWriter.js:320
+msgid "Download"
+msgstr "Λήψη"
+
+#: src/control/Control.DownloadProgress.js:82
+msgid "Downloading clipboard content"
+msgstr "Λήψη περιεχομένου από το πρόχειρο"
+
+#: src/control/Control.DownloadProgress.js:89
+#: src/control/Control.DownloadProgress.js:114
+#: src/control/Control.PartsPreview.js:304
+msgid "Copy"
+msgstr "Αντιγραφή"
+
+#: src/control/Control.DownloadProgress.js:112
+msgid "Download completed and ready to be copied to clipboard."
+msgstr "Η λήψη ολοκληρώθηκε και είναι έτοιμη για αντιγραφή στο πρόχειρο."
+
+#: src/control/Control.DownloadProgress.js:113
+msgid ""
+"From now on clipboard notifications will discreetly appear at the bottom."
+msgstr ""
+"Από εδώ και στο εξής, οι ειδοποιήσεις για το πρόχειρο θα εμφανίζονται "
+"διακριτικά στο κάτω μέρος."
+
+#: src/control/Control.DownloadProgress.js:273
+msgid "Content copied to clipboard"
+msgstr "Το περιεχόμενο αντιγράφηκε στο πρόχειρο"
+
+#: src/control/Control.DownloadProgress.js:303
+msgid "Download failed"
+msgstr "Η λήψη απέτυχε"
+
+#: src/control/Control.ESignature.ts:127
+msgid "Andorra"
+msgstr "Ανδόρα"
+
+#: src/control/Control.ESignature.ts:128
+msgid "United Arab Emirates"
+msgstr "Ηνωμένα Αραβικά Εμιράτα"
+
+#: src/control/Control.ESignature.ts:129
+msgid "Albania"
+msgstr "Αλβανία"
+
+#: src/control/Control.ESignature.ts:130
+msgid "Armenia"
+msgstr "Αρμενία"
+
+#: src/control/Control.ESignature.ts:131
+msgid "Argentina"
+msgstr "Αργεντινή"
+
+#: src/control/Control.ESignature.ts:132
+msgid "Austria"
+msgstr "Αυστρία"
+
+#: src/control/Control.ESignature.ts:133
+msgid "Australia"
+msgstr "Αυστραλία"
+
+#: src/control/Control.ESignature.ts:134
+msgid "Åland Islands"
+msgstr "Νησιά Άλαντ"
+
+#: src/control/Control.ESignature.ts:135
+msgid "Azerbaijan"
+msgstr "Αζερμπαϊτζάν"
+
+#: src/control/Control.ESignature.ts:136
+msgid "Bosnia and Herzegovina"
+msgstr "Βοσνία-Ερζεγοβίνη"
+
+#: src/control/Control.ESignature.ts:137
+msgid "Belgium"
+msgstr "Βέλγιο"
+
+#: src/control/Control.ESignature.ts:138
+msgid "Bulgaria"
+msgstr "Βουλγαρία"
+
+#: src/control/Control.ESignature.ts:139
+msgid "Brazil"
+msgstr "Βραζιλία"
+
+#: src/control/Control.ESignature.ts:140
+msgid "Belarus"
+msgstr "Λευκορωσία"
+
+#: src/control/Control.ESignature.ts:141
+msgid "Canada"
+msgstr "Καναδάς"
+
+#: src/control/Control.ESignature.ts:142
+msgid "Switzerland"
+msgstr "Ελβετία"
+
+#: src/control/Control.ESignature.ts:143
+msgid "Chile"
+msgstr "Χιλή"
+
+#: src/control/Control.ESignature.ts:144
+msgid "China"
+msgstr "Κίνα"
+
+#: src/control/Control.ESignature.ts:145
+msgid "Cyprus"
+msgstr "Κύπρος"
+
+#: src/control/Control.ESignature.ts:146
+msgid "Czech Republic"
+msgstr "Τσεχική Δημοκρατία"
+
+#: src/control/Control.ESignature.ts:147
+msgid "Germany"
+msgstr "Γερμανία"
+
+#: src/control/Control.ESignature.ts:148
+msgid "Denmark"
+msgstr "Δανία"
+
+#: src/control/Control.ESignature.ts:149
+msgid "Estonia"
+msgstr "Εσθονία"
+
+#: src/control/Control.ESignature.ts:150
+msgid "Spain"
+msgstr "Ισπανία"
+
+#: src/control/Control.ESignature.ts:151
+msgid "Finland"
+msgstr "Φινλανδία"
+
+#: src/control/Control.ESignature.ts:152
+msgid "France"
+msgstr "Γαλλία"
+
+#: src/control/Control.ESignature.ts:153
+msgid "United Kingdom"
+msgstr "Ηνωμένο Βασίλειο"
+
+#: src/control/Control.ESignature.ts:154
+msgid "Georgia"
+msgstr "Γεωργία"
+
+#: src/control/Control.ESignature.ts:155
+msgid "Guernsey"
+msgstr "Γκέρνσεϊ"
+
+#: src/control/Control.ESignature.ts:156
+msgid "Greece"
+msgstr "Ελλάδα"
+
+#: src/control/Control.ESignature.ts:157
+msgid "Croatia"
+msgstr "Κροατία"
+
+#: src/control/Control.ESignature.ts:158
+msgid "Hungary"
+msgstr "Ουγγαρία"
+
+#: src/control/Control.ESignature.ts:159
+msgid "Indonesia"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:160
+msgid "Ireland"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:161
+msgid "Israel"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:162
+msgid "India"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:163
+msgid "Iceland"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:164
+msgid "Italy"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:165
+msgid "Japan"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:166
+msgid "Kenya"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:167
+msgid "South Korea"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:168
+msgid "Kazakhstan"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:169
+msgid "Liechtenstein"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:170
+msgid "Lithuania"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:171
+msgid "Luxembourg"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:172
+msgid "Latvia"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:173
+msgid "Monaco"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:174
+msgid "Moldova, Republic of"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:175
+msgid "Montenegro"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:176
+msgid "North Macedonia, Republic of"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:177
+msgid "Malta"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:178
+msgid "Mexico"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:179
+msgid "Netherlands"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:180
+msgid "Norway"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:181
+msgid "New Zealand"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:182
+msgid "Philippines"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:183
+msgid "Poland"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:184
+msgid "Portugal"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:185
+msgid "Qatar"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:186
+msgid "Romania"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:187
+msgid "Serbia"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:188
+msgid "Russian Federation"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:189
+msgid "Saudi Arabia"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:190
+msgid "Sweden"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:191
+msgid "Singapore"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:192
+msgid "Slovenia"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:193
+msgid "Slovakia"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:194
+msgid "San Marino"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:195
+msgid "Turkey"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:196
+msgid "Taiwan, Province of China"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:197
+msgid "Ukraine"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:198
+msgid "United States of America"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:199
+msgid "Holy See (Vatican City State)"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:200
+msgid "Kosovo"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:201
+msgid "South Africa"
+msgstr ""
+
+#: src/control/Control.ESignature.ts:335
+msgid "The document is being signed and will be availably shortly"
+msgstr ""
+
+#: src/control/Control.ESignatureDialog.ts:91
+msgid "Country:"
+msgstr ""
+
+#: src/control/Control.ESignatureDialog.ts:120
+msgid "Provider:"
+msgstr ""
+
+#: src/control/Control.ESignatureDialog.ts:175
+#: src/control/Control.ESignatureDialog.ts:176
+msgid "Insert Electronic Signature"
+msgstr ""
+
+#: src/control/Control.FormulaBarJSDialog.js:18
+msgid "Expand Formula Bar"
+msgstr ""
+
+#: src/control/Control.FormulaBarJSDialog.js:19
+msgid "Function Wizard"
+msgstr "Οδηγός συναρτήσεων"
+
+#: src/control/Control.FormulaBarJSDialog.js:74
+msgid "Select Function"
+msgstr ""
+
+#: src/control/Control.FormulaBarJSDialog.js:80
+#: src/control/Control.NotebookbarWriter.js:114
+#: src/control/Control.NotebookbarWriter.js:1566
+#, fuzzy
+msgid "Formula"
+msgstr "Τύπος"
+
+#: src/control/Control.FormulaBarJSDialog.js:86
+#: src/control/Control.MobileTopBar.ts:42
+msgid "Accept"
+msgstr "Αποδοχή"
+
+#: src/control/Control.FormulaBarJSDialog.js:170
+msgid "Collapse Formula Bar"
+msgstr ""
+
+#: src/control/Control.IdleHandler.ts:43
+msgid "Idle document - please click to reload and resume editing"
+msgstr ""
+"Ανενεργό έγγραφο - παρακαλούμε πατήστε για να επαναφορτώσετε και να "
+"συνεχίσετε την επεξεργασία"
+
+#: src/control/Control.IdleHandler.ts:45
+msgid "Idle document - please tap to reload and resume editing"
+msgstr ""
+"Αδρανές έγγραφο - πατήστε για επαναφόρτωση και συνέχιση της επεξεργασίας"
+
+#: src/control/Control.JSDialog.js:331
+msgid "Close dialog"
+msgstr ""
+
+#: src/control/Control.JSDialogBuilder.js:504
+msgid "Solid"
+msgstr "Συμπαγές"
+
+#: src/control/Control.JSDialogBuilder.js:507
+msgid "Linear"
+msgstr "Γραμμικό"
+
+#: src/control/Control.JSDialogBuilder.js:510
+msgid "Axial"
+msgstr "Αξονικό"
+
+#: src/control/Control.JSDialogBuilder.js:513
+msgid "Radial"
+msgstr "Ακτινικό"
+
+#: src/control/Control.JSDialogBuilder.js:516
+msgid "Ellipsoid"
+msgstr "Ελλειψοειδές"
+
+#: src/control/Control.JSDialogBuilder.js:520
+msgid "Quadratic"
+msgstr "Δευτεροβάθμιο"
+
+#: src/control/Control.JSDialogBuilder.js:523
+msgid "Square"
+msgstr "Τετράγωνο"
+
+#: src/control/Control.JSDialogBuilder.js:526
+msgid "Fixed size"
+msgstr "Σταθερό μέγεθος"
+
+#: src/control/Control.JSDialogBuilder.js:1434
+msgid "From"
+msgstr "Από"
+
+#: src/control/Control.JSDialogBuilder.js:1437
+msgid "To"
+msgstr "Σε"
+
+#: src/control/Control.JSDialogBuilder.js:1440
+msgid "Color"
+msgstr "Χρώμα"
+
+#: src/control/Control.JSDialogBuilder.js:1516
+msgid "Select range"
+msgstr "Επιλογή περιοχής"
+
+#: src/control/Control.JSDialogBuilder.js:1644
+#: src/control/Control.NotebookbarBuilder.js:150
+msgid "Font Name"
+msgstr "Όνομα γραμματοσειράς"
+
+#: src/control/Control.JSDialogBuilder.js:1646 src/control/Toolbar.js:135
+msgid "Font Size"
+msgstr "Μέγεθος γραμματοσειράς"
+
+#: src/control/Control.JSDialogBuilder.js:1648
+#: src/control/Control.NotebookbarCalc.js:939
+#: src/control/Control.NotebookbarCalc.js:2569
+#: src/control/Control.NotebookbarDraw.js:1752
+#: src/control/Control.NotebookbarImpress.js:1294
+#: src/control/Control.NotebookbarWriter.js:1061
+#: src/control/Control.TopToolbar.js:484
+msgid "Style"
+msgstr "Τεχνοτροπία"
+
+#: src/control/Control.JSDialogBuilder.js:1906
+msgid "reply"
+msgstr "απάντηση"
+
+#: src/control/Control.JSDialogBuilder.js:1909
+msgid "replies"
+msgstr "απαντήσεις"
+
+#: src/control/Control.JSDialogBuilder.js:1984
+msgid "Insert Comment"
+msgstr "Εισαγωγή σχολίου"
+
+#: src/control/Control.JSDialogBuilder.js:2278
+msgid "Open {name}"
+msgstr ""
+
+#: src/control/Control.JSDialogBuilder.js:2603
+#: src/control/Control.Menubar.ts:929
+msgid "Rows"
+msgstr "Γραμμές"
+
+#: src/control/Control.JSDialogBuilder.js:2604
+#: src/control/Control.Menubar.ts:932
+msgid "Columns"
+msgstr "Στήλες"
+
+#: src/control/Control.JSDialogBuilder.js:2624
+msgid "Insert Table"
+msgstr "Εισαγωγή πίνακα"
+
+#: src/control/Control.LanguageDialog.js:64 src/control/Control.Menubar.ts:393
+#: src/control/Control.Menubar.ts:395 src/control/Control.Menubar.ts:397
+#: src/control/Control.Menubar.ts:586 src/control/Control.Menubar.ts:728
+#: src/control/Control.Menubar.ts:1017 src/control/Control.StatusBar.js:518
+msgid "None (Do not check spelling)"
+msgstr "Καμία (χωρίς ορθογραφικό έλεγχο)"
+
+#: src/control/Control.LanguageDialog.js:82
+msgid "Select language"
+msgstr ""
+
+#: src/control/Control.LanguageDialog.js:103
+#, fuzzy
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: src/control/Control.Mention.ts:181
+msgid "No search results found!"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:97 src/control/Control.Menubar.ts:112
+#: src/control/Control.Menubar.ts:1052
+#: src/control/Control.NotebookbarBuilder.js:334
+#: src/control/Control.NotebookbarBuilder.js:547
+msgid "ODF text document (.odt)"
+msgstr "Έγγραφο κειμένου ODF (.odt)"
+
+#: src/control/Control.Menubar.ts:98 src/control/Control.Menubar.ts:113
+#: src/control/Control.Menubar.ts:1053
+#: src/control/Control.NotebookbarBuilder.js:346
+#: src/control/Control.NotebookbarBuilder.js:559
+msgid "Word 2003 Document (.doc)"
+msgstr "Έγγραφο Word 2003 (.doc)"
+
+#: src/control/Control.Menubar.ts:99 src/control/Control.Menubar.ts:114
+#: src/control/Control.Menubar.ts:1054
+#: src/control/Control.NotebookbarBuilder.js:342
+#: src/control/Control.NotebookbarBuilder.js:555
+msgid "Word Document (.docx)"
+msgstr "Έγγραφο Word (.docx)"
+
+#: src/control/Control.Menubar.ts:100 src/control/Control.Menubar.ts:115
+#: src/control/Control.Menubar.ts:1055
+#: src/control/Control.NotebookbarBuilder.js:338
+#: src/control/Control.NotebookbarBuilder.js:551
+msgid "Rich Text (.rtf)"
+msgstr "Εμπλουτισμένο κείμενο (.rtf)"
+
+#: src/control/Control.Menubar.ts:102 src/control/Control.Menubar.ts:109
+#: src/control/Control.Menubar.ts:434 src/control/Control.Menubar.ts:440
+#: src/control/Control.Menubar.ts:607 src/control/Control.Menubar.ts:614
+#: src/control/Control.Menubar.ts:750 src/control/Control.Menubar.ts:755
+#: src/control/Control.Menubar.ts:1040 src/control/Control.Menubar.ts:1049
+#: src/control/Control.Menubar.ts:1106 src/control/Control.Menubar.ts:1114
+#: src/control/Control.Menubar.ts:1171 src/control/Control.Menubar.ts:1178
+#: src/control/Control.Menubar.ts:1226 src/control/Control.Menubar.ts:1236
+msgid "Export as"
+msgstr "Εξαγωγή ως"
+
+#: src/control/Control.Menubar.ts:103 src/control/Control.Menubar.ts:110
+#: src/control/Control.Menubar.ts:435 src/control/Control.Menubar.ts:441
+#: src/control/Control.Menubar.ts:608 src/control/Control.Menubar.ts:615
+#: src/control/Control.Menubar.ts:751 src/control/Control.Menubar.ts:756
+#: src/control/Control.Menubar.ts:1041 src/control/Control.Menubar.ts:1050
+#: src/control/Control.Menubar.ts:1107 src/control/Control.Menubar.ts:1115
+#: src/control/Control.Menubar.ts:1172 src/control/Control.Menubar.ts:1179
+#: src/control/Control.Menubar.ts:1227 src/control/Control.Menubar.ts:1237
+#: src/control/Control.NotebookbarBuilder.js:355
+#: src/control/Control.NotebookbarBuilder.js:393
+#: src/control/Control.NotebookbarBuilder.js:429
+#: src/control/Control.NotebookbarBuilder.js:608
+#: src/control/Control.NotebookbarBuilder.js:619
+#: src/control/Control.NotebookbarBuilder.js:626
+#: src/control/Control.NotebookbarBuilder.js:633
+#: src/control/Control.NotebookbarDraw.js:312
+msgid "PDF Document (.pdf)"
+msgstr "Έγγραφο PDF (.pdf)"
+
+#: src/control/Control.Menubar.ts:104 src/control/Control.Menubar.ts:116
+#: src/control/Control.Menubar.ts:1042 src/control/Control.Menubar.ts:1056
+#: src/control/Control.NotebookbarBuilder.js:350
+#: src/control/Control.NotebookbarBuilder.js:612
+msgid "EPUB (.epub)"
+msgstr "EPUB (.epub)"
+
+#: src/control/Control.Menubar.ts:106 src/control/Control.UIManager.ts:325
+#, fuzzy
+msgid "Rename Document"
+msgstr "Επισκευή εγγράφου"
+
+#: src/control/Control.Menubar.ts:107 src/control/Control.Menubar.ts:438
+#: src/control/Control.Menubar.ts:611 src/control/Control.Menubar.ts:753
+#: src/control/Control.Menubar.ts:1044 src/control/Control.Menubar.ts:1109
+#: src/control/Control.Menubar.ts:1174 src/control/Control.Menubar.ts:1229
+msgid "Share..."
+msgstr "Διαμοιρασμός..."
+
+#: src/control/Control.Menubar.ts:108 src/control/Control.Menubar.ts:439
+#: src/control/Control.Menubar.ts:613 src/control/Control.Menubar.ts:754
+#: src/control/Control.Menubar.ts:1045 src/control/Control.Menubar.ts:1110
+#: src/control/Control.Menubar.ts:1176 src/control/Control.Menubar.ts:1230
+msgid "See revision history"
+msgstr "Δείτε το ιστορικό των αναθεωρήσεων"
+
+#: src/control/Control.Menubar.ts:109 src/control/Control.Menubar.ts:440
+#: src/control/Control.Menubar.ts:614 src/control/Control.Menubar.ts:755
+#: src/control/Control.Menubar.ts:1049 src/control/Control.Menubar.ts:1114
+#: src/control/Control.Menubar.ts:1178 src/control/Control.Menubar.ts:1236
+msgid "Download as"
+msgstr "Μεταφόρτωση ως"
+
+#: src/control/Control.Menubar.ts:111 src/control/Control.Menubar.ts:442
+#: src/control/Control.Menubar.ts:616 src/control/Control.Menubar.ts:757
+#: src/control/Control.Menubar.ts:1051 src/control/Control.Menubar.ts:1116
+#: src/control/Control.Menubar.ts:1180 src/control/Control.Menubar.ts:1238
+#: src/control/Control.NotebookbarBuilder.js:365
+#: src/control/Control.NotebookbarBuilder.js:399
+#: src/control/Control.NotebookbarBuilder.js:441
+#, fuzzy
+msgid "PDF Document (.pdf) as..."
+msgstr "Έγγραφο PDF (.pdf)"
+
+#: src/control/Control.Menubar.ts:117 src/control/Control.Menubar.ts:762
+#, fuzzy
+msgid "HTML file (.html)"
+msgstr "HTML Αρχείο (.html)"
+
+#: src/control/Control.Menubar.ts:120 src/control/Control.Menubar.ts:456
+#: src/control/Control.Menubar.ts:621 src/control/Control.Menubar.ts:765
+#: src/control/Control.NotebookbarCalc.js:375
+#: src/control/Control.NotebookbarDraw.js:406
+#: src/control/Control.NotebookbarImpress.js:438
+#: src/control/Control.NotebookbarWriter.js:412
+#: src/map/handler/Map.Settings.ts:74
+msgid "Options"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:123 src/control/Control.Menubar.ts:462
+#: src/control/Control.Menubar.ts:623 src/control/Control.Menubar.ts:771
+#: src/control/Control.Toolbar.js:1104
+msgid "Close document"
+msgstr "Κλείσιμο εγγράφου"
+
+#: src/control/Control.Menubar.ts:128 src/control/Control.Menubar.ts:467
+#: src/control/Control.Menubar.ts:628 src/control/Control.Menubar.ts:776
+#: src/control/Control.Menubar.ts:1061 src/control/Control.Menubar.ts:1125
+#: src/control/Control.Menubar.ts:1186 src/control/Control.Menubar.ts:1246
+#: src/control/Control.NotebookbarCalc.js:313
+#: src/control/Control.NotebookbarDraw.js:342
+#: src/control/Control.NotebookbarImpress.js:376
+#: src/control/Control.NotebookbarWriter.js:335
+msgid "Repair"
+msgstr "Επιδιόρθωση"
+
+#: src/control/Control.Menubar.ts:158 src/control/Control.Menubar.ts:164
+#: src/control/Control.Menubar.ts:479 src/control/Control.Menubar.ts:485
+#: src/control/Control.Menubar.ts:640 src/control/Control.Menubar.ts:646
+#: src/control/Control.Menubar.ts:788 src/control/Control.Menubar.ts:794
+#: src/control/Control.NotebookbarCalc.js:1470
+#: src/control/Control.NotebookbarDraw.js:441
+#: src/control/Control.NotebookbarImpress.js:538
+#: src/control/Control.NotebookbarWriter.js:1678
+#: src/control/Control.StatusBar.js:250
+msgid "Reset zoom"
+msgstr "Επαναφορά εστίασης"
+
+#: src/control/Control.Menubar.ts:167 src/control/Control.Menubar.ts:491
+#: src/control/Control.Menubar.ts:652 src/control/Control.Menubar.ts:797
+msgid "Toggle UI Mode"
+msgstr "Εναλλαγή κατάστασης UI"
+
+#: src/control/Control.Menubar.ts:169 src/control/Control.Menubar.ts:493
+#: src/control/Control.Menubar.ts:657 src/control/Control.Menubar.ts:798
+msgid "Show Status Bar"
+msgstr "Εμφάνιση επιλεγμένων φύλλων"
+
+#: src/control/Control.Menubar.ts:170 src/control/Control.Menubar.ts:495
+#: src/control/Control.Menubar.ts:658 src/control/Control.Menubar.ts:799
+msgid "Hide Menu Bar"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:172 src/control/Control.Menubar.ts:497
+#: src/control/Control.Menubar.ts:654 src/control/Control.Menubar.ts:801
+#: src/control/Control.Menubar.ts:1083 src/control/Control.Menubar.ts:1136
+#: src/control/Control.Menubar.ts:1197 src/control/Control.Menubar.ts:1257
+#: src/control/Control.NotebookbarCalc.js:1555
+#: src/control/Control.NotebookbarDraw.js:561
+#: src/control/Control.NotebookbarImpress.js:681
+#: src/control/Control.NotebookbarWriter.js:1770
+msgid "Invert Background"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:174 src/control/Control.Menubar.ts:804
+#: src/control/Control.NotebookbarCalc.js:2596
+#: src/control/Control.NotebookbarWriter.js:954
+#: src/control/Control.NotebookbarWriter.js:1088
+msgid "Style list"
+msgstr "Λίστα στυλ"
+
+#: src/control/Control.Menubar.ts:182 src/control/Control.Menubar.ts:506
+#: src/control/Control.Menubar.ts:661 src/control/Control.Menubar.ts:815
+#: src/control/Control.Menubar.ts:1299 src/control/Control.Menubar.ts:1349
+#: src/control/Control.Menubar.ts:1363 src/control/Control.Menubar.ts:1386
+msgid "Local Image..."
+msgstr "Τοπική εικόνα..."
+
+#: src/control/Control.Menubar.ts:206 src/control/Control.Menubar.ts:208
+#: src/control/Control.Menubar.ts:1316 src/control/Control.Menubar.ts:1318
+msgid "All"
+msgstr "Όλα"
+
+#: src/control/Control.Menubar.ts:218 src/control/Control.Menubar.ts:517
+#: src/control/Control.Menubar.ts:668 src/control/Control.Menubar.ts:827
+#: src/control/Control.NotebookbarCalc.js:1776
+#: src/control/Control.NotebookbarDraw.js:1583
+#: src/control/Control.NotebookbarImpress.js:1583
+#: src/control/Control.NotebookbarWriter.js:1346
+msgid "Smart Picker"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:219 src/control/Control.Menubar.ts:518
+#: src/control/Control.Menubar.ts:669 src/control/Control.Menubar.ts:828
+#, fuzzy
+msgid "AI Assistant"
+msgstr "Βοηθός"
+
+#: src/control/Control.Menubar.ts:260
+msgid "Text orientation"
+msgstr "Προσανατολισμός κειμένου"
+
+#: src/control/Control.Menubar.ts:330
+#: src/control/Notebookbar.WriterReferencesTab.ts:25
+msgid "References"
+msgstr "Παραπομπές"
+
+#: src/control/Control.Menubar.ts:333
+#: src/control/Notebookbar.WriterReferencesTab.ts:72
+msgid "Update Index"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:342
+#: src/control/Notebookbar.WriterReferencesTab.ts:215
+msgid "Add Citation"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:343
+#: src/control/Notebookbar.WriterReferencesTab.ts:232
+msgid "Add Citation Note"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:344
+#: src/control/Notebookbar.WriterReferencesTab.ts:201
+msgid "Add Bibliography"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:346
+#: src/control/Notebookbar.WriterReferencesTab.ts:255
+msgid "Refresh Citations"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:347
+#: src/control/Notebookbar.WriterReferencesTab.ts:272
+#: src/control/Control.Zotero.js:1531
+msgid "Unlink Citations"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:348
+#: src/control/Notebookbar.WriterReferencesTab.ts:289
+msgid "Citation Preferences"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:376 src/control/Control.Menubar.ts:1338
+msgid "Insert Rich Text"
+msgstr "Εισαγωγή εμπλουτισμένου κειμένου"
+
+#: src/control/Control.Menubar.ts:377 src/control/Control.Menubar.ts:1339
+msgid "Insert Checkbox"
+msgstr "Εισαγωγή πλαισίου ελέγχου"
+
+#: src/control/Control.Menubar.ts:378 src/control/Control.Menubar.ts:1340
+msgid "Insert Dropdown"
+msgstr "Εισαγωγή αναδυόμενης λίστας"
+
+#: src/control/Control.Menubar.ts:379 src/control/Control.Menubar.ts:1341
+msgid "Insert Picture"
+msgstr "Εισαγωγή εικόνας"
+
+#: src/control/Control.Menubar.ts:380 src/control/Control.Menubar.ts:1342
+msgid "Insert Date"
+msgstr "Εισαγωγή ημερομηνίας"
+
+#: src/control/Control.Menubar.ts:381 src/control/Control.Menubar.ts:1343
+#: src/control/Control.NotebookbarCalc.js:328
+#: src/control/Control.NotebookbarDraw.js:356
+#: src/control/Control.NotebookbarImpress.js:391
+#: src/control/Control.NotebookbarWriter.js:350
+#: src/control/Control.NotebookbarWriter.js:1634
+msgid "Properties"
+msgstr "Ιδιότητες"
+
+#: src/control/Control.Menubar.ts:401 src/control/Control.Menubar.ts:1087
+#: src/control/Control.NotebookbarWriter.js:472
+msgid "Screen Reading"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:414
+#: src/control/Control.NotebookbarWriter.js:436
+msgid "Forum"
+msgstr "Φόρουμ"
+
+#: src/control/Control.Menubar.ts:415 src/control/Control.Menubar.ts:592
+#: src/control/Control.Menubar.ts:731 src/control/Control.Menubar.ts:1024
+#: src/control/Control.NotebookbarWriter.js:448
+msgid "Online Help"
+msgstr "Διαδικτυακή βοήθεια"
+
+#: src/control/Control.Menubar.ts:416 src/control/Control.Menubar.ts:593
+#: src/control/Control.Menubar.ts:732 src/control/Control.Menubar.ts:1025
+#: src/control/Control.NotebookbarWriter.js:461
+msgid "Keyboard shortcuts"
+msgstr "Συντομεύσεις πληκτρολογίου"
+
+#: src/control/Control.Menubar.ts:417 src/control/Control.Menubar.ts:594
+#: src/control/Control.Menubar.ts:733 src/control/Control.Menubar.ts:1026
+#: src/control/Control.NotebookbarWriter.js:510
+msgid "Report an issue"
+msgstr "Αναφορά ως πρόβλημα"
+
+#: src/control/Control.Menubar.ts:418 src/control/Control.Menubar.ts:595
+#: src/control/Control.Menubar.ts:734 src/control/Control.Menubar.ts:1027
+#: src/control/Control.Menubar.ts:1096 src/control/Control.Menubar.ts:1161
+#: src/control/Control.Menubar.ts:1216 src/control/Control.Menubar.ts:1291
+#: src/control/Control.NotebookbarWriter.js:524
+msgid "Latest Updates"
+msgstr "Τελευταίες ενημερώσεις"
+
+#: src/control/Control.Menubar.ts:419 src/control/Control.Menubar.ts:596
+#: src/control/Control.Menubar.ts:735 src/control/Control.Menubar.ts:1028
+#: src/control/Control.Menubar.ts:1097 src/control/Control.Menubar.ts:1162
+#: src/control/Control.Menubar.ts:1217 src/control/Control.Menubar.ts:1292
+#: src/control/Control.NotebookbarWriter.js:538
+msgid "Send Feedback"
+msgstr "Αποστολή Σχολίου"
+
+#: src/control/Control.Menubar.ts:420 src/control/Control.Menubar.ts:597
+#: src/control/Control.Menubar.ts:736 src/control/Control.Menubar.ts:1029
+#: src/control/Control.NotebookbarWriter.js:494
+#: src/control/Control.ServerAuditDialog.ts:274
+#: src/control/Control.ServerAuditDialog.ts:275
+msgid "Server audit"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:423 src/control/Control.Menubar.ts:600
+#: src/control/Control.Menubar.ts:739 src/control/Control.Menubar.ts:1032
+msgid "Last modification"
+msgstr "Τελευταία τροποποίηση"
+
+#: src/control/Control.Menubar.ts:430 src/control/Control.Menubar.ts:443
+#: src/control/Control.Menubar.ts:1117
+#: src/control/Control.NotebookbarBuilder.js:407
+#: src/control/Control.NotebookbarBuilder.js:581
+msgid "ODF presentation (.odp)"
+msgstr "Παρουσίαση ODF (.odp)"
+
+#: src/control/Control.Menubar.ts:431 src/control/Control.Menubar.ts:444
+#: src/control/Control.Menubar.ts:1118
+#: src/control/Control.NotebookbarBuilder.js:419
+#: src/control/Control.NotebookbarBuilder.js:589
+msgid "PowerPoint 2003 Presentation (.ppt)"
+msgstr "Παρουσίαση PowerPoint 2003 (.ppt)"
+
+#: src/control/Control.Menubar.ts:432 src/control/Control.Menubar.ts:445
+#: src/control/Control.Menubar.ts:1119
+#: src/control/Control.NotebookbarBuilder.js:415
+#: src/control/Control.NotebookbarBuilder.js:585
+msgid "PowerPoint Presentation (.pptx)"
+msgstr "Παρουσίαση PowerPoint (.pptx)"
+
+#: src/control/Control.Menubar.ts:437 src/control/Control.Menubar.ts:610
+msgid "Save Comments"
+msgstr "Αποθήκευση σχολίων"
+
+#: src/control/Control.Menubar.ts:446
+#: src/control/Control.NotebookbarBuilder.js:423
+msgid "HTML Document (.html)"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:447
+#: src/control/Control.NotebookbarBuilder.js:454
+msgid "Shockwave Flash (.swf)"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:448
+#: src/control/Control.NotebookbarBuilder.js:466
+msgid "Scalable Vector Graphics (.svg)"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:449
+#: src/control/Control.NotebookbarBuilder.js:478
+msgid "Current slide as Bitmap (.bmp)"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:450
+#: src/control/Control.NotebookbarBuilder.js:490
+msgid "Current slide as Graphics Interchange Format (.gif)"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:451
+#: src/control/Control.NotebookbarBuilder.js:502
+msgid "Current slide as Portable Network Graphics (.png)"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:452
+#: src/control/Control.NotebookbarBuilder.js:514
+msgid "Current slide as Tag Image File Format (.tiff)"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:459
+#: src/control/Control.NotebookbarBuilder.js:652
+msgid "Full Page Slides"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:460
+#: src/control/Control.NotebookbarBuilder.js:656
+msgid "Notes Pages"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:494
+#: src/control/Control.NotebookbarImpress.js:629
+msgid "Notes View"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:498
+#: src/control/Control.NotebookbarImpress.js:635
+msgid "Master View"
+msgstr ""
+
+#: src/control/Control.Menubar.ts:508
+msgid "Local Multimedia..."
+msgstr "Τοπικά Πολυμέσα..."
+
+#: src/control/Control.Menubar.ts:577 src/control/Control.Menubar.ts:1160
+#: src/control/Control.PresentationBar.js:128
+msgid "Fullscreen presentation"
+msgstr "Παρουσίαση πλήρους οθόνης"
+
+#: src/control/Control.Menubar.ts:578
+msgid "Present current slide"
+msgstr "Παρουσίαση τρέχουσας διαφάνειας"
+
+#: src/control/Control.Menubar.ts:579
+msgid "Present in new window"
+msgstr "Παρουσίαση σε νέο παράθυρο"
+
+#: src/control/Control.Menubar.ts:580
+#: src/control/Control.NotebookbarImpress.js:488
+#: src/slideshow/PresenterConsole.js:249
+msgid "Presenter Console"
+msgstr "Κονσόλα παρουσιαστή"
+
+#: src/control/Control.Menubar.ts:617 src/control/Control.Menubar.ts:1120
+#: src/control/Control.Menubar.ts:1181
+#: src/control/Control.NotebookbarBuilder.js:411
+#: src/control/Control.NotebookbarBuilder.js:524
+msgid "ODF Drawing (.odg)"
+msgstr "Σχέδιο ODF (.odp)"
+
+#: src/control/Control.Menubar.ts:746 src/control/Control.Menubar.ts:758
+#: src/control/Control.Menubar.ts:1239
+#: src/control/Control.NotebookbarBuilder.js:373
+#: src/control/Control.NotebookbarBuilder.js:566
+msgid "ODF spreadsheet (.ods)"
+msgstr "Υπολογιστικό φύλλο ODF (.ods)"
+
+#: src/control/Control.Menubar.ts:747 src/control/Control.Menubar.ts:759
+#: src/control/Control.Menubar.ts:1240
+#: src/control/Control.NotebookbarBuilder.js:381
+#: src/control/Control.NotebookbarBuilder.js:574
+msgid "Excel 2003 Spreadsheet (.xls)"
+msgstr "Υπολογιστικό φύλλο Excel 2003 (.xls)"
+
+#: src/control/Control.Menubar.ts:748 src/control/Control.Menubar.ts:760
+#: src/control/Control.Menubar.ts:1241
+#: src/control/Control.NotebookbarBuilder.js:377
+#: src/control/Control.NotebookbarBuilder.js:570
+msgid "Excel Spreadsheet (.xlsx)"
+msgstr "Υπολογιστικό φύλλο Excel (.xlsx)"
+
+#: src/control/Control.Menubar.ts:761
+msgid "CSV file (.csv)"
+msgstr "Αρχείο CSV (.csv)"
+
+#: src/control/Control.Menubar.ts:768
+#: src/control/jsdialog/Definitions.Menu.ts:1572
+msgid "Active sheet"
+msgstr "Ενεργό φύλλο"
+
+#: src/control/Control.Menubar.ts:807
+#: src/control/Control.NotebookbarCalc.js:1441
+msgid "Focus Cell"
+msgstr "Εστίαση σε κελί"
+
+#: src/control/Control.Menubar.ts:901
+#: src/control/jsdialog/Definitions.Menu.ts:1778
+msgid "Highlight cells with..."
+msgstr "Επισημάνετε τα κελιά με..."
+
+#: src/control/Control.Menubar.ts:902
+#: src/control/jsdialog/Definitions.Menu.ts:1781
+msgid "Values greater than..."
+msgstr "Αξίες μεγαλύτερες από..."
+
+#: src/control/Control.Menubar.ts:903
+#: src/control/jsdialog/Definitions.Menu.ts:1785
+msgid "Values less than..."
+msgstr "Αξίες μικρότερες από..."
+
+#: src/control/Control.Menubar.ts:904
+#: src/control/jsdialog/Definitions.Menu.ts:1789
+msgid "Values equal to..."
+msgstr "Αξίες ίσες με..."
+
+#: src/control/Control.Menubar.ts:905
+#: src/control/jsdialog/Definitions.Menu.ts:1793
+msgid "Values between..."
+msgstr "Αξίες μεταξύ..."
+
+#: src/control/Control.Menubar.ts:906
+#: src/control/jsdialog/Definitions.Menu.ts:1797
+msgid "Values duplicate..."
+msgstr "Διπλότυπες αξίες..."
+
+#: src/control/Control.Menubar.ts:907
+#: src/control/jsdialog/Definitions.Menu.ts:1801
+msgid "Containing text..."
+msgstr "Περιέχει κείμενο..."
+
+#: src/control/Control.Menubar.ts:909 src/control/Control.Menubar.ts:919
+#: src/control/jsdialog/Definitions.Menu.ts:1805
+#: src/control/jsdialog/Definitions.Menu.ts:1836
+msgid "More highlights..."
+msgstr "Περισσότερες επισημάνσεις"
+
+#: src/control/Control.Menubar.ts:911
+#: src/control/jsdialog/Definitions.Menu.ts:1809
+msgid "Top/Bottom Rules..."
+msgstr "Κανόνες μέγιστο/ελάχιστο..."
+
+#: src/control/Control.Menubar.ts:912
+#: src/control/jsdialog/Definitions.Menu.ts:1812
+msgid "Top N elements..."
+msgstr "Κορυφαία N στοιχεία..."
+
+#: src/control/Control.Menubar.ts:913
+#: src/control/jsdialog/Definitions.Menu.ts:1816
+msgid "Top N percent..."
+msgstr "Κορυφαίο N ποσοστό..."
+
+#: src/control/Control.Menubar.ts:914
+#: src/control/jsdialog/Definitions.Menu.ts:1820
+msgid "Bottom N elements..."
+msgstr "Τελευταία N στοιχεία..."
+
+#: src/control/Control.Menubar.ts:915
+#: src/control/jsdialog/Definitions.Menu.ts:1824
+msgid "Bottom N percent..."
+msgstr "Τελευταίο Ν ποσοστό..."
+
+#: src/control/Control.Menubar.ts:916
+#: src/control/jsdialog/Definitions.Menu.ts:1828
+msgid "Above Average..."
+msgstr "Πάνω από το μέσο όρο..."
+
+#: src/control/Control.Menubar.ts:917
+#: src/control/jsdialog/Definitions.Menu.ts:1832
+msgid "Below Average..."
+msgstr "Κάτω από το μέσο όρο..."
+
+#: src/control/Control.Menubar.ts:1036 src/control/Control.Menubar.ts:1102
+#: src/control/Control.Menubar.ts:1167 src/control/Control.Menubar.ts:1222
+#: src/control/Control.MobileSearchBar.ts:30
+#: src/control/Control.NotebookbarCalc.js:1029
+#: src/control/Control.NotebookbarDraw.js:1171
+#: src/control/Control.NotebookbarDraw.js:1184
+#: src/control/Control.NotebookbarImpress.js:1249
+#: src/control/Control.NotebookbarImpress.js:1262
+#: src/control/Control.NotebookbarWriter.js:1016
+#: src/control/Control.NotebookbarWriter.js:1029
+#: src/control/Control.Zotero.js:220 src/control/Toolbar.js:580
+#: src/control/Toolbar.js:581
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: src/control/Control.Menubar.ts:1089
+#: src/control/Control.NotebookbarCalc.js:1094
+#: src/control/Control.NotebookbarWriter.js:1798
+msgid "Page Setup"
+msgstr "Ρύθμιση σελίδας"
+
+#: src/control/Control.Menubar.ts:1233
+msgid "Define print area"
+msgstr "Ορίστε την περιοχή εκτύπωσης"
+
+#: src/control/Control.Menubar.ts:1234
+msgid "Remove print area"
+msgstr "Αφαιρέστε την περιοχή εκτύπωσης"
+
+#: src/control/Control.Menubar.ts:1590 src/control/Control.StatusBar.js:517
+msgid "Reset to Default Language"
+msgstr "Επαναφορά στην προεπιλεγμένη γλώσσα"
+
+#: src/control/Control.Menubar.ts:1621 src/control/Control.Menubar.ts:1622
+#: src/control/Control.Menubar.ts:1623 src/control/Control.Toolbar.js:247
+#: src/control/jsdialog/Definitions.Menu.ts:2058
+msgid "More..."
+msgstr "Περισσότερα..."
+
+#: src/control/Control.Menubar.ts:1965
+msgid "Use Compact view"
+msgstr "Χρήση συμπτυγμένης προβολής"
+
+#: src/control/Control.Menubar.ts:1967
+msgid "Use Tabbed view"
+msgstr "Χρησιμοποιήστε την προβολή με καρτέλες"
+
+#: src/control/Control.Menubar.ts:2121
+msgid "Insert Shape"
+msgstr "Εισαγωγή σχήματος"
+
+#: src/control/Control.Menubar.ts:2203
+msgid "The signature line can now be moved or resized as needed."
+msgstr ""
+"Η γραμμή υπογραφής μπορεί τώρα να μετακινηθεί ή να αλλάξει το μέγεθος όπως "
+"απαιτείται."
+
+#: src/control/Control.Menubar.ts:2205
+msgid "Finish electronic signing"
+msgstr "Ολοκληρώστε την ηλεκτρονική υπογραφή"
+
+#: src/control/Control.Menubar.ts:2400
+msgid "file type icon"
+msgstr "εικονίδιο τύπου αρχείου"
+
+#: src/control/Control.MobileBottomBar.js:28
+#: src/control/Control.MobileBottomBar.js:130
+#: src/control/Control.MobileBottomBar.js:198
+msgid "Show the search bar"
+msgstr "Εμφάνιση της γραμμής αναζήτησης"
+
+#: src/control/Control.MobileBottomBar.js:37
+#: src/control/Control.TopToolbar.js:145
+msgid "Borders"
+msgstr "Περιγράμματα"
+
+#: src/control/Control.MobileSearchBar.ts:28
+msgid "Hide the search bar"
+msgstr "Απόκρυψη γραμμής αναζήτησης"
+
+#: src/control/Control.MobileSearchBar.ts:48
+msgid "Clear the search field"
+msgstr "Καθαρισμός πεδίου αναζήτησης"
+
+#: src/control/Control.MobileWizardBuilder.js:546
+msgid "Background Color"
+msgstr "Χρώμα παρασκηνίου"
+
+#: src/control/Control.MobileWizardBuilder.js:548
+msgid "Gradient Start"
+msgstr "Έναρξη διαβάθμισης"
+
+#: src/control/Control.MobileWizardBuilder.js:550
+msgid "Gradient End"
+msgstr "Τέλος διαβάθμισης"
+
+#: src/control/Control.NavigatorPanel.ts:112
+msgid "Navigation"
+msgstr ""
+
+#: src/control/Control.NavigatorPanel.ts:133
+msgid "Close Navigation"
+msgstr ""
+
+#: src/control/Control.NavigatorPanel.ts:171
+#: src/control/Control.NotebookbarImpress.js:1393
+#: src/slideshow/PresenterConsole.js:34
+msgid "Slides"
+msgstr ""
+
+#: src/control/Control.NavigatorPanel.ts:185
+msgid "Results"
+msgstr ""
+
+#: src/control/Control.NavigatorPanel.ts:400
+msgid "Search..."
+msgstr ""
+
+#: src/control/Control.QuickFindPanel.ts:89
+msgid "Type in the search box to find anything in your document"
+msgstr ""
+
+#: src/control/Notebookbar.ImpressTransitionTab.ts:24
+msgid "Transition"
+msgstr ""
+
+#: src/control/Notebookbar.ImpressTransitionTab.ts:41
+msgid "Transitions"
+msgstr ""
+
+#: src/control/Notebookbar.ImpressTransitionTab.ts:63
+msgid "Variant"
+msgstr ""
+
+#: src/control/Notebookbar.ImpressTransitionTab.ts:78
+msgid "Duration"
+msgstr ""
+
+#: src/control/Notebookbar.ImpressTransitionTab.ts:105
+msgid "On mouse click"
+msgstr ""
+
+#: src/control/Notebookbar.ImpressTransitionTab.ts:113
+msgid "After"
+msgstr ""
+
+#: src/control/Notebookbar.WriterReferencesTab.ts:41
+msgid "Table of content"
+msgstr ""
+
+#: src/control/Notebookbar.WriterReferencesTab.ts:95
+msgid "Footnote/Endnote"
+msgstr ""
+
+#: src/control/Notebookbar.WriterReferencesTab.ts:301
+#: src/control/Control.NotebookbarDraw.js:1576
+#: src/control/Control.NotebookbarImpress.js:1619
+#, fuzzy
+msgid "Field"
+msgstr "Πεδία"
+
+#: src/control/Control.Notebookbar.js:691
+#: src/control/Control.NotebookbarCalc.js:194
+#: src/control/Control.NotebookbarCalc.js:228
+#: src/control/Control.NotebookbarDraw.js:209
+#: src/control/Control.NotebookbarDraw.js:243
+#: src/control/Control.NotebookbarImpress.js:64
+#: src/control/Control.NotebookbarImpress.js:255
+#: src/control/Control.NotebookbarImpress.js:289
+#: src/control/Control.NotebookbarWriter.js:218
+#: src/control/Control.NotebookbarWriter.js:251
+msgid "Share"
+msgstr "Κοινοποίηση"
+
+#: src/control/Control.NotebookbarBuilder.js:220
+msgid "Tap to expand"
+msgstr "Πατήστε για επέκταση"
+
+#: src/control/Control.NotebookbarBuilder.js:221
+#: src/control/Control.NotebookbarBuilder.js:268
+msgid "Tap to collapse"
+msgstr "Πατήστε για σύμπτυξη"
+
+#: src/control/Control.NotebookbarBuilder.js:360
+#: src/control/Control.NotebookbarBuilder.js:389
+msgid "HTML File (.html)"
+msgstr "HTML Αρχείο (.html)"
+
+#: src/control/Control.NotebookbarBuilder.js:385
+msgid "CSV File (.csv)"
+msgstr "Αρχείο CSV (.csv)"
+
+#: src/control/Control.NotebookbarBuilder.js:528
+msgid "Image (.png)"
+msgstr "Εικόνα (.png)"
+
+#: src/control/Control.NotebookbarCalc.js:23
+#: src/control/Control.NotebookbarDraw.js:57
+#: src/control/Control.NotebookbarImpress.js:77
+#: src/control/Control.NotebookbarWriter.js:37
+msgid "File"
+msgstr "Αρχείο"
+
+#: src/control/Control.NotebookbarCalc.js:29
+#: src/control/Control.NotebookbarDraw.js:63
+#: src/control/Control.NotebookbarImpress.js:83
+#: src/control/Control.NotebookbarWriter.js:43
+msgid "Home"
+msgstr "Αρχή"
+
+#: src/control/Control.NotebookbarCalc.js:36
+#: src/control/Control.NotebookbarCalc.js:1188
+#: src/control/Control.NotebookbarDraw.js:70
+#: src/control/Control.NotebookbarDraw.js:1132
+#: src/control/Control.NotebookbarImpress.js:90
+#: src/control/Control.NotebookbarImpress.js:1987
+#: src/control/Control.NotebookbarWriter.js:50
+#: src/control/Control.NotebookbarWriter.js:965
+#: src/control/Control.NotebookbarWriter.js:2513
+msgid "Insert"
+msgstr "Εισαγωγή"
+
+#: src/control/Control.NotebookbarCalc.js:42
+#: src/control/Control.NotebookbarDraw.js:1282
+#, fuzzy
+msgid "Page Layout"
+msgstr "Διάταξη σελίδας"
+
+#: src/control/Control.NotebookbarCalc.js:48
+#, fuzzy
+msgid "Formulas"
+msgstr "Τύπος"
+
+#: src/control/Control.NotebookbarCalc.js:54
+msgid "Data"
+msgstr "Δεδομένα"
+
+#: src/control/Control.NotebookbarCalc.js:60
+#: src/control/Control.NotebookbarDraw.js:82
+#: src/control/Control.NotebookbarImpress.js:109
+#: src/control/Control.NotebookbarWriter.js:63
+msgid "Review"
+msgstr "Επιθεώρηση"
+
+#: src/control/Control.NotebookbarCalc.js:66
+#: src/control/Control.NotebookbarDraw.js:88
+#: src/control/Control.NotebookbarImpress.js:115
+#: src/control/Control.NotebookbarWriter.js:69
+msgid "Format"
+msgstr "Διαμόρφωση"
+
+#: src/control/Control.NotebookbarCalc.js:72
+#: src/control/Control.NotebookbarDraw.js:101
+#: src/control/Control.NotebookbarImpress.js:128
+#: src/control/Control.NotebookbarWriter.js:88
+#, fuzzy
+msgid "Shape"
+msgstr "Σχήματα"
+
+#: src/control/Control.NotebookbarCalc.js:79
+#: src/control/Control.NotebookbarDraw.js:108
+#: src/control/Control.NotebookbarImpress.js:135
+#: src/control/Control.NotebookbarWriter.js:95
+#: src/control/Control.NotebookbarWriter.js:1618
+msgid "Picture"
+msgstr "Εικόνα"
+
+#: src/control/Control.NotebookbarCalc.js:86
+#: src/control/Control.NotebookbarDraw.js:115
+#: src/control/Control.NotebookbarImpress.js:149
+#: src/control/Control.NotebookbarWriter.js:102
+msgid "View"
+msgstr "Προβολή"
+
+#: src/control/Control.NotebookbarCalc.js:92
+#: src/control/Control.NotebookbarCalc.js:1682
+#: src/control/Control.NotebookbarCalc.js:2657
+msgid "Sparkline"
+msgstr "Γράφημα sparkline"
+
+#: src/control/Control.NotebookbarCalc.js:99
+#: src/control/Control.NotebookbarDraw.js:121
+#: src/control/Control.NotebookbarImpress.js:155
+#: src/control/Control.NotebookbarWriter.js:108
+#: src/control/Control.ServerAuditDialog.ts:294
+msgid "Help"
+msgstr "Βοήθεια"
+
+#: src/control/Control.NotebookbarCalc.js:157
+#: src/control/Control.NotebookbarImpress.js:216
+#: src/control/Control.NotebookbarWriter.js:179
+#: src/control/Control.NotebookbarWriter.js:320
+msgid "Save As"
+msgstr "Αποθήκευση ως"
+
+#: src/control/Control.NotebookbarCalc.js:176
+#: src/control/Control.NotebookbarDraw.js:190
+#: src/control/Control.NotebookbarImpress.js:236
+#: src/control/Control.NotebookbarWriter.js:199
+#, fuzzy
+msgid "Export As"
+msgstr "Εξαγωγή ως"
+
+#: src/control/Control.NotebookbarCalc.js:202
+#: src/control/Control.NotebookbarCalc.js:251
+#: src/control/Control.NotebookbarDraw.js:217
+#: src/control/Control.NotebookbarDraw.js:267
+#: src/control/Control.NotebookbarImpress.js:263
+#: src/control/Control.NotebookbarImpress.js:312
+#: src/control/Control.NotebookbarWriter.js:226
+#: src/control/Control.NotebookbarWriter.js:275
+msgid "See history"
+msgstr "Εμφάνιση ιστορικού"
+
+#: src/control/Control.NotebookbarCalc.js:341
+#: src/control/Control.NotebookbarDraw.js:370
+#: src/control/Control.NotebookbarImpress.js:404
+#: src/control/Control.NotebookbarWriter.js:363
+msgid "Signature"
+msgstr "Υπογραφή"
+
+#: src/control/Control.NotebookbarCalc.js:357
+#: src/control/Control.NotebookbarDraw.js:387
+#: src/control/Control.NotebookbarImpress.js:420
+#: src/control/Control.NotebookbarWriter.js:379
+#: src/control/Control.UIManager.ts:325
+msgid "Rename"
+msgstr "Μετονομασία"
+
+#: src/control/Control.NotebookbarCalc.js:411
+#: src/control/Control.NotebookbarDraw.js:611
+#: src/control/Control.NotebookbarImpress.js:724
+#: src/control/Control.NotebookbarWriter.js:589
+msgid "Clipboard"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:472
+#: src/control/Control.NotebookbarDraw.js:671
+#: src/control/Control.NotebookbarWriter.js:648 src/control/Toolbar.js:56
+msgid "Font"
+msgstr "Γραμματοσειρά"
+
+#: src/control/Control.NotebookbarCalc.js:619
+#: src/control/Control.NotebookbarDraw.js:812
+msgid "Alignment"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:746
+msgid "Merge & Center"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:756
+#: src/control/Control.NotebookbarCalc.js:772
+msgid "Number"
+msgstr "Αριθμός"
+
+#: src/control/Control.NotebookbarCalc.js:771
+msgid "General"
+msgstr "Γενικά"
+
+#: src/control/Control.NotebookbarCalc.js:773
+msgid "Percent"
+msgstr "Ποσοστό"
+
+#: src/control/Control.NotebookbarCalc.js:774
+msgid "Currency"
+msgstr "Νόμισμα"
+
+#: src/control/Control.NotebookbarCalc.js:777
+msgid "Scientific"
+msgstr "Επιστημονικό"
+
+#: src/control/Control.NotebookbarCalc.js:778
+msgid "Fraction"
+msgstr "Κλάσμα"
+
+#: src/control/Control.NotebookbarCalc.js:779
+msgid "Boolean Value"
+msgstr "Δυαδική τιμή"
+
+#: src/control/Control.NotebookbarCalc.js:780
+#: src/control/Control.NotebookbarCalc.js:1855
+#: src/control/Control.NotebookbarCalc.js:2020
+#: src/control/Control.NotebookbarDraw.js:1666
+#: src/control/Control.NotebookbarImpress.js:1693
+#: src/control/Control.NotebookbarWriter.js:1495
+msgid "Text"
+msgstr "Κείμενο"
+
+#: src/control/Control.NotebookbarCalc.js:858
+msgid "Cells"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:960
+#: src/control/jsdialog/Definitions.Menu.ts:2254
+msgid "Default"
+msgstr "Προεπιλογή"
+
+#: src/control/Control.NotebookbarCalc.js:967
+msgid "Heading 1"
+msgstr "Επικεφαλίδα 1"
+
+#: src/control/Control.NotebookbarCalc.js:974
+msgid "Heading 2"
+msgstr "Επικεφαλίδα 2"
+
+#: src/control/Control.NotebookbarCalc.js:987
+msgid "Good"
+msgstr "Καλό"
+
+#: src/control/Control.NotebookbarCalc.js:994
+msgid "Neutral"
+msgstr "Ουδέτερο"
+
+#: src/control/Control.NotebookbarCalc.js:1001
+msgid "Bad"
+msgstr "Κακό"
+
+#: src/control/Control.NotebookbarCalc.js:1016
+msgid "Editing"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1040
+#: src/control/Control.NotebookbarDraw.js:1195
+#: src/control/Control.NotebookbarImpress.js:1273
+#: src/control/Control.NotebookbarWriter.js:1040
+msgid "Replace"
+msgstr "Αντικατάσταση"
+
+#: src/control/Control.NotebookbarCalc.js:1104
+#: src/control/Control.NotebookbarWriter.js:1808
+msgid "Margin"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1111
+#: src/control/Control.NotebookbarWriter.js:1815
+msgid "Size"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1172
+msgid "Row Height"
+msgstr "Ύψος Γραμμής"
+
+#: src/control/Control.NotebookbarCalc.js:1180
+msgid "Column Width"
+msgstr "Πλάτος Στήλης"
+
+#: src/control/Control.NotebookbarCalc.js:1200
+msgid "Insert Rows Above"
+msgstr "Εισαγωγή γραμμών από πάνω"
+
+#: src/control/Control.NotebookbarCalc.js:1207
+msgid "Insert Columns Before"
+msgstr "Εισαγωγή στηλών πριν"
+
+#: src/control/Control.NotebookbarCalc.js:1214
+msgid "Delete Rows"
+msgstr "Διαγραφή γραμμών"
+
+#: src/control/Control.NotebookbarCalc.js:1226
+msgid "Insert Rows Below"
+msgstr "Εισαγωγή γραμμών από κάτω"
+
+#: src/control/Control.NotebookbarCalc.js:1233
+msgid "Insert Columns After"
+msgstr "Εισαγωγή στηλών μετά"
+
+#: src/control/Control.NotebookbarCalc.js:1240
+msgid "Delete Columns"
+msgstr "Διαγραφή στηλών"
+
+#: src/control/Control.NotebookbarCalc.js:1263
+#: src/control/Control.NotebookbarCalc.js:2819
+#: src/control/Control.NotebookbarCalc.js:3176
+#: src/control/Control.NotebookbarDraw.js:1298
+#: src/control/Control.NotebookbarImpress.js:2282
+#: src/control/Control.NotebookbarImpress.js:2489
+#: src/control/Control.NotebookbarImpress.js:2793
+#: src/control/Control.NotebookbarWriter.js:2039
+#: src/control/Control.NotebookbarWriter.js:2975
+#: src/control/Control.NotebookbarWriter.js:3298
+msgid "Align"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1333
+#: src/control/Control.NotebookbarCalc.js:2886
+#: src/control/Control.NotebookbarCalc.js:3243
+#: src/control/Control.NotebookbarDraw.js:1365
+#: src/control/Control.NotebookbarImpress.js:2349
+#: src/control/Control.NotebookbarImpress.js:2556
+#: src/control/Control.NotebookbarImpress.js:2860
+#: src/control/Control.NotebookbarWriter.js:2110
+#: src/control/Control.NotebookbarWriter.js:3034
+#: src/control/Control.NotebookbarWriter.js:3357
+msgid "Arrange"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1395
+msgid "Freeze"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1449
+#: src/control/Control.NotebookbarDraw.js:420
+#: src/control/Control.NotebookbarImpress.js:524
+#: src/control/Control.NotebookbarWriter.js:1664
+msgid "Zoom"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1456
+#: src/control/Control.NotebookbarDraw.js:427
+#: src/control/Control.NotebookbarImpress.js:458
+#: src/control/Control.NotebookbarWriter.js:1650
+msgid "Read mode"
+msgstr "Λειτουργία ανάγνωσης"
+
+#: src/control/Control.NotebookbarCalc.js:1523
+#: src/control/Control.NotebookbarDraw.js:518
+#: src/control/Control.NotebookbarImpress.js:615
+#: src/control/Control.NotebookbarWriter.js:1755
+msgid "Collapse Tabs"
+msgstr "Σύμπτυξη καρτελών"
+
+#: src/control/Control.NotebookbarCalc.js:1535
+#: src/control/Control.NotebookbarDraw.js:506
+#: src/control/Control.NotebookbarImpress.js:603
+#: src/control/Control.NotebookbarWriter.js:1743
+msgid "Status Bar"
+msgstr "Γραμμή κατάστασης"
+
+#: src/control/Control.NotebookbarCalc.js:1591
+#: src/control/Control.NotebookbarCalc.js:2330
+#: src/control/Control.NotebookbarCalc.js:2939
+#: src/control/Control.NotebookbarCalc.js:3296
+#: src/control/Control.NotebookbarImpress.js:2609
+#: src/control/Control.NotebookbarImpress.js:2913
+#: src/control/Control.NotebookbarWriter.js:3083
+#: src/control/Control.NotebookbarWriter.js:3406
+msgid "Group"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1598
+msgid "Ungroup"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1620
+msgid "Pivot Table"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1669
+#: src/control/Control.NotebookbarDraw.js:1013
+#: src/control/Control.NotebookbarDraw.js:1470
+#: src/control/Control.NotebookbarImpress.js:1160
+#: src/control/Control.NotebookbarImpress.js:1439
+#: src/control/Control.NotebookbarWriter.js:1254
+msgid "Illustrations"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1739
+#: src/control/Control.NotebookbarDraw.js:1027
+#: src/control/Control.NotebookbarDraw.js:1521
+#: src/control/Control.NotebookbarImpress.js:1174
+#: src/control/Control.NotebookbarImpress.js:1517
+#: src/control/Control.NotebookbarWriter.js:1299
+msgid "Shapes"
+msgstr "Σχήματα"
+
+#: src/control/Control.NotebookbarCalc.js:1784
+#: src/control/Control.NotebookbarDraw.js:1591
+#: src/control/Control.NotebookbarImpress.js:1604
+#: src/control/Control.NotebookbarWriter.js:1367
+msgid "Assistant"
+msgstr "Βοηθός"
+
+#: src/control/Control.NotebookbarCalc.js:1955
+msgid "Insert Function"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1963
+#, fuzzy
+msgid "Function Library"
+msgstr "Οδηγός συναρτήσεων"
+
+#: src/control/Control.NotebookbarCalc.js:1977
+msgid "AutoSum"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:1990
+msgid "Financial"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2008
+msgid "Logical"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2038
+msgid "Date & Time"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2050
+msgid "Lookup & Reference"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2068
+msgid "Math & Trig"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2080
+msgid "More Functions"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2125
+msgid "Range"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2208
+msgid "Sort"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2254
+msgid "Filter"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2501
+#: src/control/Control.NotebookbarImpress.js:1950
+#: src/control/Control.NotebookbarWriter.js:2237
+#, fuzzy
+msgid "Comments"
+msgstr "Σχόλιο"
+
+#: src/control/Control.NotebookbarCalc.js:2606
+msgid "Format Cells"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2752
+#: src/control/Control.NotebookbarCalc.js:3109
+#: src/control/Control.NotebookbarWriter.js:1941
+#: src/control/Control.NotebookbarWriter.js:2920
+#: src/control/Control.NotebookbarWriter.js:3243
+msgid "Wrap"
+msgstr ""
+
+#: src/control/Control.NotebookbarCalc.js:2991
+#: src/control/Control.NotebookbarImpress.js:2669
+#: src/control/Control.NotebookbarWriter.js:3129
+msgid "Image Controls"
+msgstr ""
+
+#: src/control/Control.NotebookbarDraw.js:76
+#: src/control/Control.NotebookbarWriter.js:56
+msgid "Layout"
+msgstr "Διάταξη"
+
+#: src/control/Control.NotebookbarDraw.js:94
+#: src/control/Control.NotebookbarDraw.js:1490
+#: src/control/Control.NotebookbarImpress.js:121
+#: src/control/Control.NotebookbarImpress.js:1486
+#: src/control/Control.NotebookbarWriter.js:81
+#: src/control/Control.NotebookbarWriter.js:1246
+msgid "Table"
+msgstr "Πίνακας"
+
+#: src/control/Control.NotebookbarDraw.js:321
+msgid "PDF Document (.pdf) - Expert"
+msgstr "PDF Έγγραφο (.pdf) - Προηγμένο"
+
+#: src/control/Control.NotebookbarDraw.js:494
+#: src/control/Control.NotebookbarImpress.js:591
+#: src/control/Control.NotebookbarWriter.js:1731
+msgid "Ruler"
+msgstr "Χάρακας"
+
+#: src/control/Control.NotebookbarDraw.js:899
+#: src/control/Control.NotebookbarImpress.js:974
+#: src/control/Control.NotebookbarImpress.js:2162
+#: src/control/Control.NotebookbarWriter.js:793
+#: src/control/Control.NotebookbarWriter.js:2686
+msgid "Paragraph"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:96
+msgid "Design"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:103
+msgid "Slide Show"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:142
+msgid "Master"
+msgstr "Κύριος"
+
+#: src/control/Control.NotebookbarImpress.js:464
+msgid "From Beginning"
+msgstr "Από την αρχή"
+
+#: src/control/Control.NotebookbarImpress.js:471
+msgid "From Current Slide"
+msgstr "Από την τρέχουσα διαφάνεια"
+
+#: src/control/Control.NotebookbarImpress.js:480
+msgid "Present in Window"
+msgstr "Παρουσίαση στο παράθυρο"
+
+#: src/control/Control.NotebookbarImpress.js:496
+msgid "Follow me Presentation"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:622
+msgid "Slide Views"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:661
+msgid "Snap to Grid"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:785
+#: src/control/Control.NotebookbarImpress.js:1801
+msgid "Slide Layout"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:796
+msgid "New"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:807
+#: src/control/Control.NotebookbarImpress.js:1811
+#, fuzzy
+msgid "Change Layout"
+msgstr "Διάταξη σελίδας"
+
+#: src/control/Control.NotebookbarImpress.js:815
+#: src/control/Control.NotebookbarImpress.js:1818
+msgid "Reset Layout"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:829
+msgid "Character"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:1090
+msgid "Spacing & Color"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:1779
+msgid "Master Slide Templates"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:1830
+msgid "Slide Size"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:1853
+msgid "Background Image"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:2054
+msgid "Merge & Split"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:2093
+#: src/control/Control.NotebookbarWriter.js:2636
+msgid "Select"
+msgstr ""
+
+#: src/control/Control.NotebookbarImpress.js:2702
+msgid "Effects"
+msgstr ""
+
+#: src/control/Control.NotebookbarWriter.js:75
+msgid "Form"
+msgstr "Φόρμα"
+
+#: src/control/Control.NotebookbarWriter.js:395
+msgid "Go Online"
+msgstr "Συνδεθείτε"
+
+#: src/control/Control.NotebookbarWriter.js:395
+msgid "Go Offline"
+msgstr "Μεταβείτε εκτός σύνδεσης"
+
+#: src/control/Control.NotebookbarWriter.js:923
+#: src/control/Control.Zotero.js:827
+#, fuzzy
+msgid "Styles"
+msgstr "Τεχνοτροπία"
+
+#: src/control/Control.NotebookbarWriter.js:940
+msgid "Scroll up"
+msgstr "Κάντε κύλιση προς τα πάνω"
+
+#: src/control/Control.NotebookbarWriter.js:947
+msgid "Scroll down"
+msgstr "Κάντε κύλιση προς τα κάτω"
+
+#: src/control/Control.NotebookbarWriter.js:1098
+msgid "Lists/Bullets"
+msgstr ""
+
+#: src/control/Control.NotebookbarWriter.js:1387
+msgid "Header & Footer"
+msgstr ""
+
+#: src/control/Control.NotebookbarWriter.js:1456
+msgid "Section"
+msgstr ""
+
+#: src/control/Control.NotebookbarWriter.js:1541
+msgid "Symbols"
+msgstr ""
+
+#: src/control/Control.NotebookbarWriter.js:1594
+msgid "Rich Text"
+msgstr "Πλούσιο κείμενο"
+
+#: src/control/Control.NotebookbarWriter.js:1602
+msgid "Checkbox"
+msgstr ""
+
+#: src/control/Control.NotebookbarWriter.js:1610
+msgid "Dropdown"
+msgstr ""
+
+#: src/control/Control.NotebookbarWriter.js:2312
+msgid "Tracking"
+msgstr ""
+
+#: src/control/Control.NotebookbarWriter.js:2574
+msgid "Split"
+msgstr ""
+
+#: src/control/Control.NotebookbarWriter.js:2758
+msgid "Number Format"
+msgstr ""
+
+#: src/control/Control.PartsPreview.js:186
+#, fuzzy
+msgid "preview of page %1"
+msgstr "προεπισκόπηση της σελίδας "
+
+#: src/control/Control.PartsPreview.js:188
+msgid "Slide %1"
+msgstr ""
+
+#: src/control/Control.PartsPreview.js:266
+#, fuzzy
+msgid "Paste Slide"
+msgstr "Κύριες διαφάνειες"
+
+#: src/control/Control.PartsPreview.js:317
+msgid "Paste"
+msgstr "Επικόλληση"
+
+#: src/control/Control.SaveState.ts:38
+msgid "Saving"
+msgstr ""
+
+#: src/control/Control.SaveState.ts:53
+#, fuzzy
+msgid "Saved"
+msgstr "Αποθήκευση"
+
+#: src/control/Control.Scroll.Annotation.js:19
+msgid "Scroll up annotations"
+msgstr "Κύλιση προς τα πάνω των σχολίων"
+
+#: src/control/Control.Scroll.Annotation.js:21
+msgid "Scroll down annotations"
+msgstr "Κύλιση προς τα κάτω των σχολίων"
+
+#: src/control/Control.ServerAuditDialog.ts:58
+msgid "Your WOPI server is not secure: SSL verification failed"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:63
+msgid "No problems with SSL verification detected"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:72
+msgid ""
+"Documents are not effectively contained: missing capabilities or namespaces."
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:77
+msgid "Each document is securely contained"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:83
+msgid ""
+"BPF filtering of potentially risky system calls (seccomp) is not enabled; a "
+"security hazard."
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:88
+msgid "system call security filtering enabled"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:95
+msgid ""
+"Your server is configured with insufficient hardware resources, which may "
+"lead to poor performance."
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:101
+msgid "Hardware resources are sufficient for optimal performance"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:109
+msgid "Slow Kit jail setup with copying, cannot bind-mount."
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:113
+msgid "Fast kit jail bind mounting enabled"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:118
+msgid "Poorly performing proxying of all network requests."
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:122
+msgid "direct network connection"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:128
+msgid "The IsAdminUser property is not set by integration"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:134
+msgid ""
+"Used deprecated is_admin field, integration should use IsAdminUser property "
+"instead"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:140
+msgid "The IsAdminUser user property is set by integration"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:148
+msgid "PostMessage API is initialized"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:153
+msgid "Integrator is not ready for PostMessage calls"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:161
+msgid "Using namespaces."
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:162
+msgid "Not using namespaces"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:227
+msgid "Document container started in"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:293
+#, fuzzy
+msgid "Status"
+msgstr "Κατάσταση:"
+
+#: src/control/Control.ServerAuditDialog.ts:303
+msgid "No issues found"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:308
+msgid "Alerts:"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:360
+msgid "Check security warnings of your server"
+msgstr ""
+
+#: src/control/Control.ServerAuditDialog.ts:361
+msgid "OPEN"
+msgstr ""
+
+#: src/control/Control.SheetsBar.js:49
+msgid "Scroll to the first sheet"
+msgstr "Κύλιση στο πρώτο φύλλο"
+
+#: src/control/Control.SheetsBar.js:56
+msgid "Scroll left"
+msgstr "Κύλιση προς τα αριστερά"
+
+#: src/control/Control.SheetsBar.js:64
+msgid "Scroll right"
+msgstr "Κύλιση προς τα δεξιά"
+
+#: src/control/Control.SheetsBar.js:72
+msgid "Scroll to the last sheet"
+msgstr "Κύλιση στο τελευταίο φύλλο"
+
+#: src/control/Control.SheetsBar.js:79
+msgid "Insert sheet"
+msgstr "Εισαγωγή φύλλου"
+
+#: src/control/Control.StatusBar.js:152
+msgid "On"
+msgstr ""
+
+#: src/control/Control.StatusBar.js:154
+#: src/control/jsdialog/Definitions.Menu.ts:1761
+msgid "Off"
+msgstr ""
+
+#: src/control/Control.StatusBar.js:187
+#: src/control/jsdialog/Definitions.Menu.ts:163
+msgid "Average"
+msgstr "Μέσος όρος"
+
+#: src/control/Control.StatusBar.js:188
+msgid "CountA"
+msgstr "ΠλήθοςA"
+
+#: src/control/Control.StatusBar.js:189
+#: src/control/jsdialog/Definitions.Menu.ts:166
+msgid "Count"
+msgstr "Πλήθος"
+
+#: src/control/Control.StatusBar.js:190
+msgid "Maximum"
+msgstr "Μέγιστο"
+
+#: src/control/Control.StatusBar.js:191
+msgid "Minimum"
+msgstr "Ελάχιστο"
+
+#: src/control/Control.StatusBar.js:192
+#: src/control/jsdialog/Definitions.Menu.ts:162
+msgid "Sum"
+msgstr "Άθροισμα"
+
+#: src/control/Control.StatusBar.js:193
+msgid "Selection count"
+msgstr "Πλήθος επιλογών"
+
+#: src/control/Control.StatusBar.js:389
+msgid ""
+"To prevent accidental changes, the author has set this file to open as view-"
+"only"
+msgstr ""
+
+#: src/control/Control.StatusBar.js:439
+msgid "Select multiple cells"
+msgstr "Επιλέξτε πολλαπλά κελιά"
+
+#: src/control/Control.StatusBar.js:456
+msgid "Selection mode: inactive"
+msgstr "Λειτουργία επιλογής: ανενεργή"
+
+#: src/control/Control.StatusBar.js:534
+msgid "Set Language for All text"
+msgstr "Ορισμός Γλώσσας για Όλο το κείμενο"
+
+#: src/control/Control.StatusBar.js:537
+msgid "Set Language for Paragraph"
+msgstr "Ορισμός Γλώσσας για την Παράγραφο"
+
+#: src/control/Control.StatusBar.js:538
+msgid "Set Language for Selection"
+msgstr "Ορισμός Γλώσσας για την Επιλογή"
+
+#: src/control/Control.Tabs.js:53
+msgid "Insert sheet before this"
+msgstr "Εισαγωγή φύλλου πριν από αυτό"
+
+#: src/control/Control.Tabs.js:58
+msgid "Insert sheet after this"
+msgstr "Εισαγωγή φύλλου μετά από αυτό"
+
+#: src/control/Control.Tabs.js:97
+msgid "Move Sheet Left"
+msgstr "Μετακίνηση φύλλου αριστερά"
+
+#: src/control/Control.Tabs.js:103
+msgid "Move Sheet Right"
+msgstr "Μετακίνηση φύλλου δεξιά"
+
+#: src/control/Control.Tabs.js:114
+msgid "Copy Sheet..."
+msgstr "Αντιγραφή Φύλλου..."
+
+#: src/control/Control.Tabs.js:395
+msgid "Are you sure you want to delete sheet, {sheet}?"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε το φύλλο, {sheet};"
+
+#: src/control/Control.Tabs.js:406
+msgid "Rename sheet"
+msgstr ""
+
+#: src/control/Control.Tabs.js:406
+msgid "Enter new sheet name"
+msgstr "Εισάγετε νέο όνομα φύλλου"
+
+#: src/control/Control.Toolbar.js:968
+msgid ""
+"Conflict Undo/Redo with multiple users. Please use document repair to "
+"resolve"
+msgstr ""
+"Διένεξη Αναίρεσης/Επανάληψης με πολλούς χρήστες. Παρακαλούμε, χρησιμοποιήστε "
+"την επιδιόρθωση εγγράφου για να το επιλύσετε"
+
+#: src/control/Control.TopToolbar.js:109
+#, fuzzy
+msgid "Active Sheet"
+msgstr "Ενεργό φύλλο"
+
+#: src/control/Control.TopToolbar.js:123
+msgid "Default Style"
+msgstr "Προεπιλεγμένη τεχνοτροπία"
+
+#: src/control/Control.TopToolbar.js:189
+msgid "Insert table"
+msgstr "Εισαγωγή πίνακα"
+
+#: src/control/Control.TopToolbar.js:192
+msgid "Insert shapes"
+msgstr "Εισαγωγή σχημάτων"
+
+#: src/control/Control.TopToolbar.js:194
+msgid "Insert connectors"
+msgstr "Εισαγωγή συνδέσμων"
+
+#: src/control/Control.TopToolbar.js:223 src/control/Control.UIManager.ts:1099
+msgid "Hide Menu"
+msgstr ""
+
+#: src/control/Control.UIManager.ts:325
+msgid "Enter new name"
+msgstr ""
+
+#: src/control/Control.UIManager.ts:1126
+msgid "Show Menu"
+msgstr ""
+
+#: src/control/Control.UserList.ts:56
+msgid "{user} has joined"
+msgstr "Ο {user} συμμετέχει"
+
+#: src/control/Control.UserList.ts:57
+msgid "{user} has left"
+msgstr "Ο {user} έφυγε"
+
+#: src/control/Control.UserList.ts:58
+msgid "Following {user}"
+msgstr ""
+
+#: src/control/Control.UserList.ts:59
+msgid "Following the editor"
+msgstr ""
+
+#: src/control/Control.UserList.ts:60
+msgid "Stop following"
+msgstr ""
+
+#: src/control/Control.UserList.ts:61
+msgid "Avatar for {user}"
+msgstr ""
+
+#: src/control/Control.UserList.ts:81
+msgid "%n users"
+msgstr "%n χρήστες"
+
+#: src/control/Control.UserList.ts:82
+msgid "1 user"
+msgstr "1 χρήστης"
+
+#: src/control/Control.UserList.ts:83
+msgid "0 users"
+msgstr "0 χρήστες"
+
+#: src/control/Control.UserList.ts:87
+msgid "User List Summary"
+msgstr ""
+
+#: src/control/Control.UserList.ts:495
+msgid "Following"
+msgstr ""
+
+#: src/control/Control.UserList.ts:552
+msgid "Always follow the editor"
+msgstr "Να ακολουθείται πάντα ο επεξεργαστής"
+
+#: src/control/Control.Zotero.js:143
+msgid "Zotero API key is not configured"
+msgstr ""
+
+#: src/control/Control.Zotero.js:162
+msgid "Zotero API key is incorrect"
+msgstr ""
+
+#: src/control/Control.Zotero.js:189
+msgid "Zotero Warning"
+msgstr ""
+
+#: src/control/Control.Zotero.js:190
+msgid ""
+"The document contains some citations which may be unreachable through web "
+"API. It may cause some problems while editing citations or bibliography."
+msgstr ""
+
+#: src/control/Control.Zotero.js:246 src/core/Socket.js:1378
+msgid "Loading..."
+msgstr "Φόρτωση..."
+
+#: src/control/Control.Zotero.js:257 src/control/Control.Zotero.js:454
+#: src/slideshow/PresenterConsole.js:31
+#: src/slideshow/SlideShowPresenter.ts:655
+msgid "Previous"
+msgstr "Προηγούμενο"
+
+#: src/control/Control.Zotero.js:270 src/control/Control.Zotero.js:469
+#: src/slideshow/PresenterConsole.js:32
+#: src/slideshow/SlideShowPresenter.ts:663
+msgid "Next"
+msgstr "Επόμενο"
+
+#: src/control/Control.Zotero.js:292
+msgid "Language:"
+msgstr "Γλώσσα:"
+
+#: src/control/Control.Zotero.js:307
+msgid "Store as:"
+msgstr ""
+
+#: src/control/Control.Zotero.js:313 src/control/Control.Zotero.js:436
+msgid "Fields"
+msgstr "Πεδία"
+
+#: src/control/Control.Zotero.js:314 src/control/Control.Zotero.js:436
+msgid "Bookmarks"
+msgstr ""
+
+#: src/control/Control.Zotero.js:434
+msgid "Footnotes"
+msgstr "Υποσημειώσεις"
+
+#: src/control/Control.Zotero.js:434
+msgid "Endnotes"
+msgstr ""
+
+#: src/control/Control.Zotero.js:521
+msgid "My Publications"
+msgstr ""
+
+#: src/control/Control.Zotero.js:527 src/control/Control.Zotero.js:746
+msgid "My Library"
+msgstr ""
+
+#: src/control/Control.Zotero.js:528
+msgid "Group Libraries"
+msgstr ""
+
+#: src/control/Control.Zotero.js:762
+msgid "Failed to load groups"
+msgstr ""
+
+#: src/control/Control.Zotero.js:780 src/control/Control.Zotero.js:1124
+msgid "Failed to load collections"
+msgstr ""
+
+#: src/control/Control.Zotero.js:788
+msgid "Loading references"
+msgstr ""
+
+#: src/control/Control.Zotero.js:822
+msgid "Citation Style"
+msgstr ""
+
+#: src/control/Control.Zotero.js:827
+msgid "An error occurred while fetching style list"
+msgstr ""
+
+#: src/control/Control.Zotero.js:835
+msgid "Failed to load styles"
+msgstr ""
+
+#: src/control/Control.Zotero.js:1152 src/control/Control.Zotero.js:1604
+msgid "Title"
+msgstr "Τίτλος"
+
+#: src/control/Control.Zotero.js:1152 src/control/Control.Zotero.js:1604
+msgid "Creator(s)"
+msgstr ""
+
+#: src/control/Control.Zotero.js:1152 src/control/Control.Zotero.js:1604
+msgid "Your library is empty"
+msgstr ""
+
+#: src/control/Control.Zotero.js:1164
+msgid "Failed to load items"
+msgstr ""
+
+#: src/control/Control.Zotero.js:1216
+msgid "Citation warning"
+msgstr ""
+
+#: src/control/Control.Zotero.js:1217
+msgid ""
+"Once citations are entered their storage and display type can not be "
+"changed."
+msgstr ""
+
+#: src/control/Control.Zotero.js:1218 src/control/Control.Zotero.js:1533
+msgid "Confirm"
+msgstr ""
+
+#: src/control/Control.Zotero.js:1337
+msgid "Add Note"
+msgstr ""
+
+#: src/control/Control.Zotero.js:1340
+msgid "An error occurred while fetching notes"
+msgstr ""
+
+#: src/control/Control.Zotero.js:1471
+msgid "Updated citations"
+msgstr "Ενημερωμένες παραπομπές"
+
+#: src/control/Control.Zotero.js:1473
+msgid "Citations update failed"
+msgstr "Η ενημέρωση των αναφορών απέτυχε"
+
+#: src/control/Control.Zotero.js:1477
+msgid "Updating citations"
+msgstr "Ενημέρωση παραπομπών"
+
+#: src/control/Control.Zotero.js:1532
+msgid ""
+"Unlinking citations will prevent Collabora Online from updating citations "
+"and bibliography in this document."
+msgstr ""
+"Η αποσύνδεση των παραπομπών θα εμποδίσει το Collabora Online να ενημερώσει "
+"τις αναφορές και τη βιβλιογραφία σε αυτό το έγγραφο."
+
+#: src/control/HRuler.ts:591 src/control/HRuler.ts:763
+msgid "Left Margin"
+msgstr "Αριστερό περιθώριο"
+
+#: src/control/HRuler.ts:592 src/control/HRuler.ts:764
+msgid "Right Margin"
+msgstr "Δεξιό περιθώριο"
+
+#: src/control/HRuler.ts:1072
+msgid "Insert tabstop"
+msgstr "Εισαγωγή απόστασης στηλοθέτη"
+
+#: src/control/HRuler.ts:1079
+msgid "Delete tabstop"
+msgstr "Διαγραφή απόστασης στηλοθέτη"
+
+#: src/control/Parts.js:483
+msgid "Show sheets"
+msgstr "Εμφάνιση φύλλων"
+
+#: src/control/Permission.js:27 src/control/Permission.js:28
+msgid "Edit document"
+msgstr "Επεξεργασία εγγράφου"
+
+#: src/control/Permission.js:85
+msgid "The document could not be locked, and is opened in read-only mode."
+msgstr ""
+"Το έγγραφο δεν μπόρεσε να κλειδωθεί και είναι ανοικτό σε κατάσταση μόνο για "
+"ανάγνωση."
+
+#: src/control/Permission.js:87 src/control/Permission.js:97
+msgid "Server returned this reason:"
+msgstr "Ο διακομιστής επέστρεψε αυτήν την αιτία:"
+
+#: src/control/Permission.js:95
+msgid "The document could not be locked."
+msgstr "Το έγγραφο δεν μπόρεσε να κλειδωθεί."
+
+#: src/control/Permission.js:149
+msgid "Enter a file name"
+msgstr "Εισαγάγετε όνομα αρχείου"
+
+#: src/control/Permission.js:168
+msgid "Save as ODF format"
+msgstr "Αποθήκευση ως ODF"
+
+#: src/control/Permission.js:169
+msgid "Continue editing"
+msgstr "Συνέχεια επεξεργασίας"
+
+#: src/control/Permission.js:169
+msgid "Continue read only"
+msgstr "Συνέχεια μόνο για ανάγνωση"
+
+#: src/control/Permission.js:182
+msgid ""
+"This document may contain formatting or content that cannot be saved in the "
+"current file format."
+msgstr ""
+"Αυτό το έγγραφο μπορεί να περιέχει μορφοποίηση ή περιεχόμενο που δεν μπορεί "
+"να αποθηκευτεί στην τρέχουσα μορφή αρχείου."
+
+#: src/control/Signing.js:21
+msgid "The document is not signed."
+msgstr "Το έγγραφο δεν είναι υπογεγραμμένο."
+
+#: src/control/Signing.js:32
+msgid "This document is digitally signed and the signature is valid."
+msgstr ""
+"Αυτό το έγγραφο είναι ψηφιακά υπογεγραμμένο και η υπογραφή είναι έγκυρη."
+
+#: src/control/Signing.js:36
+msgid "This document has an invalid signature."
+msgstr "Αυτό το έγγραφο έχει άκυρη υπογραφή."
+
+#: src/control/Signing.js:40
+msgid "The signature was valid, but the document has been modified."
+msgstr "Η υπογραφή ήταν έγκυρη, αλλά το έγγραφο έχει τροποποιηθεί."
+
+#: src/control/Signing.js:44
+msgid "The signature is OK, but the certificate could not be validated."
+msgstr ""
+"Η υπογραφή είναι εντάξει, αλλά το πιστοποιητικό δεν μπόρεσε να επικυρωθεί."
+
+#: src/control/Signing.js:48
+msgid "The signature is OK, but the document is only partially signed."
+msgstr ""
+"Η υπογραφή είναι εντάξει, αλλά το έγγραφο είναι μόνο εν μέρει υπογεγραμμένο."
+
+#: src/control/Signing.js:52
+msgid ""
+"The signature is OK, but the certificate could not be validated and the "
+"document is only partially signed."
+msgstr ""
+"Η υπογραφή είναι εντάξει, αλλά το πιστοποιητικό δεν ήταν δυνατό να "
+"επικυρωθεί και το έγγραφο είναι μόνο μερικώς υπογεγραμμένο."
+
+#: src/control/Toolbar.js:253 src/control/Toolbar.js:266
+msgid "Downloading..."
+msgstr "Μεταφορτώνεται..."
+
+#: src/control/Toolbar.js:282 src/control/jsdialog/Widget.HTMLContent.ts:175
+msgid "Saving..."
+msgstr "Αποθήκευση..."
+
+#: src/control/Toolbar.js:301
+msgid "Renaming..."
+msgstr "Μετονομάζεται..."
+
+#: src/control/VRuler.ts:363
+msgid "Top Margin"
+msgstr "Πάνω Περιθώριο"
+
+#: src/control/VRuler.ts:364
+msgid "Bottom Margin"
+msgstr "Κάτω Περιθώριο"
+
+#: src/control/jsdialog/Definitions.Menu.ts:111
+#: src/control/jsdialog/Definitions.Menu.ts:1734
+msgid "Normal"
+msgstr "Κανονικό"
+
+#: src/control/jsdialog/Definitions.Menu.ts:116
+msgid "Wide"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:121
+msgid "Narrow"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:164
+msgid "Min"
+msgstr "Ελάχιστο"
+
+#: src/control/jsdialog/Definitions.Menu.ts:165
+msgid "Max"
+msgstr "Μέγιστο"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1443
+msgid "Edit Single Sparkline"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1454
+msgid "Delete Single Sparkline"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1490
+msgid "Portrait"
+msgstr "Κάθετα"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1496
+msgid "Landscape"
+msgstr "Οριζόντια"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1502
+msgid "A6"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1503
+msgid "A5"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1504
+msgid "A4"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1505
+msgid "A3"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1506
+msgid "B6 (ISO)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1507
+msgid "B5 (ISO)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1508
+msgid "B4 (ISO)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1509
+msgid "Letter"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1510
+msgid "Legal"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1511
+msgid "Long Bond"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1512
+msgid "Tabloid"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1513
+msgid "B6 (JIS)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1514
+msgid "B5 (JIS)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1515
+msgid "B4 (JIS)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1516
+msgid "16 Kai"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1517
+msgid "32 Kai"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1518
+msgid "Big 32 Kai"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1519
+msgid "User"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1520
+msgid "DL Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1521
+msgid "C6 Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1522
+msgid "C6/5 Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1523
+msgid "C5 Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1524
+msgid "C4 Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1527
+msgid "#6¾ Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1532
+msgid "#7¾ (Monarch) Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1535
+msgid "#9 Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1536
+msgid "#10 Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1537
+msgid "#11 Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1538
+msgid "#12 Envelope"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1541
+msgid "Japanese Postcard"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1720
+msgid "Insert Local Image"
+msgstr "Εισαγωγή τοπικής εικόνας"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1726
+msgid "Insert Local Multimedia"
+msgstr "Εισαγωγή τοπικών πολυμέσων"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1732
+msgid "Very Tight"
+msgstr "Πολύ σφιχτό"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1733
+msgid "Tight"
+msgstr "Σφιχτό"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1735
+msgid "Loose"
+msgstr "Χαλαρό"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1736
+msgid "Very Loose"
+msgstr "Πολύ Χαλαρό"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1766
+msgid "All users"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1771
+msgid "This user"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1869
+msgid "No Borders"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1875
+msgid "Left Border"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1881
+msgid "Right Border"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1887
+msgid "Left And Right Borders"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1893
+msgid "Top Border"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1899
+msgid "Bottom Border"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1905
+msgid "Top And Bottom Border"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1911
+msgid "Outer Border"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1917
+msgid "All Horizontal Lines"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1923
+msgid "Outer Border And Horizontal Lines"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1929
+msgid "Outer Border and Vertical Lines"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1935
+msgid "Outer Borders And All Inner lines"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1940
+msgid "Line color"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1951
+#, fuzzy
+msgid "Line style"
+msgstr "Τεχνοτροπία γραμμής:"
+
+#: src/control/jsdialog/Definitions.Menu.ts:1954
+msgid "Hairline (0.05 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1963
+msgid "Very thin (0.50 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1972
+msgid "Thin (0.75 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1981
+msgid "Medium (1.50 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1990
+msgid "Thick (2.25 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:1999
+msgid "Extra thick (4.50 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2008
+msgid "Double Hairline (1.10 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2017
+msgid "Double Hairline (2.35 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2026
+msgid "Thin/Medium (3.00 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2035
+msgid "Medium/Hairline (3.05 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2044
+msgid "Medium/Medium (4.50 pt)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2104
+msgid "Standard (4:3)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2109
+msgid "Widescreen (16:9)"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2119
+msgid "Blank Slide"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2120
+msgid "Title Slide"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2121
+msgid "Title, Content"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2122
+msgid "Title and 2 Content"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2123
+msgid "Title Only"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2124
+msgid "Centered Text"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2125
+msgid "Title, 2 Content and Content"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2126
+msgid "Title, Content and 2 Content"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2127
+msgid "Title, 2 Content over Content"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2128
+msgid "Title, Content over Content"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2129
+msgid "Title, 4 Content"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2130
+msgid "Title, 6 Content"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2131
+msgid "Vertical Title, Text, Chart"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2132
+msgid "Vertical Title, Vertical Text"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2133
+msgid "Title, Vertical Text"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2134
+msgid "Title, Vertical Text, Clipart"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2259
+msgid "Grayscale"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2264
+msgid "Black/White"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2269
+msgid "Watermark"
+msgstr ""
+
+#: src/control/jsdialog/Definitions.Menu.ts:2277
+#, fuzzy
+msgid "Insert comment"
+msgstr "Εισαγωγή σχολίου"
+
+#: src/control/jsdialog/Definitions.Menu.ts:2281
+msgid "Comments list"
+msgstr ""
+
+#: src/control/jsdialog/Util.SnackbarController.ts:122
+msgid "Dismiss"
+msgstr ""
+
+#: src/control/jsdialog/Widget.ColorPicker.ts:46
+#: src/control/jsdialog/Widget.ColorPicker.ts:148
+msgid "Unknown color"
+msgstr ""
+
+#: src/control/jsdialog/Widget.ColorPicker.ts:228
+msgid "No fill"
+msgstr "Χωρίς γέμισμα"
+
+#: src/control/jsdialog/Widget.ColorPicker.ts:228
+msgid "Automatic"
+msgstr "Αυτόματο"
+
+#: src/control/jsdialog/Widget.ColorPicker.ts:413
+msgid "Recent"
+msgstr "Πρόσφατα"
+
+#: src/control/jsdialog/Widget.PageMarginEntry.ts:98
+msgid "Top: {top}"
+msgstr ""
+
+#: src/control/jsdialog/Widget.PageMarginEntry.ts:103
+msgid "Left: {left}"
+msgstr ""
+
+#: src/control/jsdialog/Widget.PageMarginEntry.ts:113
+msgid "Bottom: {bottom}"
+msgstr ""
+
+#: src/control/jsdialog/Widget.PageMarginEntry.ts:118
+msgid "Right: {right}"
+msgstr ""
+
+#: src/control/jsdialog/Widget.PageMarginEntry.ts:142
+msgid "Custom Margins…"
+msgstr ""
+
+#: src/control/jsdialog/Widget.PageSizeEntry.ts:69
+msgid "More Paper Sizes..."
+msgstr ""
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:46
+msgid "Read-only"
+msgstr "Μόνο για ανάγνωση"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:47
+#: src/control/jsdialog/Widget.HTMLContent.ts:55
+msgid "Permission Mode"
+msgstr "Λειτουργία Δικαιωμάτων"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:54
+msgid "Edit mode"
+msgstr "Λειτουργία επεξεργασίας"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:81
+msgid "Number of Pages. Click to open the Go to Page dialog box."
+msgstr ""
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:92
+msgid "Word Counter"
+msgstr "Καταμέτρηση λέξεων"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:101
+msgid "Number of Sheets"
+msgstr "Αριθμός φύλλων"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:112
+msgid "Entering text mode"
+msgstr "Εκκινεί τη λειτουργία κειμένου"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:121
+msgid "Selection Mode"
+msgstr "Κατάσταση επιλογής"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:130
+msgid "Selected range of cells"
+msgstr "Επιλεγμένη περιοχή κελιών"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:139
+msgid "Choice of functions"
+msgstr "Επιλογή λειτουργιών"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:148
+msgid "Number of Slides"
+msgstr "Αριθμός διαφανειών"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:159
+msgid "Number of Pages"
+msgstr "Αριθμός σελίδων"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:170
+#: src/control/jsdialog/Widget.HTMLContent.ts:182
+msgid "Your changes have been saved"
+msgstr "Οι αλλαγές σας έχουν αποθηκευτεί"
+
+#: src/control/jsdialog/Widget.HTMLContent.ts:194
+msgid "Show Comments"
+msgstr "Εμφάνιση σχολίων"
+
+#: src/control/jsdialog/Widget.MobileBorderSelector.js:96
+msgid "Cell borders"
+msgstr "Περιγράμματα κελιού"
+
+#: src/control/jsdialog/Widget.SidebarContainers.ts:72
+#, fuzzy
+msgid "More options for {1}"
+msgstr "Περισσότερες επιλογές για {name}"
+
+#: src/control/jsdialog/Widget.TreeView.ts:1511
+msgid "Headings and objects that you add to the document will appear here"
+msgstr ""
+
+#: src/core/Socket.js:69
+msgid "Oops, there is a problem connecting to {productname}: "
+msgstr "Όπα, υπάρχει πρόβλημα σύνδεσης με το {productname}: "
+
+#: src/core/Socket.js:702
+msgid "Server is now reachable. We have to refresh the page now."
+msgstr "Η σύνδεση με το διακομιστή αποκαταστάθηκε. Ανανεώστε τη σελίδα."
+
+#: src/core/Socket.js:704
+msgid "Server is now reachable..."
+msgstr "Η σύνδεση με το διακομιστή αποκαταστάθηκε..."
+
+#: src/core/Socket.js:708
+msgid "RELOAD"
+msgstr "ΑΝΑΝΕΩΣΗ"
+
+#: src/core/Socket.js:721
+msgid "Cluster configuration warning"
+msgstr ""
+
+#: src/core/Socket.js:724
+msgid "Wrong server, reconnecting..."
+msgstr "Λάθος διακομιστής, επανασύνδεση..."
+
+#: src/core/Socket.js:733
+msgid "COOLWSD version:"
+msgstr "Έκδοση COOLWSD:"
+
+#: src/core/Socket.js:758
+msgid "Served by:"
+msgstr "Εξυπηρετούμενο από:"
+
+#: src/core/Socket.js:764
+msgid "Unsupported server version."
+msgstr "Μη υποστηριζόμενη έκδοση διακομιστή."
+
+#: src/core/Socket.js:768
+msgid "LOKit version:"
+msgstr "Έκδοση LOKit:"
+
+#: src/core/Socket.js:893
+msgid "Document is getting migrated"
+msgstr ""
+
+#: src/core/Socket.js:920
+msgid "Session terminated by document owner"
+msgstr "Η συνεδρία τελείωσε από τον κάτοχο του εγγράφου"
+
+#: src/core/Socket.js:931
+msgid "Server is shutting down for maintenance (auto-saving)"
+msgstr "Ο διακομιστής κλείνει για συντήρηση (αυτόματη αποθήκευση)"
+
+#: src/core/Socket.js:937
+msgid "Oops, there is a problem connecting the document"
+msgstr "Ωχ, υπάρχει πρόβλημα σύνδεσης του εγγράφου"
+
+#: src/core/Socket.js:941
+msgid "Server is down, restarting automatically. Please wait."
+msgstr ""
+"Ο διακομιστής είναι εκτός λειτουργίας, επανεκκινείται αυτόματα. Παρακαλούμε "
+"περιμένετε."
+
+#: src/core/Socket.js:968
+msgid ""
+"Document has changed in storage. Loading the new document. Your version is "
+"available as revision."
+msgstr ""
+"Το έγγραφο έχει αλλάξει στην αποθήκευση. Φόρτωση του νέου εγγράφου. Η έκδοση "
+"σας είναι διαθέσιμη ως αναθεώρηση."
+
+#: src/core/Socket.js:974
+msgid ""
+"Restoring older revision. Any unsaved changes will be available in version "
+"history"
+msgstr ""
+"Επαναφορά παλαιότερης έκδοσης. Τυχόν μη αποθηκευμένες αλλαγές θα είναι "
+"διαθέσιμες στο ιστορικό εκδόσεων"
+
+#: src/core/Socket.js:980
+msgid "Reloading the document after rename"
+msgstr "Επαναφόρτωση του εγγράφου μετά τη μετονομασία"
+
+#: src/core/Socket.js:1139
+msgid "Document requires password to view."
+msgstr "Για την προβολή του εγγράφου απαιτείται κωδικός πρόσβασης."
+
+#: src/core/Socket.js:1142
+msgid "Document requires password to modify."
+msgstr "Για την τροποποίηση του εγγράφου απαιτείται κωδικός πρόσβασης."
+
+#: src/core/Socket.js:1144
+msgid "Hit Cancel to open in view-only mode."
+msgstr "Πατήστε Άκυρο για να ανοιχθεί σε κατάσταση μόνο για προβολή."
+
+#: src/core/Socket.js:1148
+msgid "Wrong password provided. Please try again."
+msgstr "Εσφαλμένος κωδικός πρόσβασης. Παρακαλούμε, ξαναπροσπαθήστε."
+
+#: src/core/Socket.js:1186
+msgid "Only the document owner can change the password."
+msgstr "Μόνο ο κάτοχος του εγγράφου μπορεί να αλλάξει τον κωδικό πρόσβασης."
+
+#: src/core/Socket.js:1217 src/core/Socket.js:1222
+msgid "Missing Fonts"
+msgstr "Λείπουν γραμματοσειρές"
+
+#: src/core/Socket.js:1254
+msgid "Someone"
+msgstr "Κάποιος"
+
+#: src/core/Socket.js:1255
+msgid "{username} saved this document as {filename}. Do you want to join?"
+msgstr ""
+"Ο χρήστης {username} αποθήκευσε αυτό το έγγραφο ως {filename}. Θέλετε να "
+"συμμετάσχετε;"
+
+#: src/core/Socket.js:1272
+msgid "The document is being renamed and will reload shortly"
+msgstr "Το έγγραφο μετονομάστηκε και θα γίνει ανανέωση σύντομα"
+
+#: src/core/Socket.js:1275
+msgid "The document is switching to Offline mode and will reload shortly"
+msgstr ""
+"Το έγγραφο μεταβαίνει σε λειτουργία εκτός σύνδεσης και θα επαναφορτωθεί "
+"σύντομα"
+
+#: src/core/Socket.js:1378
+msgid "Connecting..."
+msgstr "Συνδέεται..."
+
+#: src/core/Socket.js:1393
+msgid "Server is shutting down"
+msgstr "Ο διακομιστής τερματίζεται"
+
+#: src/core/Socket.js:1433
+msgid "Exported to storage"
+msgstr ""
+
+#: src/core/Socket.js:1433
+msgid "Successfully exported: "
+msgstr "Έγινε επιτυχής εξαγωγή: "
+
+#: src/core/Socket.js:1461
+msgid "Discard"
+msgstr "Απόρριψη"
+
+#: src/core/Socket.js:1473
+msgid "Save to new file"
+msgstr "Αποθήκευση σε νέο αρχείο"
+
+#: src/core/Socket.js:1483
+msgid "Document has been changed"
+msgstr "Το έγγραφο έχει αλλάξει"
+
+#: src/core/Socket.js:1484
+msgid ""
+"Document has been changed in storage. What would you like to do with your "
+"unsaved changes?"
+msgstr ""
+"Το έγγραφο έχει αλλαχθεί στην αποθήκευση. Τι θα θέλατε να κάνετε με τις μη "
+"αποθηκευμένες αλλαγές σας;"
+
+#: src/core/Socket.js:1749
+msgid ""
+"Well, this is embarrassing, we cannot connect to your document. Please try "
+"again."
+msgstr ""
+"Δυστυχώς, δεν μπορούμε να συνδεθούμε με το έγγραφό σας. Παρακαλούμε, "
+"ξαναπροσπαθήστε."
+
+#: src/core/Socket.js:1766
+msgid "Reconnecting..."
+msgstr "Επανασύνδεση..."
+
+#: src/core/Socket.js:1776
+msgid "The server has been disconnected."
+msgstr "Ο διακομιστής έχει αποσυνδεθεί."
+
+#: src/docdispatcher.ts:533
+msgid "Are you sure you want to delete this slide?"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτήν τη διαφάνεια;"
+
+#: src/docdispatcher.ts:536
+msgid "Are you sure you want to delete this page?"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτήν τη σελίδα;"
+
+#: src/docstate.ts:115
+msgid "Standard"
+msgstr ""
+
+#: src/docstate.ts:260
+msgid "Theme colors"
+msgstr "Χρώματα θέματος"
+
+#: src/docstate.ts:261
+msgid "Document colors"
+msgstr "Χρώματα εγγράφων"
+
+#: src/docstatefunctions.js:247
+msgid ", cluster configuration error: mis-matching serverid"
+msgstr ""
+
+#: src/dom/NotebookbarAccessibility.js:234
+msgid "{0} tab selected"
+msgstr "Επιλέχθηκε η καρτέλα {0}"
+
+#: src/errormessages.js:22
+msgid "No disk space left on server."
+msgstr "Δεν υπάρχει χώρος στο δίσκο στον διακομιστή."
+
+#: src/errormessages.js:23
+msgid ""
+"The host URL is empty. The coolwsd server is probably misconfigured, please "
+"contact the administrator."
+msgstr ""
+"Η URL του κεντρικού υπολογιστή είναι κενή. Ο διακομιστής coolwsd είναι "
+"προφανώς ρυθμισμένος εσφαλμένα, παρακαλούμε επικοινωνήστε με τον διαχειριστή."
+
+#: src/errormessages.js:24
+#, fuzzy
+msgid ""
+"This is an unsupported version of {productname}. To avoid the impression "
+"that it is suitable for deployment in enterprises, this message appears "
+"when more than {docs} documents or {connections} connections are in use "
+"concurrently."
+msgstr ""
+"Αυτή είναι μια μη υποστηριζόμενη έκδοση του {productname}. Για να αποφευχθεί "
+"η εντύπωση ότι είναι κατάλληλο για ανάπτυξη σε επιχειρήσεις, αυτό το μήνυμα "
+"εμφανίζεται όταν χρησιμοποιούνται ταυτόχρονα περισσότερα από {docs} έγγραφα "
+"ή {συνδέσεις} συνδέσεις"
+
+#: src/errormessages.js:25
+msgid "More information and support"
+msgstr "Περισσότερες πληροφορίες και υποστήριξη"
+
+#: src/errormessages.js:26
+msgid ""
+"This service is limited to {0} documents, and {1} connections total by the "
+"admin. This limit has been reached. Please try again later."
+msgstr ""
+"Αυτή η υπηρεσία περιορίζεται σε {0} έγγραφα και {1} συνδέσεις συνολικά από "
+"τον διαχειριστή. Έχετε φτάσει ήδη αυτό το όριο. Παρακαλούμε, ξαναδοκιμάστε "
+"αργότερα."
+
+#: src/errormessages.js:27
+msgid ""
+"Service is unavailable. Please try again later and report to your "
+"administrator if the issue persists."
+msgstr ""
+"Η υπηρεσία δεν είναι διαθέσιμη. Παρακαλούμε, δοκιμάστε ξανά αργότερα και "
+"αναφέρτε το στον διαχειριστή σας, αν το πρόβλημα επιμένει."
+
+#: src/errormessages.js:28
+msgid ""
+"Unauthorized WOPI host. Please try again later and report to your "
+"administrator if the issue persists."
+msgstr ""
+"Μη εξουσιοδοτημένος οικοδεσπότης WOPI. Παρακαλούμε, δοκιμάστε ξανά αργότερα "
+"και αν το πρόβλημα επιμένει, αναφέρτε το στον διαχειριστή σας."
+
+#: src/errormessages.js:29
+msgid "Authorization error was: '{errormessage}'."
+msgstr "Το σφάλμα εξουσιοδότησης ήταν: \"{errormessage}\"."
+
+#: src/errormessages.js:30
+msgid "Wrong or missing WOPISrc parameter, please contact support."
+msgstr ""
+"Εσφαλμένη ή ελλείπουσα παράμετρος WOPISrc, παρακαλούμε να επικοινωνήσετε με "
+"την υποστήριξη."
+
+#: src/errormessages.js:31
+msgid ""
+"Your session will expire in {time}. Please save your work and refresh the "
+"session (or webpage) to continue. You might need to login again."
+msgstr ""
+"Η συνεδρία σας θα τελειώσει σε {time}. Παρακαλούμε, αποθηκεύστε την εργασία "
+"σας και ανανεώστε τη συνεδρία (ή την ιστοσελίδα) για να συνεχίσετε. Ίσως "
+"χρειαστεί να συνδεθείτε ξανά."
+
+#: src/errormessages.js:32
+msgid ""
+"Your session has expired. Further changes to the document might not be "
+"saved. Please refresh the session (or webpage) to continue. You might need "
+"to login again."
+msgstr ""
+"Η συνεδρία σας έχει λήξει. Οι πρόσθετες αλλαγές στο έγγραφο μπορεί να μην "
+"αποθηκευτούν. Παρακαλούμε, ανανεώστε τη συνεδρία (ή την ιστοσελίδα) για να "
+"συνεχίσετε. Ίσως χρειαστεί να συνδεθείτε ξανά."
+
+#: src/errormessages.js:33
+msgid ""
+"Failed to load the document. Please ensure the file type is supported and "
+"not corrupted, and try again."
+msgstr ""
+"Αποτυχία φόρτωσης του εγγράφου. Παρακαλούμε, διασφαλίστε ότι ο τύπος του "
+"αρχείου υποστηρίζεται και δεν είναι αλλοιωμένος και ξαναπροσπαθήστε."
+
+#: src/errormessages.js:34
+msgid "Invalid link: '{url}'"
+msgstr "Άκυρος σύνδεσμος: '{url}'"
+
+#: src/errormessages.js:35
+msgid ""
+"You are leaving the document. The following web page will open in a new "
+"tab: "
+msgstr ""
+"Αποχωρείτε από το έγγραφο. Η παρακάτω ιστοσελίδα θα ανοίξει σε νέα καρτέλα: "
+
+#: src/errormessages.js:36
+msgid ""
+"Failed to load the document. This document is either malformed or is taking "
+"more resources than allowed. Please contact the administrator."
+msgstr ""
+"Αποτυχία φόρτωσης του εγγράφου. Αυτό το έγγραφο είναι είτε αλλοιωμένο ή "
+"παίρνει περισσότερους πόρους από τους επιτρεπόμενους. Επικοινωνήστε με τον "
+"διαχειριστή."
+
+#: src/errormessages.js:37
+msgid "Cleaning up the document from the last session."
+msgstr "Εκκαθάριση του εγγράφου από την τελευταία συνεδρία."
+
+#: src/errormessages.js:38
+msgid ""
+"We are in the process of cleaning up this document from the last session, "
+"please try again later."
+msgstr ""
+"Βρισκόμαστε στη διαδικασία εκκαθάρισης αυτού του εγγράφου από την τελευταία "
+"συνεδρία, δοκιμάστε ξανά αργότερα."
+
+#: src/errormessages.js:39
+msgid ""
+"Your {productname} cluster appear to be mis-configured or scaling rapidly - "
+"please contact your system administrator. Continuing with editing may "
+"result in multiple users not seeing each other, conflicts in the document "
+"storage and/or copy/paste problems. Expected serverId {0} for routeToken "
+"{1} but connected to serverId {2}"
+msgstr ""
+
+#: src/errormessages.js:40
+msgid ""
+"Failed to establish socket connection or socket connection closed "
+"unexpectedly. The reverse proxy might be misconfigured, please contact the "
+"administrator. For more info on proxy configuration please checkout https://"
+"sdk.collaboraonline.com/docs/installation/Proxy_settings.html"
+msgstr ""
+
+#: src/errormessages.js:41
+msgid ""
+"Failed to establish socket connection or socket connection closed "
+"unexpectedly."
+msgstr ""
+
+#: src/errormessages.js:44
+msgid "Failed to load document."
+msgstr "Αδυναμία φόρτωσης του εγγράφου."
+
+#: src/errormessages.js:45
+msgid "Save failed due to no disk space left. Document will now be read-only."
+msgstr ""
+"Αποτυχία αποθήκευσης λόγω έλλειψης χώρου στον δίσκο. Το έγγραφο θα είναι "
+"τώρα μόνο για ανάγνωση."
+
+#: src/errormessages.js:46
+msgid ""
+"The document is too large or no disk space left to save. Document will now "
+"be read-only."
+msgstr ""
+"Το έγγραφο είναι πολύ μεγάλο ή δεν υπάρχει χώρος στο δίσκο για αποθήκευση. "
+"Το έγγραφο θα είναι πλέον μόνο για ανάγνωση."
+
+#: src/errormessages.js:47
+msgid ""
+"Document cannot be saved due to expired session, please reopen the document "
+"to continue."
+msgstr ""
+"Δεν είναι δυνατή η αποθήκευση του εγγράφου λόγω λήξεως της περιόδου "
+"λειτουργίας. Ανοίξτε ξανά το έγγραφο για να συνεχίσετε."
+
+#: src/errormessages.js:48
+msgid "Document cannot be saved."
+msgstr "Το έγγραφο δεν μπορεί να αποθηκευτεί."
+
+#: src/errormessages.js:49
+msgid "Document cannot be renamed."
+msgstr "Το έγγραφο δεν μπορεί να μετονομαστεί."
+
+#: src/errormessages.js:53
+msgid ""
+"Failed to read document from storage, please try to load the document again."
+msgstr ""
+"Αποτυχία ανάγνωσης εγγράφου από τον χώρο αποθήκευσης, δοκιμάστε να φορτώσετε "
+"ξανά το έγγραφο."
+
+#: src/errormessages.js:54
+msgid ""
+"Save failed due to no storage space left. Document will now be read-only. "
+"Please make sure enough disk space is available and try to save again."
+msgstr ""
+"Η αποθήκευση απέτυχε λόγω έλλειψης αποθηκευτικού χώρου. Το έγγραφο θα είναι "
+"πλέον μόνο για ανάγνωση. Βεβαιωθείτε ότι υπάρχει αρκετός χώρος στο δίσκο και "
+"προσπαθήστε να αποθηκεύσετε ξανά."
+
+#: src/errormessages.js:55
+msgid ""
+"Save failed because the document is too large or exceeds the remaining "
+"storage space. The document will now be read-only but you may still "
+"download it now to preserve a copy locally."
+msgstr ""
+"Η αποθήκευση απέτυχε επειδή το έγγραφο είναι πολύ μεγάλο ή υπερβαίνει τον "
+"υπολειπόμενο χώρο αποθήκευσης. Το έγγραφο θα είναι πλέον μόνο για ανάγνωση, "
+"αλλά μπορείτε να το κατεβάσετε τώρα για να διατηρήσετε ένα αντίγραφο τοπικά."
+
+#: src/errormessages.js:56
+msgid ""
+"Document cannot be saved due to expired session, please reload the page to "
+"continue."
+msgstr ""
+"Δεν είναι δυνατή η αποθήκευση του εγγράφου λόγω λήξεως της συνεδρίας, "
+"φορτώστε ξανά τη σελίδα για να συνεχίσετε."
+
+#: src/errormessages.js:57
+msgid "Document cannot be saved, please check your permissions."
+msgstr "Δεν είναι δυνατή η αποθήκευση του εγγράφου, ελέγξτε τα δικαιώματά σας."
+
+#: src/errormessages.js:58
+msgid "Document cannot be renamed, please check your permissions."
+msgstr "Δεν είναι δυνατή η μετονομασία του εγγράφου, ελέγξτε τα δικαιώματά σας."
+
+#: src/errormessages.js:59
+msgid "Document cannot be exported. Please try again."
+msgstr "Δεν είναι δυνατή η εξαγωγή του εγγράφου. Δοκιμάστε ξανά."
+
+#: src/errormessages.js:64
+msgid "Uploading file to server failed, file not found."
+msgstr "Αποτυχία αποστολής αρχείου στον διακομιστή, δεν βρέθηκε το αρχείο."
+
+#: src/errormessages.js:65
+msgid "Uploading file to server failed, the file is too large."
+msgstr ""
+"Αποτυχία αποστολής του αρχείου στον διακομιστή, το αρχείο είναι υπερβολικά "
+"μεγάλο."
+
+#: src/layer/marker/A11yTextInput.js:235
+msgid "Out of table"
+msgstr "Εκτός πίνακα"
+
+#: src/layer/marker/A11yTextInput.js:238
+msgid "Table with {0} rows and {1} columns"
+msgstr "Πίνακας με {0} σειρές και {1} στήλες"
+
+#: src/layer/marker/A11yTextInput.js:243
+msgid "Row {0} through {1}"
+msgstr "Σειρά {0} έως {1}"
+
+#: src/layer/marker/A11yTextInput.js:246
+msgid "Row {0}"
+msgstr "Σειρά {0}"
+
+#: src/layer/marker/A11yTextInput.js:254
+msgid "Column {0} through {1}"
+msgstr "Στήλες {0} έως {1}"
+
+#: src/layer/marker/A11yTextInput.js:257
+msgid "Column {0}"
+msgstr "Στήλη {0}"
+
+#: src/layer/marker/A11yTextInput.js:285
+msgid "Editing activated. "
+msgstr "Η επεξεργασία ενεργοποιήθηκε. "
+
+#: src/layer/marker/A11yTextInput.js:304
+msgid "{0} selected"
+msgstr "{0} επιλεγμένο"
+
+#: src/layer/marker/A11yTextInput.js:306
+msgid "Has text: "
+msgstr "Έχει κείμενο: "
+
+#: src/layer/marker/A11yTextInput.js:311
+msgid "{0} unselected"
+msgstr "{0} αποεπιλέχτηκε"
+
+#: src/layer/marker/A11yTextInput.js:315
+msgid "{0} deleted"
+msgstr "{0} διαγράφηκε"
+
+#: src/layer/marker/TextInput.js:451
+msgid "Screen reader support for text content is disabled. "
+msgstr ""
+"Η υποστήριξη του προγράμματος ανάγνωσης οθόνης για περιεχόμενο κειμένου "
+"είναι απενεργοποιημένη. "
+
+#: src/layer/marker/TextInput.js:452
+msgid "You need to enable it both at server level and in the UI. "
+msgstr ""
+"Πρέπει να το ενεργοποιήσετε τόσο σε επίπεδο διακομιστή όσο και στη διεπαφή "
+"χρήστη. "
+
+#: src/layer/marker/TextInput.js:453
+msgid "Look for the accessibility section in coolwsd.xml for server setting. "
+msgstr ""
+"Αναζητήστε την ενότητα προσβασιμότητας στο coolwsd.xml για ρύθμιση "
+"διακομιστή. "
+
+#: src/layer/marker/TextInput.js:454
+msgid "Also check the voice over toggle under {parentControl}."
+msgstr "Ελέγξτε επίσης την εναλλαγή φωνής στο {parentControl}."
+
+#: src/layer/marker/TextInput.js:456
+msgid "the Help tab"
+msgstr ""
+
+#: src/layer/marker/TextInput.js:456
+msgid "the View menu"
+msgstr ""
+
+#: src/layer/tile/CanvasTileLayer.js:1587
+msgid "Functions"
+msgstr "Λειτουργίες"
+
+#: src/layer/tile/CanvasTileLayer.js:1847
+msgid "Named Range"
+msgstr ""
+
+#: src/layer/tile/CanvasTileLayer.js:3507
+msgid "No Comments"
+msgstr "Χωρίς σχόλια"
+
+#: src/main.js:130
+msgid "Warning! The browser you are using is not supported."
+msgstr ""
+"Προειδοποίηση! Το πρόγραμμα περιήγησης που χρησιμοποιείτε δεν υποστηρίζεται."
+
+#: src/map/Clipboard.js:176
+msgid ""
+"To paste outside {productname}, please first click the 'download' button"
+msgstr "Για επικόλληση εκτός του {productname}, πατήστε πρώτα το πλήκτρο 'λήψη'"
+
+#: src/map/Clipboard.js:184
+msgid "Copying from the document disabled"
+msgstr "Έχει απενεργοποιηθεί η αντιγραφή από το έγγραφο"
+
+#: src/map/Clipboard.js:285
+msgid "warning: copy/paste request timed out"
+msgstr "προειδοποίηση: έληξε το αίτημα αντιγραφής/επικόλλησης"
+
+#: src/map/Clipboard.js:329
+msgid "Failed to download clipboard, please re-copy"
+msgstr "Αποτυχία λήψης του προχείρου, ξαναντιγράψτε"
+
+#: src/map/Clipboard.js:1317
+msgid ""
+"Your browser has very limited access to the clipboard, so please use the "
+"paste buttons on your on-screen keyboard instead."
+msgstr ""
+
+#: src/map/Clipboard.js:1373
+msgid ""
+"A download due to a large copy/paste operation has already started. Please, "
+"wait for the current download or cancel it before starting a new one"
+msgstr ""
+"Έχει ήδη ξεκινήσει μια λήψη λόγω μιας μεγάλης λειτουργίας αντιγραφής/"
+"επικόλλησης. Παρακαλούμε, περιμένετε την ολοκλήρωση της τρέχουσας λήψης ή "
+"ακυρώστε την πριν ξεκινήσετε μια νέα"
+
+#: src/map/Clipboard.js:1395
+msgid "Paste from this document"
+msgstr "Επικόλληση από αυτό το έγγραφο"
+
+#: src/map/Clipboard.js:1395
+msgid "Cancel paste special"
+msgstr "Ακύρωση ειδικής επικόλλησης"
+
+#: src/map/Clipboard.js:1417
+msgid "Your browser has very limited access to the clipboard"
+msgstr "Ο πλοηγητής σας έχει πολύ περιορισμένη πρόσβαση στο πρόχειρο"
+
+#: src/map/Clipboard.js:1422
+msgid "Please use following combination to see more options:"
+msgstr ""
+"Χρησιμοποιήστε τον παρακάτω συνδυασμό για να δείτε περισσότερες επιλογές:"
+
+#: src/map/Clipboard.js:1440
+msgid "Close popup to ignore paste special"
+msgstr "Κλείστε το αναδυόμενο παράθυρο για να αγνοήσετε την ειδική επικόλληση"
+
+#: src/map/Map.js:218
+msgid "Initializing..."
+msgstr "Αρχικοποίηση..."
+
+#: src/map/Map.js:497 src/map/Map.js:500 src/map/Map.js:503 src/map/Map.js:506
+msgid "Last saved:"
+msgstr "Τελευταία αποθήκευση:"
+
+#: src/map/Map.js:1513
+msgid "Please wait!"
+msgstr "Παρακαλώ περιμένετε!"
+
+#: src/map/handler/Map.Feedback.js:95
+msgid "Please send us your feedback"
+msgstr "Παρακαλώ στείλτε μας τα σχόλιά σας"
+
+#: src/map/handler/Map.FileInserter.js:174
+#, javascript-format
+msgid ""
+"The file of type: {0} cannot be uploaded to server since the file has no "
+"name"
+msgstr ""
+"Το αρχείο τύπου: {0} δεν μπορεί να αποσταλεί στον διακομιστή επειδή το "
+"αρχείο δεν έχει όνομα"
+
+#: src/map/handler/Map.FileInserter.js:176
+#, javascript-format
+msgid ""
+"The file of type: {0} cannot be uploaded to server since the file is empty"
+msgstr ""
+"Το αρχείο τύπου: {0} δεν μπορεί να αποσταλεί στον διακομιστή, επειδή το "
+"αρχείο είναι κενό"
+
+#: src/map/handler/Map.FileInserter.js:214
+msgid "Uploading..."
+msgstr "Αποστολή…"
+
+#: src/map/handler/Map.FileInserter.js:239
+msgid "Uploading file to server failed with status: {0}"
+msgstr "Αποτυχία αποστολής αρχείου στον διακομιστή με κατάσταση: {0}"
+
+#: src/map/handler/Map.Print.js:44
+msgid "Print dialog"
+msgstr ""
+
+#: src/map/handler/Map.SlideShow.js:59
+#: src/slideshow/SlideShowPresenter.ts:1004
+msgid "Empty Slide Show"
+msgstr ""
+
+#: src/map/handler/Map.SlideShow.js:167
+#: src/slideshow/SlideShowPresenter.ts:1032
+msgid "Windowed Presentation Blocked"
+msgstr "Αποκλείστηκε η παρουσίαση σε παράθυρο"
+
+#: src/map/handler/Map.SlideShow.js:168
+#: src/slideshow/SlideShowPresenter.ts:1034
+msgid ""
+"Presentation was blocked. Please allow pop-ups in your browser. This lets "
+"slide shows to be displayed in separated windows, allowing for easy screen "
+"sharing."
+msgstr ""
+"Η παρουσίαση μπλοκαρίστηκε. Επιτρέψτε τα αναδυόμενα παράθυρα στο πρόγραμμα "
+"περιήγησής σας. Αυτό επιτρέπει την εμφάνιση προβολών διαφανειών σε ξεχωριστά "
+"παράθυρα, επιτρέποντας την εύκολη κοινή χρήση οθόνης."
+
+#: src/map/handler/Map.SlideShow.js:172
+#: src/slideshow/SlideShowPresenter.ts:834
+msgid "Windowed Presentation: "
+msgstr "Παρουσίαση σε παράθυρο: "
+
+#: src/map/handler/Map.SlideShow.js:202
+#: src/slideshow/SlideShowPresenter.ts:876
+#, fuzzy
+msgid "Presenting in window"
+msgstr "Παρουσίαση στο παράθυρο"
+
+#: src/map/handler/Map.SlideShow.js:203
+#: src/slideshow/SlideShowPresenter.ts:877
+msgid "Close Presentation"
+msgstr "Κλείσιμο παρουσίασης"
+
+#: src/map/handler/Map.SlideShow.js:230
+msgid "Presenting in fullscreen"
+msgstr ""
+
+#: src/map/handler/Map.SlideShow.js:231
+msgid "End Presentation"
+msgstr "Τερματισμός παρουσίασης"
+
+#: src/map/handler/Map.SlideShow.js:295
+#: src/slideshow/SlideShowPresenter.ts:1019
+msgid "Already presenting"
+msgstr ""
+
+#: src/map/handler/Map.SlideShow.js:296
+#: src/slideshow/SlideShowPresenter.ts:1020
+msgid "You are already presenting this document"
+msgstr "Παρουσιάζετε ήδη αυτό το έγγραφο"
+
+#: src/map/handler/Map.SlideShow.js:306
+#: src/slideshow/SlideShowPresenter.ts:1057
+msgid "Presentation disabled"
+msgstr "Η παρουσίαση απενεργοποιήθηκε"
+
+#: src/map/handler/Map.SlideShow.js:307
+#: src/slideshow/SlideShowPresenter.ts:1058
+msgid "Presentation mode has been disabled for this document"
+msgstr "Η λειτουργία παρουσίασης έχει απενεργοποιηθεί για αυτό το έγγραφο"
+
+#: src/map/handler/Map.VersionBar.js:50
+msgid "Your Collabora Online server needs updating. Version {0} is available."
+msgstr ""
+"Ο διακομιστής σας Collabora Online χρειάζεται ενημέρωση. Η έκδοση {0} είναι "
+"διαθέσιμη."
+
+#: src/map/handler/Map.WOPI.js:176
+msgid "Creating new file from template..."
+msgstr "Δημιουργία νέου αρχείου από πρότυπο..."
+
+#: src/map/handler/Map.WOPI.js:695
+msgid "File name should contain an extension."
+msgstr "Το όνομα αρχείου πρέπει να περιέχει μια επέκταση."
+
+#: src/map/handler/Map.WOPI.js:703
+msgid "Creating copy..."
+msgstr "Δημιουργείται αντίγραφο..."
+
+#: src/map/handler/Map.Welcome.js:92
+msgid "Welcome Dialog"
+msgstr "Διάλογος καλωσορίσματος"
+
+#: src/slideshow/PauseTimer.ts:141
+msgid "Pause... ( %SECONDS% )"
+msgstr "Παύση... ( %SECONDS% )"
+
+#: src/slideshow/PresenterConsole.js:29
+msgid "Current Slide"
+msgstr "Τρέχουσα διαφάνεια"
+
+#: src/slideshow/PresenterConsole.js:30
+msgid "Next Slide"
+msgstr "Επόμενη διαφάνεια"
+
+#: src/slideshow/PresenterConsole.js:35
+msgid "Pause"
+msgstr "Παύση"
+
+#: src/slideshow/PresenterConsole.js:36
+msgid "Restart"
+msgstr "Επανεκκίνηση"
+
+#: src/slideshow/PresenterConsole.js:37
+msgid "Resume"
+msgstr "Συνέχεια"
+
+#: src/slideshow/PresenterConsole.js:38
+msgid "Go Back"
+msgstr ""
+
+#: src/slideshow/PresenterConsole.js:39
+msgid "Zoom In"
+msgstr "Μεγέθυνση"
+
+#: src/slideshow/PresenterConsole.js:40
+msgid "Zoom Out"
+msgstr "Σμίκρυνση"
+
+#: src/slideshow/PresenterConsole.js:178
+msgid "Preview Slide {1}"
+msgstr ""
+
+#: src/slideshow/PresenterConsole.js:1241
+msgid "Slide {0} of {1}"
+msgstr "Διαφάνεια {0} από {1}"
+
+#: src/slideshow/PresenterConsole.js:1265
+msgid "No Notes"
+msgstr "Καμία σημείωση"
+
+#: src/slideshow/PresenterConsole.js:1353
+msgid "Repeat in {0} seconds"
+msgstr "Επαναλάβετε σε {0} δευτερόλεπτα"
+
+#: src/slideshow/PresenterConsole.js:1358
+#: src/slideshow/SlideShowPresenter.ts:535
+msgid "Click to exit presentation..."
+msgstr "Κάντε κλικ για έξοδο από την παρουσίαση..."
+
+#: src/slideshow/SlideShowPresenter.ts:647
+msgid "End Show"
+msgstr ""
+
+#: src/slideshow/SlideShowPresenter.ts:675
+#: src/slideshow/SlideShowPresenter.ts:687
+msgid "Disable Animations"
+msgstr ""
+
+#: src/slideshow/SlideShowPresenter.ts:686
+msgid "Enable Animations"
+msgstr ""
+
+#: src/slideshow/SlideShowPresenter.ts:698
+msgid "Follow Presentation"
+msgstr ""
+
+#: welcome/welcome.html%2Bhtml.head.title:9-3
+msgid "Collabora Online Welcome"
+msgstr "Καλώς ήρθατε στο Collabora Online"
+
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.h1:26-7
+msgid "Explore The New {coolversion}"
+msgstr "Εξερευνήστε τη Νέα {coolversion}"
+
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.h2:27-7
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.h2:38-7
+msgid "Collabora Online Development Edition"
+msgstr "Collabora Online Development Edition"
+
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.p:28-7
+msgid ""
+"Enjoy the latest developments in online productivity, free for you to use, "
+"to explore and to use with others in the browser. Various <a "
+"target=\"_blank\" href=\"https://www.collaboraonline.com/solutions/"
+"collabora-office-android-ios/\">apps</a> are also available for mobile."
+msgstr ""
+"Απολαύστε τις τελευταίες εξελίξεις στην παραγωγικότητα στο διαδίκτυο, δωρεάν "
+"για χρήση, εξερεύνηση και χρήση με άλλους στο πρόγραμμα περιήγησης. Διάφορες "
+"<a target=\"_blank\" href=\"https://www.collaboraonline.com/solutions/"
+"collabora-office-android-ios/\">εφαρμογές</a> είναι επίσης διαθέσιμες για "
+"κινητά."
+
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.h1:37-7
+msgid "Discover All The Changes"
+msgstr "Ανακαλύψτε Όλες Τις Αλλαγές"
+
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.p:39-7
+msgid ""
+"Check the <a target=\"_blank\" href=\"https://www.collaboraonline.com/"
+"code-25-04-release-notes/\">release notes</a> and learn all about: The "
+"latest Collabora Online Development Edition, aimed at home users and small "
+"teams."
+msgstr ""
+"Ελέγξτε τις <a target=\"_blank\" href=\"https://www.collaboraonline.com/"
+"code-25-04-release-notes/\">σημειώσεις έκδοσης</a> και μάθετε τα πάντα για: "
+"Την τελευταία έκδοση Collabora Online Development Edition, που απευθύνεται "
+"σε οικιακούς χρήστες και μικρές ομάδες."
+
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.h1:48-7
+msgid "Get Involved"
+msgstr "Συμμετέχετε"
+
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.h2:49-7
+msgid "https://collaboraonline.github.io/"
+msgstr "https://collaboraonline.github.io/"
+
+#: welcome/welcome.html%2Bhtml.body.div.div.div.div.p:50-7
+msgid ""
+"Are you interested in contributing but don’t know where to start? Head over "
+"to the <a target=\"_blank\" href=\"https://collaboraonline.github.io/post/"
+"build-code/\">step-by-step instructions</a> and build CODE from scratch. "
+"You can also help out with <a target=\"_blank\" href=\"https://"
+"collaboraonline.github.io/post/translate/\">translations</a> or by <a "
+"target=\"_blank\" href=\"https://collaboraonline.github.io/post/filebugs/"
+"\">filing a bug report</a> with all the essential steps on how to reproduce "
+"it."
+msgstr ""
+"Ενδιαφέρεστε να συνεισφέρετε αλλά δεν ξέρετε από πού να ξεκινήσετε; "
+"Μεταβείτε στις <a target=\"_blank\" href=\"https://collaboraonline.github.io/"
+"post/build-code/\">βήμα προς βήμα οδηγίες</a> και δημιουργήστε το CODE από "
+"την αρχή. Μπορείτε επίσης να βοηθήσετε με <a target=\"_blank\" href=\"https"
+"://collaboraonline.github.io/post/translate/\">μεταφράσεις</a> ή <a target="
+"\"_blank\" href=\"https://collaboraonline.github.io/post/filebugs/\""
+">καταθέτοντας μια αναφορά σφάλματος</a> με όλα τα βασικά βήματα για τον "
+"τρόπο αναπαραγωγής του."
+
+#: welcome/welcome.html%2Bhtml.body.div.div:55-5
+msgid ""
+"<a id=\"slide-1-indicator\" class=\"active\" href=\"#slide-1\" data-"
+"translate=\"true\">1</a> <a id=\"slide-2-indicator\" href=\"#slide-2\" data-"
+"translate=\"true\">2</a> <a id=\"slide-3-indicator\" href=\"#slide-3\" data-"
+"translate=\"true\">3</a>"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Show ruler"
+#~ msgstr "Εμφάνιση χάρακα"
+
+#~ msgid "Cluster is scaling, retrying..."
+#~ msgstr "Η συστάδα κλιμακώνεται, επανάληψη..."
+
+#~ msgid "Document is migrating to new server, retrying..."
+#~ msgstr "Το έγγραφο μεταναστεύει σε νέο διακομιστή, επανάληψη..."
+
+#~ msgid "Cancel the search"
+#~ msgstr "Ακύρωση αναζήτησης"
+
+#~ msgid "Insert hyperlink"
+#~ msgstr "Εισαγωγή υπερσυνδέσμου"
+
+#~ msgid "Link"
+#~ msgstr "Σύνδεσμος"
+
+#~ msgid "Read-only mode"
+#~ msgstr "Λειτουργία μόνο για ανάγνωση"
+
+#~ msgid "Draw"
+#~ msgstr "Σχεδίαση"
+
+#~ msgid "Please use the paste buttons on your on-screen keyboard."
+#~ msgstr ""
+#~ "Χρησιμοποιήστε τα πλήκτρα αντιγραφής/επικόλλησης στο πληκτρολόγιο της οθόνης "
+#~ "σας."
+
+#~ msgid "Insert mode: inactive"
+#~ msgstr "Λειτουργία εισαγωγής: ανενεργό"
+
+#~ msgid "Another user has updated comments. Would you like to proceed updating?"
+#~ msgstr ""
+#~ "Ένας άλλος χρήστης έχει ενημερώσει τα σχόλια. Θέλετε να συνεχίσετε την "
+#~ "ενημέρωση;"
+
+#~ msgid ""
+#~ "<p>Your browser has very limited access to the clipboard, so use these "
+#~ "keyboard shortcuts:</p><table class=\"warn-copy-paste\"><tr><td><kbd>Ctrl</"
+#~ "kbd><span class=\"kbd--plus\">+</span><kbd>C</kbd></td><td><kbd>Ctrl</"
+#~ "kbd><span class=\"kbd--plus\">+</span><kbd>X</kbd></td><td><kbd>Ctrl</"
+#~ "kbd><span class=\"kbd--plus\">+</span><kbd>V</kbd></td></tr><tr><td>Copy</"
+#~ "td><td>Cut</td><td>Paste</td></tr></table>"
+#~ msgstr ""
+#~ "<p>Ο πλοηγητής σας έχει πολύ περιορισμένη πρόσβαση στο πρόχειρο, γι' αυτό "
+#~ "χρησιμοποιήστε αυτές τις συντομεύσεις πληκτρολογίου:</p><table class=\"warn-"
+#~ "copy-paste\"><tr><td><kbd>Ctrl</kbd><span class=\"kbd--plus\""
+#~ ">+</span><kbd>C</kbd></td><td><kbd>Ctrl</kbd><span class=\"kbd--plus\""
+#~ ">+</span><kbd>X</kbd></td><td><kbd>Ctrl</kbd><span class=\"kbd--plus\""
+#~ ">+</span><kbd>V</kbd></td></tr><tr><td>Για αντιγραφή</td><td></td>Για "
+#~ "αποκοπή<td>Για επικόλληση</td></tr></table>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Your browser has very limited access to the clipboard</p><p><b>Please "
+#~ "press</b> <kbd>Ctrl</kbd><span class=\"kbd--plus\">+</span><kbd>V</kbd> to "
+#~ "see more options</p><p>Close popup to ignore paste special</p>"
+#~ msgstr ""
+#~ "<p>Το πρόγραμμα περιήγησής σας έχει πολύ περιορισμένη πρόσβαση στο πρόχειρο</"
+#~ "p><p>Πατήστε τώρα: <kbd>Ctrl</kbd><span class=\"kbd--plus\">+</span><kbd>V</"
+#~ "kbd> για να δείτε περισσότερες επιλογές</p><p class=\"vex-footnote\">Κλείστε "
+#~ "το αναδυόμενο παράθυρο για να αγνοήσετε την ειδική επικόλληση</p>"
+
+#~ msgid "Document cannot be saved due to expired or invalid access token."
+#~ msgstr ""
+#~ "Το έγγραφο δεν μπορεί να αποθηκευτεί επειδή έληξε ή είναι άκυρο το "
+#~ "διακριτικό πρόσβασης."
+
+#~ msgid "ODF Spreadsheet (.ods)"
+#~ msgstr "Υπολογιστικό φύλλο ODF (.ods)"
+
+#~ msgid "ODF Presentation (.odp)"
+#~ msgstr "Παρουσίαση ODF (.odp)"
+
+#~ msgid "ODF Text Document (.odt)"
+#~ msgstr "Έγγραφο κειμένου ODF (.odt)"
+
+#~ msgid "EPUB Document (.epub)"
+#~ msgstr "Έγγραφο EPUB (.epub)"
+
+#~ msgid "Previous slide"
+#~ msgstr "Προηγούμενη διαφάνεια"
+
+#~ msgid "Readonly"
+#~ msgstr "Μόνο για ανάγνωση"
+
+#~ msgid "Current"
+#~ msgstr "Τρέχουσα"
+
+#~ msgid "Start download"
+#~ msgstr "Έναρξη λήψης"
+
+#~ msgid "Confirm copy to clipboard"
+#~ msgstr "Επιβεβαίωση αντιγραφής στο πρόχειρο"
+
+#~ msgid ""
+#~ "<p>If you would like to share larger elements of your document with other "
+#~ "applications it is necessary to first download them onto your device. To do "
+#~ "that press the \"Start download\" button below, and when complete click "
+#~ "\"Confirm copy to clipboard\".</p><p>If you are copy and pasting between "
+#~ "documents inside {productname}, there is no need to download.</p>"
+#~ msgstr ""
+#~ "<p>Εάν θέλετε να μοιραστείτε μεγαλύτερα τμήματα του εγγράφου σας με άλλες "
+#~ "εφαρμογές, είναι απαραίτητο να τα μεταφορτώσετε πρώτα στη συσκευή σας. Για "
+#~ "να το κάνετε αυτό, πατήστε το παρακάτω πλήκτρο \"Έναρξη μεταφόρτωσης\" και "
+#~ "όταν ολοκληρωθεί πατήστε \"Επιβεβαίωση αντιγραφής στο πρόχειρο\".</p><p>Εάν "
+#~ "αντιγράφετε και επικολλάτε μεταξύ εγγράφων μέσα στο {productname}, δεν "
+#~ "χρειάζεται να μεταφορτώσετε.</p>"
+
+#~ msgid "~View"
+#~ msgstr "~Προβολή"
+
+#~ msgid "Reference~s"
+#~ msgstr "~Παραπομπές"
+
+#, fuzzy
+#~ msgid "For~m"
+#~ msgstr "Φόρουμ"
+
+#~ msgid ""
+#~ "No disk space left on server, please contact the server administrator to "
+#~ "continue."
+#~ msgstr ""
+#~ "Δεν απέμεινε καθόλου χώρος δίσκου στον διακομιστή, παρακαλούμε επικοινωνήστε "
+#~ "με τον διαχειριστή του διακομιστή για να συνεχίσετε."
+
+#, javascript-format
+#~ msgid ""
+#~ "Failed to read document from storage. Please contact your storage server "
+#~ "(%storageserver) administrator."
+#~ msgstr ""
+#~ "Αποτυχία ανάγνωσης του εγγράφου από τον χώρο αποθήκευσης. Παρακαλούμε "
+#~ "επικοινωνήστε με τον διαχειριστή του διακομιστή του χώρου αποθήκευσής σας "
+#~ "(%storageserver)."
+
+#~ msgid ""
+#~ "Document cannot be saved. Check your permissions or contact the storage "
+#~ "server administrator."
+#~ msgstr ""
+#~ "Το έγγραφο δεν μπορεί να αποθηκευτεί. Ελέγξτε τα δικαιώματά σας ή "
+#~ "επικοινωνήστε με τον διαχειριστή του διακομιστή αποθήκευσης."
+
+#~ msgid ""
+#~ "Document cannot be renamed. Check your permissions or contact the storage "
+#~ "server administrator."
+#~ msgstr ""
+#~ "Το έγγραφο δεν μπορεί να μετονομαστεί. Ελέγξτε τα δικαιώματά σας ή "
+#~ "επικοινωνήστε με τον διαχειριστή του διακομιστή αποθήκευσης."
+
+#~ msgid ""
+#~ "Document cannot be exported. Please contact the storage server "
+#~ "administrator."
+#~ msgstr ""
+#~ "Δεν είναι δυνατή η εξαγωγή του εγγράφου. Επικοινωνήστε με τον διαχειριστή "
+#~ "του διακομιστή αποθήκευσης."
+
+#~ msgid "Sign document"
+#~ msgstr "Υπογραφή εγγράφου"
+
+#, javascript-format
+#~ msgid ""
+#~ "Save failed due to no disk space left on storage server. Document will now "
+#~ "be read-only. Please contact the server (%storageserver) administrator to "
+#~ "continue editing."
+#~ msgstr ""
+#~ "Η αποθήκευση απέτυχε επειδή δεν υπάρχει χώρος στον δίσκο στον διακομιστή "
+#~ "αποθήκευσης. Το έγγραφο θα είναι τώρα μόνο για ανάγνωση. Παρακαλούμε, "
+#~ "επικοινωνήστε με τον διαχειριστή του διακομιστή (%storageserver) για να "
+#~ "συνεχίσετε την επεξεργασία."
+
+#~ msgid "Show Selected Sheets"
+#~ msgstr "Εμφάνιση επιλεγμένων φύλλων"
+
+#~ msgid "filename"
+#~ msgstr "όνομα αρχείου"
+
+#~ msgid "Please enter the PIN Code"
+#~ msgstr "Παρακαλούμε, εισάγετε τον κωδικό PIN"
+
+#~ msgid "Error at login."
+#~ msgstr "Σφάλμα στη σύνδεση."
+
+#~ msgid "Please scan the code"
+#~ msgstr "Παρακαλούμε, σαρώστε τον κωδικό"
+
+#~ msgid "Couldn't get the QR code image."
+#~ msgstr "Αδυναμία λήψης της εικόνας κώδικα QR."
+
+#~ msgid "Error when trying to restore access to identity."
+#~ msgstr "Σφάλμα κατά την προσπάθεια επαναφοράς της στην ταυτότητα."
+
+#~ msgid "PIN Code"
+#~ msgstr "Κωδικός PIN"
+
+#~ msgid "Please enter the PIN code from the EMail or SMS"
+#~ msgstr "Παρακαλούμε, εισάγετε τον κωδικό PIN από ηλ. διεύθυνση ή SMS"
+
+#~ msgid "Login from email or mobile number"
+#~ msgstr "Σύνδεση από ηλ. διεύθυνση ή κινητό αριθμό"
+
+#~ msgid "Select document type to upload"
+#~ msgstr "Επιλέξτε τον τύπο εγγράφου για ανέβασμα"
+
+#~ msgid "Type:"
+#~ msgstr "Τύπος:"
+
+#~ msgid "Document uploaded."
+#~ msgstr "Το έγγραφο ανέβηκε."
+
+#~ msgid "Select identity:"
+#~ msgstr "Επιλογή ταυτότητας:"
+
+#~ msgid "Login from mobile"
+#~ msgstr "Σύνδεση από κινητό"
+
+#~ msgid "Recover from email"
+#~ msgstr "Ανάκτηση από ηλ. διεύθυνση"
+
+#~ msgid "Select passport"
+#~ msgstr "Επιλογή διαβατηρίου"
+
+#~ msgid "Passport: N/A"
+#~ msgstr "Διαβατήριο: Δ/Υ"
+
+#~ msgid "Sign"
+#~ msgstr "Υπογραφή"
+
+#~ msgid "N/A"
+#~ msgstr "Δ/Υ"
+
+#~ msgid "Login"
+#~ msgstr "Σύνδεση"
+
+#~ msgid "Not Signed"
+#~ msgstr "Μη υπογεγραμμένο"
+
+#~ msgid "Signed and validated"
+#~ msgstr "Υπογεγραμμένο και επικυρωμένο"
+
+#~ msgid "Signature broken"
+#~ msgstr "Αλλοιωμένη υπογραφή"
+
+#~ msgid "Signed but document modified"
+#~ msgstr "Υπογεγραμμένο, αλλά το έγγραφο τροποποιήθηκε"
+
+#~ msgid "Signed but not validated"
+#~ msgstr "Υπογεγραμμένο αλλά μη επικυρωμένο"
+
+#~ msgid "Signed but not all files are signed"
+#~ msgstr "Υπογεγραμμένο, αλλά δεν έχουν υπογραφεί όλα τα αρχεία"
+
+#~ msgid "Signed but not validated and not all files are signed"
+#~ msgstr ""
+#~ "Υπογεγραμμένο αλλά όχι επικυρωμένο και δεν είναι όλα τα αρχεία υπογεγραμμένα"
+
+#~ msgid "Inactive document"
+#~ msgstr "Ανενεργό έγγραφο"
+
+#~ msgid "Please click to resume editing"
+#~ msgstr "Κάντε κλικ για να συνεχίσετε την επεξεργασία"
+
+#~ msgid ""
+#~ "You are leaving the editor, are you sure you want to visit the following "
+#~ "URL?"
+#~ msgstr ""
+#~ "Αποχωρείτε από το πρόγραμμα επεξεργασίας, είστε βέβαιοι ότι θέλετε να "
+#~ "επισκεφτείτε την παρακάτω διεύθυνση URL;"
+
+#~ msgid " saved this document as "
+#~ msgstr " αποθήκευσε το έγγραφο ως "
+
+#~ msgid ". Do you want to join?"
+#~ msgstr ". Θέλετε να συμμετέχετε;"
+
+#~ msgid "Index"
+#~ msgstr "Ευρετήριο"
+
+#~ msgid "User name"
+#~ msgstr "Όνομα χρήστη"
+
+#~ msgid "Timestamp"
+#~ msgstr "Χρονική σήμανση"
+
+#~ msgid "Jump to state"
+#~ msgstr "Μετάβαση στην κατάσταση"
+
+#~ msgid "Toggle Status Bar"
+#~ msgstr "Εναλλαγή Γραμμής Κατάστασης"
+
+#~ msgid "Text Body"
+#~ msgstr "Σώμα κειμένου"
+
+#~ msgid "Toggle Ruler"
+#~ msgstr "Εναλλαγή Χάρακα"
+
+#~ msgid "Menu"
+#~ msgstr "Μενού"
+
+#~ msgid "Start Presentation"
+#~ msgstr "Έναρξη παρουσίασης"
+
+#, fuzzy
+#~ msgid "Reset Zoom"
+#~ msgstr "Επαναφορά εστίασης"
+
+#~ msgid "I understand the risks"
+#~ msgstr "Καταλαβαίνω τους κινδύνους"
+
+#~ msgid ""
+#~ "We are sorry, the information about the latest updates is not available."
+#~ msgstr ""
+#~ "Λυπούμαστε, αλλά οι πληροφορίες για της τελευταίες ενημερώσεις δεν είναι "
+#~ "διαθέσιμες."
+
+#~ msgid "Inactive document - please click to resume editing"
+#~ msgstr ""
+#~ "Ανενεργό έγγραφο - παρακαλούμε πατήστε (κλικ) για να συνεχίσετε την "
+#~ "επεξεργασία"
+
+#, javascript-format
+#~ msgid "%d seconds ago"
+#~ msgstr "πριν %d δευτερόλεπτα"
+
+#, javascript-format
+#~ msgid "%d minutes ago"
+#~ msgstr "πριν %d λεπτά"
+
+#~ msgid "Start upload"
+#~ msgstr "Έναρξη αποστολής"
+
+#~ msgid "Start cross copy/paste"
+#~ msgstr "Έναρξη διασταυρούμενης αντιγραφής/επικόλλησης"
+
+#~ msgid "Emphasis"
+#~ msgstr "Έμφαση"
+
+#~ msgid "Strong Emphasis"
+#~ msgstr "Ισχυρή έμφαση"
+
+#~ msgid "~Sheet"
+#~ msgstr "~Φύλλο"
+
+#~ msgid "Insert Row Break"
+#~ msgstr "Εισαγωγή αλλαγής γραμμής"
+
+#~ msgid "Insert Column Break"
+#~ msgstr "Εισαγωγή αλλαγής στήλης"
+
+#~ msgid "Remove Row Break"
+#~ msgstr "Αφαίρεση αλλαγής γραμμής"
+
+#~ msgid "Remove Column Break"
+#~ msgstr "Αφαίρεση αλλαγής στήλης"
+
+#~ msgid ""
+#~ "<p>Your browser has very limited access to the clipboard, so use these "
+#~ "keyboard shortcuts:<ul><li><b>Ctrl+C</b>: For copying.</li><li><b>Ctrl+X</"
+#~ "b>: For cutting.</li><li><b>Ctrl+V</b>: For pasting.</li></ul></p>"
+#~ msgstr ""
+#~ "<p>Ο πλοηγητής σας έχει πολύ περιορισμένη πρόσβαση στο πρόχειρο, γι' αυτό "
+#~ "χρησιμοποιήστε αυτές τις συντομεύσεις πληκτρολογίου: <ul><li><b>Ctrl+C</b>: "
+#~ "Για αντιγραφή.</li><li><b>Ctrl+X</b>: Για αποκοπή.</li><li><b>Ctrl+V</b>: "
+#~ "Για επικόλληση.</li></ul></p>"
+
+#~ msgid "Subtitle"
+#~ msgstr "Υπότιτλος"
+
+#~ msgid ""
+#~ "The Personal edition is supported by volunteers and intended for individual "
+#~ "use."
+#~ msgstr ""
+#~ "Η προσωπική έκδοση υποστηρίζεται από εθελοντές και αποσκοπεί σε ατομική "
+#~ "χρήση."
+
+#~ msgid "Server is recycling and will be available shortly"
+#~ msgstr "Ο διακομιστής επανεκκινεί και θα είναι σύντομα διαθέσιμος"
+
+#, fuzzy
+#~ msgid "Oops, there is a problem connecting to Collabora Online : "
+#~ msgstr "Όπα, υπάρχει πρόβλημα στη σύνδεση με το διαδικτυακό LibreOffice : "
+
+#~ msgid "Number of views"
+#~ msgstr "Αριθμός προβολών"
+
+#~ msgid "Documents"
+#~ msgstr "Έγγραφα"
+
+#~ msgid "First sheet"
+#~ msgstr "Πρώτο φύλλο"
+
+#~ msgid "Previous sheet"
+#~ msgstr "Προηγούμενο φύλλο"
+
+#~ msgid "Next sheet"
+#~ msgstr "Επόμενο φύλλο"
+
+#~ msgid "Last sheet"
+#~ msgstr "Τελευταίο φύλλο"
+
+#~ msgid "Gradient"
+#~ msgstr "Διαβάθμιση"
+
+#~ msgid "Hatching"
+#~ msgstr "Γραμμοσκίαση"
+
+#~ msgid "Pattern"
+#~ msgstr "Μοτίβο"
+
+#, fuzzy
+#~| msgid "Text orientation"
+#~ msgid "Toggle Page Orientation"
+#~ msgstr "Προσανατολισμός κειμένου"
+
+#~ msgid "Save as PDF"
+#~ msgstr "Αποθήκευση ως PDF"
